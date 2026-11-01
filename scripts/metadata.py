@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """Turn the buildroot scan (tmp/.packageinfo, tmp/.targetinfo) into channel metadata JSON.
 
-Output is one entry per line with sorted keys so the daily refresh produces small git diffs.
+Run from the tree root. Output is one entry per line with sorted keys so the daily refresh
+produces small git diffs.
 """
 
 import json
+import os
 import sys
 
 
@@ -23,7 +25,10 @@ def packages(path):
     result, source = {}, None
     for st in stanzas(path):
         if "Source-Makefile" in st:
-            source = st["Source-Makefile"].removesuffix("/Makefile")
+            # The scan reaches some Makefiles through package/feeds symlinks, and which path it
+            # reports depends on directory order; record the real location to stay deterministic.
+            makefile = os.path.relpath(os.path.realpath(st["Source-Makefile"]))
+            source = makefile.removesuffix("/Makefile")
         name = st.get("Package")
         if not name:
             continue
