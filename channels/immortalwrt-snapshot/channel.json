@@ -1,0 +1,11 @@
+{
+  "description": "ImmortalWrt development snapshot (master branch)",
+  "follow": {
+    "branch": "master"
+  },
+  "upstream": {
+    "owner": "immortalwrt",
+    "repo": "immortalwrt"
+  },
+  "version": "SNAPSHOT"
+}

@@ -1,0 +1,154 @@
+{
+  "feeds": [
+    {
+      "fetch": {
+        "narHash": "sha256-V1XNXmHqEBvWYHnatfLVDkY2ZRt2yWwvAmQYO1lcYMU=",
+        "owner": "immortalwrt",
+        "repo": "packages",
+        "rev": "48f609040f2e4beb16c1aa62af6a6aaafd2eb6cd",
+        "type": "github"
+      },
+      "name": "packages",
+      "pinnedBy": "default-branch"
+    },
+    {
+      "fetch": {
+        "narHash": "sha256-wDqzUKjBUurA6buemdH1E+hAskKvAXEnbIbXfVbNDMo=",
+        "owner": "immortalwrt",
+        "repo": "luci",
+        "rev": "df794c7f69361641195a4b336634d1b1c918099c",
+        "type": "github"
+      },
+      "name": "luci",
+      "pinnedBy": "default-branch"
+    },
+    {
+      "fetch": {
+        "narHash": "sha256-TNF1qapEQUfC4afzERH9CNA6SwOMgcD+OtcNHELQQCY=",
+        "owner": "openwrt",
+        "repo": "routing",
+        "rev": "ea8633da9c461a9bdc62a0323439d31180762e03",
+        "type": "github"
+      },
+      "name": "routing",
+      "pinnedBy": "default-branch"
+    },
+    {
+      "fetch": {
+        "narHash": "sha256-avOQbnX44lU7u1qGbb03PAKbn2qIpkBB/fE6A4tcIJA=",
+        "owner": "openwrt",
+        "repo": "telephony",
+        "rev": "9bcb6d71db03377ff49ccb099be763add9a5b059",
+        "type": "github"
+      },
+      "name": "telephony",
+      "pinnedBy": "default-branch"
+    },
+    {
+      "fetch": {
+        "narHash": "sha256-WtRVmWeGbDNpLQVsEC1ZeM1AoGcSBg0pamoHTVd0QK4=",
+        "owner": "naoki66",
+        "repo": "luci-app-airoha",
+        "rev": "b1b487b5326fa2a9acccfec122d607c7bf175974",
+        "type": "github"
+      },
+      "name": "app_airoha",
+      "pinnedBy": "default-branch"
+    },
+    {
+      "fetch": {
+        "narHash": "sha256-m/xkbVuMhDFUNeiEQL4Vxqs3HS1ndry2zSqWs4fhMyk=",
+        "owner": "naoki66",
+        "repo": "openwrt-pon-drivers",
+        "rev": "e19bde08ac3f3218a783f22165d9a5ded06046d2",
+        "type": "github"
+      },
+      "name": "pon_drivers",
+      "pinnedBy": "default-branch"
+    },
+    {
+      "fetch": {
+        "narHash": "sha256-u4mf2XMGDwHXxg3ZdpmxK3HKaTZ0MWTZLoOKH9dhNfw=",
+        "owner": "naoki66",
+        "repo": "OpenWrt_ONU_CONFIG",
+        "rev": "3cb13560459f1d51136dac662baa1f399028b2b4",
+        "type": "github"
+      },
+      "name": "onu_config",
+      "pinnedBy": "default-branch"
+    },
+    {
+      "fetch": {
+        "narHash": "sha256-r+W+NDqgk812on/Tij449i6LJYrxqhSHqxWIBCj8flE=",
+        "owner": "EasyTier",
+        "repo": "luci-app-easytier",
+        "rev": "9c51d3f8d2bfcefd039f2ff2354c6a7674293a06",
+        "type": "github"
+      },
+      "name": "easytier",
+      "pinnedBy": "branch",
+      "ref": "main"
+    },
+    {
+      "fetch": {
+        "narHash": "sha256-vroHrAzcbQFMqyqcTYVsG3nOObHDbOvuRfUQWYqXh04=",
+        "owner": "timsaya",
+        "repo": "openwrt-bandix",
+        "rev": "0760d1f5b52d1a2317dfd171ab00fe6543a9a0c4",
+        "type": "github"
+      },
+      "name": "openwrt_bandix",
+      "pinnedBy": "branch",
+      "ref": "main"
+    },
+    {
+      "fetch": {
+        "narHash": "sha256-a3r9/mEWnzdU6JVuMRGKGXcNzxtjsTQqSSEuw5QhNws=",
+        "owner": "timsaya",
+        "repo": "luci-app-bandix",
+        "rev": "108369b8da05f01296a3ed0210a2ab60809712e5",
+        "type": "github"
+      },
+      "name": "luci_app_bandix",
+      "pinnedBy": "branch",
+      "ref": "main"
+    },
+    {
+      "fetch": {
+        "narHash": "sha256-Fy+Z/eL9g9AmdrlzdW3Ux9o/XlravMfUAuZSGc1feA0=",
+        "owner": "fw876",
+        "repo": "helloworld",
+        "rev": "04fe559424048d44aaf7c53f3b3c9a775c513a3b",
+        "type": "github"
+      },
+      "name": "helloworld",
+      "pinnedBy": "branch",
+      "ref": "dev"
+    },
+    {
+      "directory": "luci-app-pushbot",
+      "fetch": {
+        "narHash": "sha256-DjmafmsWsOajTTVkLRbHUWnyp+SLkTqI2xfBAoFs8IY=",
+        "owner": "naoki66",
+        "repo": "luci-app-pushbot",
+        "rev": "d9f3f2b16584b5f040658ebb9d6c3e656fbec9b5",
+        "type": "github"
+      },
+      "name": "pushbot",
+      "pinnedBy": "default-branch"
+    }
+  ],
+  "revision": "r42828-8f92c5427fd9",
+  "src": {
+    "fetch": {
+      "narHash": "sha256-SGh8c6VfOynQHHP+Bd7ZrQboSZ6ynDsmFtmphudt2M4=",
+      "owner": "naoki66",
+      "repo": "ImmortalWrt-for-Gemtek-brightspeed",
+      "rev": "8f92c5427fd902eb5c32006d1bc1ed9954055378",
+      "type": "github"
+    },
+    "lastModified": 1792992530,
+    "ref": "master"
+  },
+  "version": "SNAPSHOT"
+}

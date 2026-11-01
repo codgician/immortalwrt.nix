@@ -1,0 +1,12 @@
+{
+  "description": "ImmortalWrt 25.12 release branch snapshot (openwrt-25.12)",
+  "follow": {
+    "branch": "openwrt-25.12"
+  },
+  "series": "25.12",
+  "upstream": {
+    "owner": "immortalwrt",
+    "repo": "immortalwrt"
+  },
+  "version": "25.12-SNAPSHOT"
+}

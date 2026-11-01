@@ -1,0 +1,11 @@
+{
+  "description": "ImmortalWrt 25.12 stable releases (newest v25.12.x tag)",
+  "follow": {
+    "tagSeries": "25.12"
+  },
+  "series": "25.12",
+  "upstream": {
+    "owner": "immortalwrt",
+    "repo": "immortalwrt"
+  }
+}

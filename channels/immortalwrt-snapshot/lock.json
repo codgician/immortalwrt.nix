@@ -1,0 +1,72 @@
+{
+  "feeds": [
+    {
+      "fetch": {
+        "narHash": "sha256-V1XNXmHqEBvWYHnatfLVDkY2ZRt2yWwvAmQYO1lcYMU=",
+        "owner": "immortalwrt",
+        "repo": "packages",
+        "rev": "48f609040f2e4beb16c1aa62af6a6aaafd2eb6cd",
+        "type": "github"
+      },
+      "name": "packages",
+      "pinnedBy": "default-branch"
+    },
+    {
+      "fetch": {
+        "narHash": "sha256-wDqzUKjBUurA6buemdH1E+hAskKvAXEnbIbXfVbNDMo=",
+        "owner": "immortalwrt",
+        "repo": "luci",
+        "rev": "df794c7f69361641195a4b336634d1b1c918099c",
+        "type": "github"
+      },
+      "name": "luci",
+      "pinnedBy": "default-branch"
+    },
+    {
+      "fetch": {
+        "narHash": "sha256-TNF1qapEQUfC4afzERH9CNA6SwOMgcD+OtcNHELQQCY=",
+        "owner": "openwrt",
+        "repo": "routing",
+        "rev": "ea8633da9c461a9bdc62a0323439d31180762e03",
+        "type": "github"
+      },
+      "name": "routing",
+      "pinnedBy": "default-branch"
+    },
+    {
+      "fetch": {
+        "narHash": "sha256-avOQbnX44lU7u1qGbb03PAKbn2qIpkBB/fE6A4tcIJA=",
+        "owner": "openwrt",
+        "repo": "telephony",
+        "rev": "9bcb6d71db03377ff49ccb099be763add9a5b059",
+        "type": "github"
+      },
+      "name": "telephony",
+      "pinnedBy": "default-branch"
+    },
+    {
+      "fetch": {
+        "narHash": "sha256-3TEWQf2wAaw/S9ecZ9/6L1ZSbaNE4mhQS8GhiAuzrLA=",
+        "owner": "openwrt",
+        "repo": "video",
+        "rev": "4582d70fd21665c4d53b740c76bdf0b390ef9c88",
+        "type": "github"
+      },
+      "name": "video",
+      "pinnedBy": "default-branch"
+    }
+  ],
+  "revision": "r42943-89f1ef18c888",
+  "src": {
+    "fetch": {
+      "narHash": "sha256-BOFHIuJ1g5IkwWfJ4xP5QV7BBmiMh+AJbga05L08R5Y=",
+      "owner": "immortalwrt",
+      "repo": "immortalwrt",
+      "rev": "89f1ef18c888f841633f19f92655ee4b7f7716a4",
+      "type": "github"
+    },
+    "lastModified": 1793345437,
+    "ref": "master"
+  },
+  "version": "SNAPSHOT"
+}

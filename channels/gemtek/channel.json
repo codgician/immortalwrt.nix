@@ -1,0 +1,12 @@
+{
+  "description": "naoki66's ImmortalWrt fork for Brightspeed/Gemtek XR1710G and XG2010G (Airoha AN7581)",
+  "feedPatches": "patches/feeds",
+  "follow": {
+    "branch": "master"
+  },
+  "upstream": {
+    "owner": "naoki66",
+    "repo": "ImmortalWrt-for-Gemtek-brightspeed"
+  },
+  "version": "SNAPSHOT"
+}
