@@ -33,4 +33,7 @@ with pkgs;
   gnused
   gnutar
   gzip
+  # mkisofs and qemu-img, for x86 ISO, QCOW2, VDI, VMDK and VHDX images (target/linux/x86)
+  cdrkit
+  qemu-utils
 ]

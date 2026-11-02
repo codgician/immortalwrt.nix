@@ -1,0 +1,78 @@
+name: build
+
+# Builds the fork-only example device (Gemtek XR1710G, see flake.nix) from source and pushes
+# every stage to the immortalwrt Attic cache. One job per stage keeps each within the 6 hour
+# limit of hosted runners; a stage that is already cached is substituted, not rebuilt.
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+
+concurrency: build
+
+jobs:
+  toolchain:
+    if: github.repository_owner == 'codgician'
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - &free-disk-space
+        uses: thiagokokada/free-disk-space@main
+        continue-on-error: true
+        with:
+          tool-cache: true
+          usrlocal: true
+          usrmisc: true
+          opt: true
+          varcache: true
+      # The buildroot runs in a bubblewrap FHS view inside the Nix sandbox; Ubuntu blocks
+      # unprivileged user namespaces through AppArmor by default.
+      - &allow-userns
+        name: Allow nested user namespaces
+        run: sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+      - &checkout
+        uses: actions/checkout@v6
+      - &install-nix
+        uses: NixOS/nix-installer-action@main
+        with:
+          extra-conf: |
+            accept-flake-config = true
+            experimental-features = nix-command flakes
+            builders-use-substitutes = true
+            system-features = nixos-test benchmark big-parallel kvm
+      - &attic
+        name: Setup Attic cache
+        uses: ryanccn/attic-action@v0
+        with:
+          endpoint: https://cache.codgician.me
+          cache: immortalwrt
+          token: ${{ secrets.CACHE_PUSH_TOKEN }}
+          inputs-from: .
+      - name: Build toolchain
+        run: nix build -L '.#legacyPackages.x86_64-linux.channels.gemtek.toolchain."airoha/an7581"'
+
+  imagebuilder:
+    needs: toolchain
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - *free-disk-space
+      - *allow-userns
+      - *checkout
+      - *install-nix
+      - *attic
+      - name: Build ImageBuilder
+        run: nix build -L .#gemtek-xr1710g.imagebuilder
+
+  images:
+    needs: imagebuilder
+    runs-on: ubuntu-latest
+    steps:
+      - *free-disk-space
+      - *allow-userns
+      - *checkout
+      - *install-nix
+      - *attic
+      - name: Build images
+        run: nix build -L .#gemtek-xr1710g .#gemtek-xr1710g-ubi

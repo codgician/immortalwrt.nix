@@ -1,19 +1,21 @@
 #!/usr/bin/env python3
-"""Refresh channel locks and metadata.
+"""Refresh channel locks, metadata, sources and vendored Go modules.
 
 For each channel, resolve the upstream revision, pin every feed listed in the tree's
-feeds.conf.default, and prefetch all sources. Then build every channel's tree and metadata: a
-changed lock is only kept when that build succeeds, otherwise the last good lock stays.
+feeds.conf.default, and prefetch all sources. Then build every channel's tree and metadata, and
+hash the Go modules of the packages listed in vendor-packages.json: a changed lock is only kept
+when all of that succeeds, otherwise the channel keeps its last good state.
 
-Release channels follow the newest tag of their series whose official binaries
-nix-immortalwrt-imagebuilder has pinned. New series are picked up automatically: channels are
-created when upstream opens an openwrt-XX.YY branch and when a vXX.YY.Z of a new series is pinned.
+Release channels follow the newest tag of their series. New series are picked up automatically:
+channels are created when upstream opens an openwrt-XX.YY branch and when it tags vXX.YY.Z of a
+new series.
 """
 
 from __future__ import annotations
 
 import argparse
 import concurrent.futures
+import datetime
 import json
 import pathlib
 import re
@@ -26,6 +28,7 @@ ROOT = pathlib.Path(subprocess.check_output(["git", "rev-parse", "--show-topleve
 CHANNELS = ROOT / "channels"
 IMMORTALWRT = {"owner": "immortalwrt", "repo": "immortalwrt"}
 HISTORY_SEARCH_LIMIT = 300
+GENERATED = ("metadata.json", "sources.json", "vendor.json")
 
 
 class RefreshError(Exception):
@@ -86,45 +89,55 @@ def prefetch(fetch):
     return locked, info["locked"].get("lastModified"), pathlib.Path(info["storePath"])
 
 
-def published_releases():
-    """Releases whose official ImageBuilder the image backend has pinned (flake input)."""
-    out = run(["nix", "eval", "--json", ".#legacyPackages.x86_64-linux.binaryReleases"], cwd=ROOT)
-    return set(json.loads(out))
-
-
 def channel_names():
     return sorted(p.parent.name for p in CHANNELS.glob("*/channel.json"))
 
 
+def snapshot(name):
+    """The channel's committed state: its lock and generated files (None when missing)."""
+    files = {
+        f: (CHANNELS / name / f).read_bytes() if (CHANNELS / name / f).exists() else None for f in GENERATED
+    }
+    return {"lock": load_json(CHANNELS / name / "lock.json"), "files": files}
+
+
+def stage(path, content):
+    """Write (or with None, remove) a file and stage the change."""
+    if content is None:
+        path.unlink(missing_ok=True)
+        run(["git", "rm", "--cached", "--quiet", "--ignore-unmatch", str(path)], cwd=ROOT)
+    else:
+        path.write_bytes(content)
+        run(["git", "add", str(path)], cwd=ROOT)
+
+
 def restore(name, old, created):
-    """Put back a channel's last good lock; drop the channel if this run created it."""
+    """Put back a channel's last good state; drop the channel if this run created it."""
     if name in created:
         shutil.rmtree(CHANNELS / name, ignore_errors=True)
         run(["git", "rm", "-r", "--cached", "--quiet", "--ignore-unmatch", str(CHANNELS / name)], cwd=ROOT)
         return
-    lock = CHANNELS / name / "lock.json"
-    if old is None:
-        lock.unlink(missing_ok=True)
-        run(["git", "rm", "--cached", "--quiet", "--ignore-unmatch", str(lock)], cwd=ROOT)
-    else:
-        write_json(lock, old)
-        run(["git", "add", str(lock)], cwd=ROOT)
+    lock = old["lock"]
+    stage(
+        CHANNELS / name / "lock.json",
+        None if lock is None else (json.dumps(lock, indent=2, sort_keys=True) + "\n").encode(),
+    )
+    for f, content in old["files"].items():
+        stage(CHANNELS / name / f, content)
 
 
 # ---------------------------------------------------------------------------- channel discovery
 
 
-def ensure_release_channels(published):
-    """Create channels for the newest ImmortalWrt release branch and published release series.
+def ensure_release_channels():
+    """Create channels for the newest ImmortalWrt release branch and release series.
 
     Returns the names of the channels created.
     """
     url = github_url(**IMMORTALWRT)
     refs = ls_remote(url, "refs/heads/openwrt-*", "refs/tags/v*")
     branches = [m[1] for r in refs if (m := re.fullmatch(r"refs/heads/openwrt-(\d+\.\d+)", r))]
-    releases = [
-        m[2] for r in refs if (m := re.fullmatch(r"refs/tags/v((\d+\.\d+)\.\d+)", r)) and m[1] in published
-    ]
+    releases = [m[2] for r in refs if (m := re.fullmatch(r"refs/tags/v((\d+\.\d+)\.\d+)", r))]
     wanted = {}
     if branches:
         series = max(branches, key=version_key)
@@ -138,7 +151,7 @@ def ensure_release_channels(published):
     if releases:
         series = max(releases, key=version_key)
         wanted[f"immortalwrt-{series}"] = {
-            "description": f"ImmortalWrt {series} stable releases (newest published v{series}.x tag)",
+            "description": f"ImmortalWrt {series} stable releases (newest v{series}.x tag)",
             "follow": {"tagSeries": series},
             "series": series,
             "upstream": IMMORTALWRT,
@@ -156,7 +169,7 @@ def ensure_release_channels(published):
 # ---------------------------------------------------------------------------- resolution
 
 
-def resolve_src(spec, published):
+def resolve_src(spec):
     """Return (url, ref, rev, version) for the channel's upstream."""
     url = github_url(spec["upstream"]["owner"], spec["upstream"]["repo"])
     follow = spec["follow"]
@@ -172,10 +185,9 @@ def resolve_src(spec, published):
         m = re.fullmatch(rf"refs/tags/v({re.escape(series)}\.\d+)(\^\{{\}})?", ref)
         if m and (m[2] or m[1] not in tags):  # peeled entry wins for annotated tags
             tags[m[1]] = sha
-    ready = [v for v in tags if v in published]
-    if not ready:
-        raise RefreshError(f"{url}: no published v{series}.x release (tags: {', '.join(sorted(tags))})")
-    version = max(ready, key=version_key)
+    if not tags:
+        raise RefreshError(f"{url}: no v{series}.x release tag")
+    version = max(tags, key=version_key)
     return url, f"v{version}", tags[version], version
 
 
@@ -249,25 +261,32 @@ def newest_patchable(url, start, patches):
     raise RefreshError(f"{url}: no commit among the last {HISTORY_SEARCH_LIMIT} accepts the feed patches")
 
 
-class Revisions:
-    """REVISION strings as scripts/getver.sh prints them for a plain checkout (r<count>-<hash>)."""
+class History:
+    """Git history of upstream repositories, for what the buildroot derives from `.git`.
+
+    Trees are built without `.git`, where the buildroot falls back to build-time values. Instead,
+    the lock records what a plain checkout would give: the REVISION string (scripts/getver.sh),
+    base-files' release (its commit count) and LuCI package versions (luci.mk's findrev)."""
 
     def __init__(self, tmp):
         self.tmp = pathlib.Path(tmp)
         self.clones = {}
 
-    def clone(self, url):
+    def clone(self, url, rev):
         if url not in self.clones:
             path = self.tmp / f"clone{len(self.clones)}.git"
-            run(["git", "clone", "--quiet", "--bare", "--filter=tree:0", url, str(path)])
+            run(["git", "clone", "--quiet", "--bare", "--filter=blob:none", url, str(path)])
             self.clones[url] = path
-        return self.clones[url]
+        repo = self.clones[url]
+        if subprocess.run(["git", "cat-file", "-e", f"{rev}^{{commit}}"], cwd=repo).returncode != 0:
+            run(["git", "fetch", "--quiet", "--filter=blob:none", "origin", rev], cwd=repo)
+        return repo
 
-    def get(self, url, rev, src_path):
+    def revision(self, url, rev, src_path):
         shipped = src_path / "version"
         if shipped.is_file() and shipped.read_text().strip():
             return shipped.read_text().strip()  # release tags carry their official revision
-        repo = self.clone(url)
+        repo = self.clone(url, rev)
         getver = src_path / "scripts" / "getver.sh"
         m = re.search(r"REBOOT=([0-9a-f]{40})", getver.read_text()) if getver.exists() else None
         span = f"{m[1]}..{rev}" if m else rev
@@ -275,14 +294,46 @@ class Revisions:
         short = run(["git", "rev-parse", "--short=12", rev], cwd=repo).strip()
         return f"r{count}-{short}"
 
+    def commit_count(self, url, rev, path):
+        """rules.mk's COMMITCOUNT for a package directory."""
+        return run(["git", "rev-list", "--count", rev, "--", path], cwd=self.clone(url, rev)).strip()
 
-def resolve_channel(name, revisions, published):
+    def luci_versions(self, url, rev, feed_path, directory):
+        """luci.mk's findrev for every LuCI package of a feed, keyed by path below the feed."""
+        repo = self.clone(url, rev)
+        root = feed_path / directory if directory else feed_path
+        versions = {}
+        for makefile in sorted(root.rglob("Makefile")):
+            if not re.search(r"^include .*/luci\.mk\s*$", makefile.read_text(errors="replace"), re.M):
+                continue
+            rel = makefile.parent.relative_to(root).as_posix()
+            repo_dir = f"{directory}/{rel}" if directory else rel
+
+            def findrev(*pathspec):
+                out = run(
+                    ["git", "log", "-1", "--format=%ct %h", "--abbrev=7", rev, "--", *pathspec], cwd=repo
+                )
+                if not out.strip():
+                    return "0"
+                ts, short = out.split()
+                day = datetime.datetime.fromtimestamp(int(ts), datetime.UTC).strftime("%y.%j")
+                return f"{day}.{int(ts) % 86400:05d}~{short}"
+
+            versions[rel] = {
+                "src": findrev(repo_dir, f":(exclude){repo_dir}/po"),
+                "po": findrev(f"{repo_dir}/po"),
+            }
+        return versions
+
+
+def resolve_channel(name, history):
     """Return the channel's new lock and notes about held-back feeds."""
     spec = load_json(CHANNELS / name / "channel.json")
-    url, ref, rev, version = resolve_src(spec, published)
+    url, ref, rev, version = resolve_src(spec)
     src_fetch, src_mtime, src_path = prefetch(fetch_spec(url, rev))
     notes = []
     feeds = []
+    luci = {}
     for feed in parse_feeds(src_path / "feeds.conf.default"):
         if feed["sep"] == "^":
             frev, pinned_by = feed["ref"], "tree"
@@ -295,28 +346,35 @@ def resolve_channel(name, revisions, published):
         fetch, _, path = prefetch(fetch_spec(feed["url"], frev))
         patches = feed_patches(src_path, spec, feed["name"])
         if patches and not patches_satisfied(path, patches):
-            good = newest_patchable(feed["url"], frev, patches)
-            fetch, _, _ = prefetch(fetch_spec(feed["url"], good))
-            notes.append(f"feed {feed['name']} pinned to {good[:12]}: patches reject {frev[:12]}")
+            rejected, frev = frev, newest_patchable(feed["url"], frev, patches)
+            fetch, _, path = prefetch(fetch_spec(feed["url"], frev))
+            notes.append(f"feed {feed['name']} pinned to {frev[:12]}: patches reject {rejected[:12]}")
         entry = {"name": feed["name"], "fetch": fetch, "pinnedBy": pinned_by}
         if feed["sep"] == ";":
             entry["ref"] = feed["ref"]
         if feed["directory"]:
             entry["directory"] = feed["directory"]
         feeds.append(entry)
+        for rel, v in history.luci_versions(feed["url"], frev, path, feed["directory"]).items():
+            luci[f"feeds/{feed['name']}/{rel}"] = v
     lock = {
         "version": version,
-        "revision": revisions.get(url, rev, src_path),
+        "revision": history.revision(url, rev, src_path),
         "src": {"ref": ref, "lastModified": src_mtime, "fetch": src_fetch},
         "feeds": feeds,
+        "packageVersions": {
+            "baseFilesRelease": history.commit_count(url, rev, "package/base-files"),
+            "luci": luci,
+        },
     }
     return lock, notes
 
 
-# ---------------------------------------------------------------------------- metadata
+# ---------------------------------------------------------------------------- metadata, vendoring
 
 
 def build_metadata(name):
+    """Build the channel's metadata.json and sources.json; returns the output directory."""
     attr = f'.#"{name}-metadata"'
     proc = subprocess.run(
         ["nix", "build", "--no-link", "--print-out-paths", attr], cwd=ROOT, text=True, capture_output=True
@@ -325,6 +383,43 @@ def build_metadata(name):
         tail = "\n".join(proc.stderr.strip().splitlines()[-25:])
         raise RefreshError(f"building {attr} failed:\n{tail}")
     return pathlib.Path(proc.stdout.strip())
+
+
+def go_modules_hash(name, directory):
+    """Hash of a Go package's modules: build the probe (empty hash) and read what Nix got."""
+    attr = f'.#legacyPackages.x86_64-linux.channels."{name}".goModulesProbe."{directory}"'
+    proc = subprocess.run(["nix", "build", "--no-link", attr], cwd=ROOT, text=True, capture_output=True)
+    m = re.search(r"got:\s+(sha256-[A-Za-z0-9+/]+=*)", proc.stderr)
+    if not m:
+        tail = "\n".join(proc.stderr.strip().splitlines()[-25:])
+        raise RefreshError(f"hashing the Go modules of {directory} failed:\n{tail}")
+    return m[1]
+
+
+def vendor(name, old):
+    """vendor.json for a channel: Go module hashes of the packages in vendor-packages.json.
+
+    A hash is reused while the package's source file is unchanged."""
+    metadata = load_json(CHANNELS / name / "metadata.json")
+    sources = load_json(CHANNELS / name / "sources.json")
+    result = {}
+    for package in load_json(ROOT / "vendor-packages.json")["go"]:
+        info = metadata["packages"].get(package)
+        if info is None:
+            continue  # not in this channel
+        directory = info["source"]
+        if not metadata["sources"].get(directory, {}).get("go"):
+            raise RefreshError(f"{package} (vendor-packages.json) is not a Go package in {name}")
+        entries = sources["dirs"].get(directory, [])
+        if len(entries) != 1:
+            raise RefreshError(f"{directory} has {len(entries)} source files, cannot tell which holds go.mod")
+        sha256 = entries[0]["sha256"]
+        if old.get(directory, {}).get("sha256") == sha256:
+            result[directory] = old[directory]
+        else:
+            log(f"{name}: hashing Go modules of {directory}")
+            result[directory] = {"sha256": sha256, "hash": go_modules_hash(name, directory)}
+    return result
 
 
 def changes(old, new):
@@ -350,29 +445,28 @@ def main():
     parser.add_argument("--summary", type=pathlib.Path, help="append a Markdown summary here")
     args = parser.parse_args()
 
-    published = published_releases()
-    created = ensure_release_channels(published)
+    created = ensure_release_channels()
     unknown = sorted(set(args.channels) - set(channel_names()))
     if unknown:
         parser.error(f"unknown channels: {', '.join(unknown)}")
 
     results = {}
     with tempfile.TemporaryDirectory() as tmp:
-        revisions = Revisions(tmp)
+        history = History(tmp)
         for name in args.channels or channel_names():
             log(f"resolving {name}")
-            r = results[name] = {"old": load_json(CHANNELS / name / "lock.json")}
+            r = results[name] = {"old": snapshot(name)}
             try:
-                r["lock"], r["notes"] = resolve_channel(name, revisions, published)
+                r["lock"], r["notes"] = resolve_channel(name, history)
             except RefreshError as e:
                 r["error"] = str(e)
                 if name in created:
-                    restore(name, None, created)
+                    restore(name, r["old"], created)
 
     # Write candidate locks, then build every resolved channel: this validates new locks as well
     # as unchanged ones against today's flake inputs.
     for name, r in results.items():
-        if "error" in r or r["lock"] == r["old"]:
+        if "error" in r or r["lock"] == r["old"]["lock"]:
             continue
         write_json(CHANNELS / name / "lock.json", r["lock"])
         run(["git", "add", str(CHANNELS / name)], cwd=ROOT)
@@ -383,24 +477,27 @@ def main():
         for future in concurrent.futures.as_completed(futures):
             name = futures[future]
             r = results[name]
-            target = CHANNELS / name / "metadata.json"
             try:
                 out = future.result()
-                if not target.exists() or target.read_bytes() != out.read_bytes():
-                    shutil.copyfile(out, target)
-                    target.chmod(0o644)
-                    run(["git", "add", str(target)], cwd=ROOT)
-                    log(f"{name}: metadata updated")
+                for f in ("metadata.json", "sources.json"):
+                    stage(CHANNELS / name / f, (out / f).read_bytes())
+                old_vendor = json.loads(r["old"]["files"]["vendor.json"] or b"{}")
+                stage(
+                    CHANNELS / name / "vendor.json",
+                    (json.dumps(vendor(name, old_vendor), indent=2, sort_keys=True) + "\n").encode(),
+                )
+                updated = [f for f in GENERATED if (CHANNELS / name / f).read_bytes() != r["old"]["files"][f]]
+                if updated:
+                    log(f"{name}: updated {', '.join(updated)}")
             except RefreshError as e:
                 r["error"] = str(e)
-                if r["lock"] != r["old"] or name in created:
-                    restore(name, r["old"], created)
+                restore(name, r["old"], created)
 
     rows = ["| channel | status | version | revision | changes |", "|---|---|---|---|---|"]
     for name, r in sorted(results.items()):
         failed = "error" in r
-        lock = (r["old"] if failed else r["lock"]) or {}
-        change = "" if failed else changes(r["old"], r["lock"])
+        lock = (r["old"]["lock"] if failed else r["lock"]) or {}
+        change = "" if failed else changes(r["old"]["lock"], r["lock"])
         rows.append(
             f"| {name} | {'failed' if failed else 'ok'} | {lock.get('version', '')} | "
             f"{lock.get('revision', '')} | {change} |"

@@ -36,11 +36,6 @@ jobs:
           extra_nix_config: |
             access-tokens = github.com=${{ secrets.GITHUB_TOKEN }}
 
-      # nix-immortalwrt-imagebuilder pins the hashes of newly published releases; release
-      # channels only advance to tags it knows, so update inputs before refreshing channels.
-      - name: Update flake inputs
-        run: nix flake update
-
       - name: Refresh channels
         id: refresh
         continue-on-error: true
@@ -52,10 +47,10 @@ jobs:
 
       - name: Commit and push
         run: |
-          if [ -n "$(git status --porcelain flake.lock channels)" ]; then
+          if [ -n "$(git status --porcelain channels)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add flake.lock channels
+            git add channels
             git commit -m "bot: refresh channels"
             git push
           else

@@ -1,7 +1,6 @@
 {
   pkgs,
   lib,
-  imagebuilder,
 }:
 let
   # The buildroot is validated against this compiler generation (OpenWrt's own toolchain is
@@ -19,30 +18,37 @@ let
       ;
   };
   mkMetadata = import ./metadata.nix { inherit stdenv hostDeps fhs; };
-  mkImage = import ./image.nix { inherit lib pkgs imagebuilder; };
-  # releases whose official ImageBuilder and package hashes are pinned by nix-immortalwrt-imagebuilder
-  binaryReleases = lib.filter (r: r != "snapshot") imagebuilder.lib.releases;
+  mkGoModules = import ./vendor.nix { inherit lib pkgs; };
+  mkSources = import ./sources.nix { inherit lib pkgs mkGoModules; };
+  mkBuild = import ./build.nix {
+    inherit
+      lib
+      pkgs
+      stdenv
+      hostDeps
+      fhs
+      ;
+  };
+  mkImage = import ./image.nix {
+    inherit
+      lib
+      stdenv
+      hostDeps
+      fhs
+      ;
+  };
   mkChannel = import ./channel.nix {
     inherit
       lib
       fetchLocked
       mkTree
       mkMetadata
+      mkSources
+      mkBuild
       mkImage
-      binaryReleases
       ;
   };
 in
 {
-  inherit
-    stdenv
-    hostDeps
-    fhs
-    fetchLocked
-    mkTree
-    mkMetadata
-    mkImage
-    binaryReleases
-    mkChannel
-    ;
+  inherit mkChannel;
 }

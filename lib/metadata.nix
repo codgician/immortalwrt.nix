@@ -1,6 +1,10 @@
-# Package and target metadata of a tree, as produced by the buildroot's own scan
-# (`make prepare-tmpinfo`). The refresh job commits the result as channels/<name>/metadata.json
-# so consumers can check package and profile names at evaluation time without IFD.
+# What the buildroot itself says about a tree, as committed by the refresh job:
+#
+# - metadata.json: packages, their dependencies and defaults, targets and device profiles, from
+#   the buildroot's own scan (`make prepare-tmpinfo`). Consumers check names against it at
+#   evaluation time, and source closures are computed from it, without IFD.
+# - sources.json: every file the tree can download, keyed by the directory that needs it, from
+#   the buildroot's own `make -n download` (scripts/sources.py).
 {
   stdenv,
   hostDeps,
@@ -8,7 +12,7 @@
 }:
 { name, tree }:
 stdenv.mkDerivation {
-  name = "${name}-metadata.json";
+  name = "${name}-metadata";
   dontUnpack = true;
   dontConfigure = true;
   dontFixup = true;
@@ -22,8 +26,12 @@ stdenv.mkDerivation {
     cd "$NIX_BUILD_TOP/tree"
     owrt-fhs "$NIX_BUILD_TOP" make prepare-tmpinfo
     python3 ${../scripts/metadata.py} tmp/.packageinfo tmp/.targetinfo "$(cat version)" > metadata.json
+    python3 ${../scripts/sources.py} "$(cat version)" > sources.json
     runHook postBuild
   '';
 
-  installPhase = "cp metadata.json $out";
+  installPhase = ''
+    mkdir $out
+    cp metadata.json sources.json $out/
+  '';
 }

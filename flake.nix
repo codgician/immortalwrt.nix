@@ -1,42 +1,27 @@
 {
-  description = "ImmortalWrt source channels, pinned and built with Nix";
+  description = "ImmortalWrt source channels, pinned and built from source with Nix";
 
-  inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    # official ImageBuilders and package repositories with daily-pinned hashes (release images)
-    imagebuilder = {
-      url = "github:codgician/nix-immortalwrt-imagebuilder";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+  nixConfig = {
+    extra-substituters = [ "https://cache.codgician.me/immortalwrt" ];
+    extra-trusted-public-keys = [ "immortalwrt:t17gIHmdp6G9DpukeaW0LCB32Lg+mPRvN0SNdGW1r90=" ];
   };
 
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+
   outputs =
-    {
-      nixpkgs,
-      imagebuilder,
-      ...
-    }:
+    { nixpkgs, ... }:
     let
       # The OpenWrt buildroot only supports building on Linux; x86_64 is what we exercise.
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
       inherit (nixpkgs) lib;
-      iwrt = import ./lib { inherit pkgs lib imagebuilder; };
-      inherit
-        (import ./channels {
-          inherit lib;
-          inherit (iwrt) mkChannel;
-        })
-        channels
-        aliases
-        ;
+      inherit (import ./lib { inherit pkgs lib; }) mkChannel;
+      inherit (import ./channels { inherit lib mkChannel; }) channels aliases;
     in
     {
       legacyPackages.${system} = {
-        # channels.<name>.{tree, metadata, metadataDrv, lock, version, revision, ...}
+        # channels.<name>.{tree, metadata, mkImages, mkImage, imagebuilder, toolchain, ...}
         channels = channels // aliases;
-        # releases the image backend can build; the refresh keeps release channels within these
-        inherit (iwrt) binaryReleases;
       };
 
       packages.${system} =
@@ -44,6 +29,37 @@
           "${name}-tree" = channel.tree;
           "${name}-metadata" = channel.metadataDrv;
         }) channels
+        # A device that only exists in a fork: Gemtek / Brightspeed XR1710G, for the stock
+        # partition layout and the OpenWrt U-Boot UBI layout, sharing one ImageBuilder.
+        // channels.gemtek.mkImages (
+          let
+            device = profile: {
+              target = "airoha/an7581";
+              inherit profile;
+              packages = [
+                "luci"
+                "luci-i18n-base-zh-cn"
+                "luci-i18n-firewall-zh-cn"
+                "luci-app-package-manager"
+                "luci-i18n-package-manager-zh-cn"
+                "luci-app-upnp"
+                "luci-i18n-upnp-zh-cn"
+                "luci-proto-wireguard"
+                "luci-app-airoha-npu"
+                "luci-app-airoha-factory"
+                "luci-app-airoha-fancontrol"
+                "luci-app-airoha-recovery"
+                "luci-app-mlo"
+                "luci-app-usteer"
+                "luci-app-wifischedule"
+              ];
+            };
+          in
+          {
+            gemtek-xr1710g = device "gemtek_xr1710g";
+            gemtek-xr1710g-ubi = device "gemtek_xr1710g-ubi";
+          }
+        )
         // {
           refresh = pkgs.writeShellApplication {
             name = "refresh";
@@ -60,11 +76,17 @@
       checks.${system}.metadata-matches-lock =
         let
           stale = lib.attrNames (
-            lib.filterAttrs (_: c: c.metadata == null || c.metadata.revision != c.revision) channels
+            lib.filterAttrs (
+              _: c:
+              c.metadata == null
+              || c.sources == null
+              || c.metadata.revision != c.revision
+              || c.sources.revision != c.revision
+            ) channels
           );
         in
         assert lib.assertMsg (stale == [ ])
-          "metadata.json does not describe the locked revision of: ${lib.concatStringsSep ", " stale}; run `nix run .#refresh`";
+          "metadata.json or sources.json does not describe the locked revision of: ${lib.concatStringsSep ", " stale}; run `nix run .#refresh`";
         pkgs.runCommand "metadata-matches-lock" { } "touch $out";
 
       formatter.${system} = pkgs.nixfmt;

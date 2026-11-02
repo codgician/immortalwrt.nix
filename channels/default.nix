@@ -16,6 +16,8 @@ let
       spec = lib.importJSON (dir + "/${name}/channel.json");
       lock = lib.importJSON (dir + "/${name}/lock.json");
       metadataFile = dir + "/${name}/metadata.json";
+      sourcesFile = dir + "/${name}/sources.json";
+      vendorFile = dir + "/${name}/vendor.json";
     }
   ) (lib.filterAttrs isChannel (builtins.readDir dir));
 

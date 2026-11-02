@@ -17,35 +17,41 @@ The OpenWrt buildroot remains the compiler. Nix supplies four things around it:
 
 ```mermaid
 flowchart LR
-  subgraph channel
-    A[upstream commit + feeds<br/>lock.json] --> T[tree<br/>feeds installed, fork patches applied]
-    S[sources lock] --> F[per-file source FODs]
+  subgraph channel["channel (committed by the refresh)"]
+    L[lock.json<br/>upstream commit + feeds] --> T[tree<br/>feeds installed, fork patches applied]
+    M[metadata.json<br/>packages, targets, profiles]
+    S[sources.json + vendor.json]
   end
-  T --> TC[toolchain<br/>per target]
+  M --> C[source closure<br/>evaluated in Nix]
+  S --> C
+  C --> F[per-file source FODs<br/>+ vendored Go modules]
+  L --> TC[toolchain<br/>per target, core tree]
   F --> TC
-  TC --> TB[target build<br/>kernel with ALL_KMODS + package union<br/>self-built ImageBuilder + package repo]
-  R[resolved config lock] --> TB
-  TB --> IMG[image composition per router<br/>profile + packages + files]
-  OFF[official ImageBuilder + repo] -. binary backend, releases only .-> IMG
-  IMG --> SIG[signing outside Nix]
+  T --> R[resolve<br/>Kconfig on the request]
+  R --> IB[ImageBuilder<br/>kernel + requested packages]
+  TC --> IB
+  F --> IB
+  IB --> IMG[images per device<br/>profile + packages + files]
 ```
 
-Images are composed by an ImageBuilder in every case: either the official one, or one built from the channel. This keeps ImageBuilder semantics for package lists, so an unknown package is an error.
+| Stage | Derivation | Rebuilt when |
+|---|---|---|
+| tree | `channels.<name>.tree` | the lock changes |
+| toolchain | `channels.<name>.toolchain.<target>` | the core tree (not the feeds) changes |
+| resolve | `<imagebuilder>.config` | the tree or the request changes; about a minute |
+| ImageBuilder | `channels.<name>.imagebuilder { target; profiles; packages; }` | the tree, the toolchain or the request changes |
+| image | `<imagebuilder>.mkImage { profile; packages; files; ... }` | anything above, or the device's own settings; seconds |
 
-Each item in the diagram has one of three states:
+Images are always composed by an ImageBuilder, built from the channel itself. This keeps ImageBuilder semantics for package lists, and per-device changes (files, removed default packages, partition size) never rebuild packages. `mkImages` builds one ImageBuilder per target, with the union of the packages and profiles of its devices, so devices on a target share kernels and packages.
 
-- **Done:** `lock.json`, the tree, the metadata, and image composition with the official ImageBuilder for release channels (`channels.<release>.mkImage`, through nix-immortalwrt-imagebuilder).
-- **Proven in the feasibility spike, to be ported:** the source FODs, the toolchain stage, and the target stage.
-- **Designed but not yet built:** the resolved config lock, the self-built ImageBuilder (which lets snapshot and fork channels build images), and signing.
-
-`mkImage` takes an explicit `target` (`"<target>/<subtarget>"`). Profile names are not unique across targets; `generic`, for example, exists in a dozen of them. The target and the profile are checked against the channel's metadata before anything is built. Package names are left to the ImageBuilder: the official package repositories are rebuilt from the release branch, so they carry packages that the tag's metadata does not list.
+`target` is explicit (`"<target>/<subtarget>"`): profile names are not unique across targets; `generic`, for example, exists in a dozen of them. The target, the profiles and every package name are checked against `metadata.json` at evaluation time.
 
 ## Channels
 
 A channel is one upstream line:
 
 - a branch (`immortalwrt-snapshot`, `immortalwrt-<series>-snapshot`, `gemtek`);
-- or the newest stable tag of a release series (`immortalwrt-<series>`), counting only tags whose official binaries nix-immortalwrt-imagebuilder has pinned, so `mkImage` never points at a release that cannot be built.
+- or the newest stable tag of a release series (`immortalwrt-<series>`).
 
 `channel.json` states what to follow. It can also name a directory of per-feed patches; naoki66's fork keeps these in `patches/feeds`.
 
@@ -58,65 +64,60 @@ A channel is one upstream line:
   - `branch`: `;branch`;
   - `default-branch`: the feed has no pin at all.
 - **revision:** the `REVISION` string (`r<count>-<hash>`). Release tags ship their official `version` and `version.date` files, and those are used as-is.
+- **packageVersions:** what the buildroot would derive from `.git` in a checkout: base-files' release (`COMMITCOUNT`, the number of commits touching `package/base-files`) and the version of every LuCI package (luci.mk's `findrev`, from the last commit touching the package and its `po/`). The refresh computes them from blobless clones; the tree writes them into the Makefiles, since trees have no `.git`.
 
-Feeds are fetched as GitHub tarballs, or with `fetchgit` for other hosts. They are installed with `src-cpy`, so building a tree never touches the network.
+Feeds are fetched as GitHub tarballs, or with `fetchgit` for other hosts. They are installed with `src-cpy`, so building a tree never touches the network. The tree also moves luci-base's host tool build out of the package directory (see Reproducibility).
 
 ## Daily refresh
 
-`.github/workflows/refresh.yml` first runs `nix flake update` (which also brings in newly pinned release binaries) and then `scripts/refresh.py`. The script does the following:
+`.github/workflows/refresh.yml` runs `scripts/refresh.py`, which does the following:
 
-1. Detect the newest `openwrt-XX.YY` branch and the newest published `vXX.YY.Z` release series, and create channels for any that are missing.
-2. For each channel, resolve the upstream commit and pin every feed.
+1. Detect the newest `openwrt-XX.YY` branch and the newest `vXX.YY.Z` release series, and create channels for any that are missing.
+2. For each channel, resolve the upstream commit, pin every feed, and record `REVISION` and the package versions from git history.
 3. For forks with feed patches, a feed only advances to a commit its patches still apply to. A patch whose change the feed already contains counts as applied, which matches naoki66's `scripts/apply-feed-patches.sh`. If the feed head is rejected, the refresh pins the newest commit on the feed's first-parent history that accepts the patches.
-4. Prefetch everything, then build the tree and metadata of every channel in the sandbox. Unchanged channels are built as well, so a flake input update that breaks the trees shows up the same day.
-5. Keep a new lock only if that build succeeds; otherwise keep the last good one.
+4. Prefetch everything, then build the tree, `metadata.json` and `sources.json` of every channel in the sandbox. Unchanged channels are built as well, so a change that breaks the trees shows up the same day.
+5. Hash the Go modules of the packages in `vendor-packages.json` whose source file changed, into `vendor.json`.
+6. Keep a channel's new state only if all of that succeeds; otherwise keep the last good one.
 
-Channels refresh independently of each other.
+Channels refresh independently of each other. The refresh fits on a hosted GitHub runner: one `git ls-remote` per ref, one tarball per pinned source, a blobless clone of each upstream and feed repository for the history (about 125 MB for ImmortalWrt, 56 MB for LuCI), and per channel a tree build plus the buildroot's own scans (a few minutes).
 
-Resource use is small, which is why the refresh fits on a hosted GitHub runner:
-
-- one `git ls-remote` per ref;
-- one tarball per pinned source (26 sources, 1.4 GB unpacked, across today's four channels);
-- a treeless clone (about 40 MB for ImmortalWrt) to count commits for `REVISION`;
-- a tree build plus the buildroot's own scan (`make prepare-tmpinfo`, about a minute) per channel.
-
-Full firmware builds are a different matter. Stage 1 alone took 18 minutes on 48 cores in the spike. They therefore belong on a dedicated builder with a binary cache, not on hosted runners.
-
-The official snapshot binaries are replaced every day, so a pinned snapshot ImageBuilder stops being downloadable after a day. For that reason, snapshot channels use the source backend only.
+`nixpkgs` is not updated by the refresh. Every update changes the host tools of every stage and rebuilds all of them, so it is done by hand.
 
 ## Sources
 
-Every source file a build needs becomes a fixed-output derivation. Its hash is the one the buildroot itself declares (`PKG_HASH` / `PKG_MIRROR_HASH`), so no second set of hashes has to be maintained. The spike settled several details:
+Every source file a build needs becomes a fixed-output derivation. Its hash is the one the buildroot itself declares (`PKG_HASH` / `PKG_MIRROR_HASH`), so no second set of hashes has to be maintained.
 
-- URL sources use `fetchurl` together with the tree's `scripts/projectsmirrors.json`.
-- Git sources must be packed exactly like `include/download.mk` packs them, using a `gnutar` built with the tree's `tools/tar/patches`. Otherwise long paths produce different tar headers. The fetcher also tries the source mirrors first.
-- A top-level `make download` is not a complete list of what a build fetches. Eight files were only downloaded during the build. It also needs `tools/` to be compiled first.
-- The sources lock is therefore generated per package with `make -n -C <pkg> download`. This only prints the commands, at roughly 0.1 s per Makefile.
-- Generation runs per channel × target, because a few file names depend on the target architecture. The sandbox is the final check: any missing file fails loudly.
-- Go, Rust and npm packages fetch dependencies at build time. They need vendor FODs placed in `dl/go-mod-cache` and `dl/cargo`, with hashes maintained like nixpkgs' `vendorHash`. Packages that download unhashed binaries (`PKG_HASH:=skip`) must be patched or dropped.
+`sources.json` comes from the buildroot: `scripts/sources.py` runs `make -n -C <dir> download` for every package, `tools/` and `toolchain/` directory, which only prints the commands (about 0.1 s per Makefile). It runs once for an x86_64 and once for an aarch64 target, because a few file names depend on the architecture. Kernel tarballs come from `target/linux/generic/kernel-<version>`.
+
+- URL sources use `fetchurl` with the tree's `scripts/projectsmirrors.json` and the source mirrors.
+- Git sources are packed exactly like `include/download.mk` packs them, with a `gnutar` built with the tree's `tools/tar/patches` (otherwise long paths produce different tar headers). The fetcher tries the source mirrors first.
+- A top-level `make download` is not a complete list of what a build fetches: in the spike, eight files were only downloaded during the build. The per-directory dry run covers them.
+
+A build gets only the sources it can need, computed at evaluation time from `metadata.json`: the closure of the requested packages, the target's default packages and the profiles' device packages over
+
+- dependencies (`+` or not, conditional ones included) and virtual names (`PROVIDES`);
+- the buildroot's own directory-level build dependencies (`tmp/.packagedeps`), which include host builds such as `golang/host` and every dependency of every package in a directory: util-linux is built after ncurses because cfdisk needs it, even when nothing selects cfdisk;
+- package defaults whose conditions mention the target, the profiles, `BUILDBOT` or a package in the closure;
+- packages selected by the buildroot's own options (image formats select `kmod-e1000` and `grub2`) and by package config options that default on, which Kconfig does not always nest under their package (luci-app-ssr-plus selects 3proxy even when it is not built);
+- the host package manager (`package/system/apk`), which `package/Makefile` builds without any package depending on it.
+
+The closure over-approximates what Kconfig selects, so a few unused files are fetched, never too few. The sandbox is the final check: a missing file fails the build.
+
+Go packages fetch modules at build time. For the packages in `vendor-packages.json`, `lib/vendor.nix` runs `go mod download` in a fixed-output derivation (like nixpkgs' `proxyVendor`), and the build copies the result to `dl/go-mod-cache/cache/download` and sets `GOPROXY=off`. The refresh maintains the hashes in `vendor.json`, keyed by the package directory and recomputed when the source file changes. Rust and npm packages would need the same treatment (`dl/cargo`); packages that download unhashed binaries (`PKG_HASH:=skip`) cannot be fetched reproducibly and are left out of the sources lock.
 
 ## Building in the sandbox
 
-The spike found these requirements:
+The buildroot needs these to run in the sandbox:
 
-- **FHS view:** a bubblewrap view providing `/bin/sh`, `/bin/bash` and `/usr/bin/env`, because of `rules.mk` and the shebangs inside extracted tarballs.
+- **FHS view:** a bubblewrap view providing a `/bin` with bash and coreutils and `/usr/bin/env` (for `rules.mk`, the shebangs inside extracted tarballs and packages that call tools by absolute path, such as perl's `/bin/ln -s`), the glibc loader under `/lib64` (the Go bootstrap runs PIE executables that expect it) and `/var/lock` (minicom's configure looks for it).
 - **fakeroot:** `FAKEROOTDONTTRYCHOWN=1`. The sandbox is a user namespace, so `chown(0)` fails with `EINVAL`, and libfakeroot only ignores `EPERM`.
 - **cmake:** `CMAKE_INCLUDE_PATH` must point at glibc's headers so cmake's bundled libarchive finds `iconv.h`. It must not include nixpkgs' openssl, which would mix with `tools/libressl`.
-- **Toolchain stamp:** stage 1 has to write the toolchain/compile stamp. Otherwise `world` rebuilds GCC.
-- **Version files:** `version` and `version.date` are needed because there is no `.git`. The tree derivation writes them.
+- **Toolchain stamp:** the package stage writes the `toolchain/compile` stamp after copying the toolchain in. Otherwise `world` rebuilds GCC, because the build directories it would check component by component are not kept.
+- **Version files:** `version` and `version.date` are needed because there is no `.git`.
 
-## Reproducibility
+Builds use the official buildbot's configuration (`BUILDBOT=y`): no per-build key in base-files, no per-package signatures, and a fixed kernel build user and host. Its other defaults are switched off where they would build more than requested: `ALL_KMODS`, `ALL_NONSHARED`, `TARGET_ALL_PROFILES`, the SDK, the toolchain archive, the CycloneDX SBOM and kernel debug collection. The ImageBuilder is built standalone (`IB_STANDALONE`), carrying every package built, and serves only the requested profiles: with `CONFIG_IB` the buildroot compiles the kernel of every device of the target, which fails for devices whose kernel embeds their own root filesystem (netgear_eax17) unless every profile is selected, so the build compiles only the requested devices' kernels. The toolchain stage uses the same target configuration, so `tools/` enables the same host tools in both stages.
 
-Measurements from the spike:
-
-- Two independent stage-2 builds on the same machine were bit-identical (0 of 203 files differed), provided the apk signing key was fixed. This holds because OpenWrt's apk signs with RFC 6979 deterministic ECDSA.
-- Stage 2 was identical even on top of an independently built stage 1, although stage 1 itself differs (static archive order, a meson zipapp, and the own-store-path RUNPATH that nixpkgs' linker wrapper adds).
-
-What remains to handle:
-
-- **Keys.** apk-based trees generate a random EC key on every build and install its public half into base-files. Build in BUILDBOT mode instead (no per-build key, no per-package signatures), sign the index outside Nix, and ship our own public key through a keyring package. Never let `private-key.pem` or `key-build*` reach the store through `src`.
-- **BUILDBOT side effects.** BUILDBOT also enables `ALL_NONSHARED`, SDK, IB and attended-sysupgrade defaults. Each needs explicit overrides and extra sources.
-- **luci.mk versions.** Without `.git`, luci.mk versions packages by the newest mtime in the package directory. The tree must stay read-only, with patches applied when the tree is built and never during the build. Proper per-package versions need a version table generated while refreshing, where `.git` is available.
+Images are composed with signature checking off: the package index exists only inside the image build, and signing it would generate a random key each time.
 
 ## Kconfig
 
@@ -125,21 +126,26 @@ What remains to handle:
 - unknown or target-gated packages vanish;
 - conflicts demote a package to `=m`;
 - packages pulled in by `select` cannot be deselected;
-- `luci-i18n-*` packages cannot be selected by name and only follow `LUCI_LANG_*`.
-
-The fountain-of-lucine bundles lose 24 to 27 packages each when applied to the XR1710G target, with no error.
+- `luci-i18n-*` packages cannot be selected by name and only follow `LUCI_LANG_*`;
+- hidden packages (such as `kmod-mt76-sdio`) cannot be selected at all, only pulled in by other packages.
 
 Reimplementing Kconfig in Nix is not worth it. OpenWrt generates its Kconfig by evaluating every package Makefile with GNU make, which takes about 52 s; evaluating the Kconfig itself takes about 2 s. A Nix version would also have to match the C implementation bug for bug. nixpkgs takes the same approach for kernels: `generate-config.pl` runs the real `make config` and then verifies the result. This project therefore:
 
 - checks names against `metadata.json` at evaluation time;
-- runs `conf` in a cheap derivation before any expensive stage and fails if a requested package was dropped;
-- commits the resolved package set per channel × target as a config lock;
-- translates ImageBuilder-style package lists, for example `luci-i18n-*` into `LUCI_LANG_*`;
-- follows the official buildbot for the kernel stage (`ALL_KMODS`), because kmod `KCONFIG` entries otherwise change the kernel and its vermagic.
+- translates the ImageBuilder-style request: every package becomes `=m` (so conflicting alternatives can coexist in the ImageBuilder), `luci-i18n-*-<lang>` becomes `LUCI_LANG_<lang>`, and dependencies without `+`, which Kconfig requires but does not select, are requested as well;
+- runs `defconfig` in a cheap derivation (`resolve`) before any expensive stage, and fails if a requested package or profile was dropped or a selected Go package has no vendored modules.
+
+Building only the requested kmods (no `ALL_KMODS`) means the kernel configuration differs from the official one wherever a kmod's `KCONFIG` changes it, and so does the vermagic: official kmod packages do not install on these images. Adding a package to a target can change its kernel; all devices of an ImageBuilder share it.
+
+## Reproducibility
+
+Measurements from the spike:
+
+- Two independent stage-2 builds on the same machine were bit-identical (0 of 203 files differed), provided the apk signing key was fixed. This holds because OpenWrt's apk signs with RFC 6979 deterministic ECDSA. In BUILDBOT mode the per-build key only signs the build's own package index, which the ImageBuilder does not carry.
+- Stage 2 was identical even on top of an independently built stage 1, although stage 1 itself differs (static archive order, a meson zipapp, and the own-store-path RUNPATH that nixpkgs' linker wrapper adds).
+- Without `.git`, luci.mk versions packages by the newest mtime in the package directory, which in the store is 1970 (`0.700101.00001`); the lock's `packageVersions` replace that. For LuCI packages a fork's feed patches add, which have no history, the mtime remains, and luci-base compiles its host tools inside its package directory, which would make that mtime the build time; the tree moves that build to the host build directory.
 
 ## Roadmap
 
-1. Port the spike's source FODs and stages. Build XR1710G from the `gemtek` channel, with image composition through the self-built ImageBuilder, so the channel gets `mkImage` like the release channels.
-2. Add the config lock, the resolve check and the package-list translation. Add vendor FODs for Go, Rust and npm. Build the full `1710.config` package set.
-3. Let release channels choose the source backend as well, so release images can carry patches.
-4. Run builds on a dedicated builder with a binary cache, and sign outside Nix.
+1. Run builds on a dedicated builder with the binary cache, and sign images and package indexes outside Nix.
+2. Let consumers add vendored Go modules without changing this repository, and vendor Rust and npm packages.
