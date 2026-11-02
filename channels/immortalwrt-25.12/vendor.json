@@ -1,6 +1,7 @@
 {
   "feeds/packages/net/sing-box": {
     "hash": "sha256-28vHdXEaD1LgxSDfzz+eSJsV3Wx8WUlWl9ARvdbzby8=",
+    "patches": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "sha256": "881435f07b5ab8170ccf3cb69e87130759521dc0ed1ae4bfeacbe7772a93a158"
   }
 }

@@ -19,12 +19,14 @@
   tree,
   metadata,
   sources,
-  # channels/<name>/vendor.json: { <dir> = { file; sha256; hash; }; }
+  # channels/<name>/vendor.json: { <dir> = { sha256; patches; hash; }; }, see scripts/refresh.py
   vendor,
 }:
 let
   storeName = file: "dl-" + lib.strings.sanitizeDerivationName file;
   mirrorUrls = file: map (base: "${base}/${file}") sources.mirrors;
+  # a stalled mirror is given up after a minute below 1 KiB/s, and the next one tried
+  curlFlags = "-fsSL --retry 2 --connect-timeout 30 --speed-limit 1024 --speed-time 60";
 
   # Git checkouts are packed into tarballs whose bytes must match PKG_MIRROR_HASH, which needs
   # the buildroot's patched tar (tools/tar/patches change the headers of long names).
@@ -75,7 +77,7 @@ let
         export HOME=$TMPDIR
         cd $TMPDIR
         for url in ${lib.escapeShellArgs (mirrorUrls entry.file)}; do
-          if curl -fsSL --retry 2 -o mirror.dl "$url" \
+          if curl ${curlFlags} -o mirror.dl "$url" \
             && [ "$(sha256sum mirror.dl | cut -d' ' -f1)" = ${entry.sha256} ]; then
             mv mirror.dl $out
             exit 0
@@ -114,7 +116,7 @@ let
       env.SSL_CERT_FILE = "${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt";
       buildCommand = ''
         for url in ${lib.escapeShellArgs (entry.urls ++ mirrorUrls entry.file)}; do
-          if curl -fsSL --retry 2 --connect-timeout 30 -o "$TMPDIR/dl" "$url"; then
+          if curl ${curlFlags} -o "$TMPDIR/dl" "$url"; then
             [ "$(sha256sum "$TMPDIR/dl" | cut -d' ' -f1)" = ${entry.sha256} ] && exec mv "$TMPDIR/dl" $out
             echo "hash mismatch from $url" >&2
           fi

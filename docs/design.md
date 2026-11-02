@@ -76,7 +76,7 @@ Feeds are fetched as GitHub tarballs, or with `fetchgit` for other hosts. They a
 2. For each channel, resolve the upstream commit, pin every feed, and record `REVISION` and the package versions from git history.
 3. For forks with feed patches, a feed only advances to a commit its patches still apply to. A patch whose change the feed already contains counts as applied, which matches naoki66's `scripts/apply-feed-patches.sh`. If the feed head is rejected, the refresh pins the newest commit on the feed's first-parent history that accepts the patches.
 4. Prefetch everything, then build the tree, `metadata.json` and `sources.json` of every channel in the sandbox. Unchanged channels are built as well, so a change that breaks the trees shows up the same day.
-5. Hash the Go modules of the packages in `vendor-packages.json` whose source file changed, into `vendor.json`.
+5. Hash the Go modules of the packages in `vendor-packages.json` whose source file or patches changed, into `vendor.json`.
 6. Keep a channel's new state only if all of that succeeds; otherwise keep the last good one.
 
 Channels refresh independently of each other. The refresh fits on a hosted GitHub runner: one `git ls-remote` per ref, one tarball per pinned source, a blobless clone of each upstream and feed repository for the history (about 125 MB for ImmortalWrt, 56 MB for LuCI), and per channel a tree build plus the buildroot's own scans (a few minutes).
@@ -87,9 +87,9 @@ Channels refresh independently of each other. The refresh fits on a hosted GitHu
 
 Every source file a build needs becomes a fixed-output derivation. Its hash is the one the buildroot itself declares (`PKG_HASH` / `PKG_MIRROR_HASH`), so no second set of hashes has to be maintained.
 
-`sources.json` comes from the buildroot: `scripts/sources.py` runs `make -n -C <dir> download` for every package, `tools/` and `toolchain/` directory, which only prints the commands (about 0.1 s per Makefile). It runs once for an x86_64 and once for an aarch64 target, because a few file names depend on the architecture. Kernel tarballs come from `target/linux/generic/kernel-<version>`.
+`sources.json` comes from the buildroot: `scripts/sources.py` runs `make -n -C <dir> download` for every package, `tools/` and `toolchain/` directory, which only prints the commands (about 0.1 s per Makefile), in the environment the top-level Makefile exports. A few downloads depend on the architecture (prebuilt binaries such as chinadns-ng's), so the dry run covers every directory for an x86_64 and an aarch64 target, and the directories whose downloads differ between the two again for one target of every other architecture. A directory that differs only on other architectures would be missed and fail its build. Kernel tarballs come from `target/linux/generic/kernel-<version>`.
 
-- URL sources use `fetchurl` with the tree's `scripts/projectsmirrors.json` and the source mirrors.
+- URL sources are fetched like `scripts/download.pl` does: each declared URL, then the tree's `scripts/projectsmirrors.json` and the source mirrors, until one serves the declared hash. Checking each URL matters because snapshot URLs (cgit, codeload) can serve regenerated archives whose bytes differ.
 - Git sources are packed exactly like `include/download.mk` packs them, with a `gnutar` built with the tree's `tools/tar/patches` (otherwise long paths produce different tar headers). The fetcher tries the source mirrors first.
 - A top-level `make download` is not a complete list of what a build fetches: in the spike, eight files were only downloaded during the build. The per-directory dry run covers them.
 
@@ -103,7 +103,7 @@ A build gets only the sources it can need, computed at evaluation time from `met
 
 The closure over-approximates what Kconfig selects, so a few unused files are fetched, never too few. The sandbox is the final check: a missing file fails the build.
 
-Go packages fetch modules at build time. For the packages in `vendor-packages.json`, `lib/vendor.nix` runs `go mod download` in a fixed-output derivation (like nixpkgs' `proxyVendor`), and the build copies the result to `dl/go-mod-cache/cache/download` and sets `GOPROXY=off`. The refresh maintains the hashes in `vendor.json`, keyed by the package directory and recomputed when the source file changes. Rust and npm packages would need the same treatment (`dl/cargo`); packages that download unhashed binaries (`PKG_HASH:=skip`) cannot be fetched reproducibly and are left out of the sources lock.
+Go packages fetch modules at build time. For the packages in `vendor-packages.json`, `lib/vendor.nix` runs `go mod download` in a fixed-output derivation (like nixpkgs' `proxyVendor`), and the build copies the result to `dl/go-mod-cache/cache/download` and sets `GOPROXY=off`. The refresh maintains the hashes in `vendor.json`, keyed by the package directory and recomputed when the source file or the package's patches (which can change `go.mod`) change. Rust and npm packages would need the same treatment (`dl/cargo`); packages that download unhashed binaries (`PKG_HASH:=skip`) cannot be fetched reproducibly and are left out of the sources lock.
 
 ## Building in the sandbox
 

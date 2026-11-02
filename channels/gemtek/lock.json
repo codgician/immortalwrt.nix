@@ -177,6 +177,10 @@
         "po": "26.297.48464~652714b",
         "src": "26.298.10628~31b180d"
       },
+      "feeds/luci-app-pushbot": {
+        "po": "26.286.15812~ca19630",
+        "src": "26.296.70060~d9f3f2b"
+      },
       "feeds/luci/applications/luci-app-3cat": {
         "po": "25.165.47678~2fcc26e",
         "src": "25.218.38818~14ea92e"

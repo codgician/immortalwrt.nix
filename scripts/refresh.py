@@ -16,6 +16,7 @@ from __future__ import annotations
 import argparse
 import concurrent.futures
 import datetime
+import hashlib
 import json
 import pathlib
 import re
@@ -298,16 +299,14 @@ class History:
         """rules.mk's COMMITCOUNT for a package directory."""
         return run(["git", "rev-list", "--count", rev, "--", path], cwd=self.clone(url, rev)).strip()
 
-    def luci_versions(self, url, rev, feed_path, directory):
-        """luci.mk's findrev for every LuCI package of a feed, keyed by path below the feed."""
-        repo = self.clone(url, rev)
-        root = feed_path / directory if directory else feed_path
+    def luci_versions(self, url, rev, feed_path):
+        """luci.mk's findrev for every LuCI package of a feed, keyed by path below the feed root."""
         versions = {}
-        for makefile in sorted(root.rglob("Makefile")):
+        for makefile in sorted(feed_path.rglob("Makefile")):
             if not re.search(r"^include .*/luci\.mk\s*$", makefile.read_text(errors="replace"), re.M):
                 continue
-            rel = makefile.parent.relative_to(root).as_posix()
-            repo_dir = f"{directory}/{rel}" if directory else rel
+            repo = self.clone(url, rev)
+            rel = makefile.parent.relative_to(feed_path).as_posix()
 
             def findrev(*pathspec):
                 out = run(
@@ -319,10 +318,8 @@ class History:
                 day = datetime.datetime.fromtimestamp(int(ts), datetime.UTC).strftime("%y.%j")
                 return f"{day}.{int(ts) % 86400:05d}~{short}"
 
-            versions[rel] = {
-                "src": findrev(repo_dir, f":(exclude){repo_dir}/po"),
-                "po": findrev(f"{repo_dir}/po"),
-            }
+            po = "po" if rel == "." else f"{rel}/po"
+            versions[rel] = {"src": findrev(rel, f":(exclude){po}"), "po": findrev(po)}
         return versions
 
 
@@ -355,8 +352,10 @@ def resolve_channel(name, history):
         if feed["directory"]:
             entry["directory"] = feed["directory"]
         feeds.append(entry)
-        for rel, v in history.luci_versions(feed["url"], frev, path, feed["directory"]).items():
-            luci[f"feeds/{feed['name']}/{rel}"] = v
+        # scripts/feeds checks a feed out to feeds/<--directory> when given, else feeds/<name>
+        checkout = f"feeds/{feed['directory'] or feed['name']}"
+        for rel, v in history.luci_versions(feed["url"], frev, path).items():
+            luci[checkout if rel == "." else f"{checkout}/{rel}"] = v
     lock = {
         "version": version,
         "revision": history.revision(url, rev, src_path),
@@ -389,17 +388,27 @@ def go_modules_hash(name, directory):
     """Hash of a Go package's modules: build the probe (empty hash) and read what Nix got."""
     attr = f'.#legacyPackages.x86_64-linux.channels."{name}".goModulesProbe."{directory}"'
     proc = subprocess.run(["nix", "build", "--no-link", attr], cwd=ROOT, text=True, capture_output=True)
-    m = re.search(r"got:\s+(sha256-[A-Za-z0-9+/]+=*)", proc.stderr)
+    # only the modules derivation's mismatch counts; a source fetch can fail the same way
+    m = re.search(r"-go-modules\.drv':\s+specified:\s+\S+\s+got:\s+(sha256-[A-Za-z0-9+/]+=*)", proc.stderr)
     if not m:
         tail = "\n".join(proc.stderr.strip().splitlines()[-25:])
         raise RefreshError(f"hashing the Go modules of {directory} failed:\n{tail}")
     return m[1]
 
 
+def patches_digest(name, directory):
+    """Digest of the patches lib/vendor.nix applies before downloading modules."""
+    tree = run(["nix", "build", "--no-link", "--print-out-paths", f'.#"{name}-tree"'], cwd=ROOT).strip()
+    digest = hashlib.sha256()
+    for patch in sorted(pathlib.Path(tree, directory, "patches").glob("*.patch")):
+        digest.update(patch.name.encode() + b"\0" + patch.read_bytes() + b"\0")
+    return digest.hexdigest()
+
+
 def vendor(name, old):
     """vendor.json for a channel: Go module hashes of the packages in vendor-packages.json.
 
-    A hash is reused while the package's source file is unchanged."""
+    A hash is reused while the package's source file and patches are unchanged."""
     metadata = load_json(CHANNELS / name / "metadata.json")
     sources = load_json(CHANNELS / name / "sources.json")
     result = {}
@@ -413,12 +422,12 @@ def vendor(name, old):
         entries = sources["dirs"].get(directory, [])
         if len(entries) != 1:
             raise RefreshError(f"{directory} has {len(entries)} source files, cannot tell which holds go.mod")
-        sha256 = entries[0]["sha256"]
-        if old.get(directory, {}).get("sha256") == sha256:
+        key = {"sha256": entries[0]["sha256"], "patches": patches_digest(name, directory)}
+        if all(old.get(directory, {}).get(k) == v for k, v in key.items()):
             result[directory] = old[directory]
         else:
             log(f"{name}: hashing Go modules of {directory}")
-            result[directory] = {"sha256": sha256, "hash": go_modules_hash(name, directory)}
+            result[directory] = dict(key, hash=go_modules_hash(name, directory))
     return result
 
 

@@ -114,7 +114,7 @@ let
       owrt() { owrt-fhs "$NIX_BUILD_TOP" "$@"; }
       owrt_make() {
         owrt make -j''${NIX_BUILD_CORES:-1} BUILD_LOG=1 "$@" && return 0
-        grep -rlE 'Error [0-9]+|error:' logs --include='*.txt' 2>/dev/null | while read -r f; do
+        { grep -rlE 'Error [0-9]+|error:' logs --include='*.txt' 2>/dev/null || true; } | while read -r f; do
           echo "===== $f"
           tail -n 80 "$f"
         done
@@ -169,6 +169,7 @@ let
     }
   );
 
+  # names are checked at evaluation time, before anything is built
   checkRequest =
     {
       target,
@@ -179,9 +180,12 @@ let
       targetInfo =
         metadata.targets.${target} or (throw "immortalwrt.nix: channel ${name} has no target ${target}");
       unknownProfiles = lib.filter (p: !(targetInfo.profiles ? ${p})) profiles;
-      unknownPackages = lib.filter (
-        p: channelSources.resolveName (lib.removePrefix "-" p) == [ ]
-      ) packages;
+      names = map (lib.removePrefix "-") packages;
+      unknownPackages = lib.filter (p: channelSources.resolveName p == [ ]) names;
+      # Kconfig only knows real packages; a virtual name (PROVIDES) has to name its provider
+      virtualPackages = lib.filter (
+        p: !(metadata.packages ? ${p}) && channelSources.resolveName p != [ ]
+      ) names;
     in
     assert lib.assertMsg (profiles != [ ]) "immortalwrt.nix: no device profile requested for ${target}";
     assert lib.assertMsg (unknownProfiles == [ ])
@@ -189,6 +193,12 @@ let
     assert lib.assertMsg (
       unknownPackages == [ ]
     ) "immortalwrt.nix: channel ${name} has no package ${lib.concatStringsSep ", " unknownPackages}";
+    assert lib.assertMsg (virtualPackages == [ ])
+      "immortalwrt.nix: request a package that provides ${
+        lib.concatMapStringsSep "; " (
+          p: "${p} (${lib.concatStringsSep ", " (channelSources.resolveName p)})"
+        ) virtualPackages
+      }, not the virtual name";
     true;
 
   # Kconfig resolution of a request: fails if Kconfig dropped a requested package or device, or
@@ -200,7 +210,6 @@ let
       packages,
     }@request:
     deps:
-    assert checkRequest request;
     stdenv.mkDerivation {
       name = "${name}-${kconfigName target}-config";
       dontUnpack = true;
@@ -260,7 +269,9 @@ let
     }@request:
     let
       drvName = "${name}-${kconfigName target}-imagebuilder";
-      deps = channelSources.packages drvName request;
+      deps =
+        assert checkRequest request;
+        channelSources.packages drvName request;
       config = resolve request deps;
       parts = lib.splitString "/" target;
     in
@@ -314,5 +325,5 @@ let
     };
 in
 {
-  inherit toolchain imagebuilder checkRequest;
+  inherit toolchain imagebuilder;
 }

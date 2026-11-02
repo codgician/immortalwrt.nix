@@ -96,7 +96,7 @@ For each channel, the refresh:
 2. pins each feed from the tree's `feeds.conf.default`, and records the package versions a git checkout would give (base-files' release, LuCI package versions);
 3. prefetches all sources;
 4. rebuilds the tree, its metadata and its sources lock;
-5. hashes the Go modules of the vendored packages whose source changed.
+5. hashes the Go modules of the vendored packages whose source or patches changed.
 
 A new lock is only kept when all of that succeeds. If anything fails, the channel stays on its last good state. Forks that patch their feeds (`feedPatches` in `channel.json`) only move each feed to the newest commit their patches still apply to.
 

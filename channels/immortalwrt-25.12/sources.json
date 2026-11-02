@@ -9363,6 +9363,41 @@
   ],
   "feeds/packages/net/chinadns-ng": [
    {
+    "file": "chinadns-ng-2025.08.09+wolfssl@arm-linux-musleabi@generic+v5t+soft_float@fast+lto",
+    "sha256": "46ce65b0e2342d4f8dac63f281a38a239d8de29d6c75f863c797b164ab8e72cc",
+    "urls": [
+     "https://github.com/zfl9/chinadns-ng/releases/download/2025.08.09/chinadns-ng+wolfssl@arm-linux-musleabi@generic+v5t+soft_float@fast+lto"
+    ]
+   },
+   {
+    "file": "chinadns-ng-2025.08.09+wolfssl@i386-linux-musl@pentium4@fast+lto",
+    "sha256": "2d0f1a05c82f2e21e71a6618c7f1d2e7f46aa6a21535d774d517e87ec00c989b",
+    "urls": [
+     "https://github.com/zfl9/chinadns-ng/releases/download/2025.08.09/chinadns-ng+wolfssl@i386-linux-musl@pentium4@fast+lto"
+    ]
+   },
+   {
+    "file": "chinadns-ng-2025.08.09+wolfssl@mips-linux-musl@mips32+soft_float@fast+lto",
+    "sha256": "b610821a8f61b0ed3c8c7e82e10d401348a9de17f900988589024a37c4099c8e",
+    "urls": [
+     "https://github.com/zfl9/chinadns-ng/releases/download/2025.08.09/chinadns-ng+wolfssl@mips-linux-musl@mips32+soft_float@fast+lto"
+    ]
+   },
+   {
+    "file": "chinadns-ng-2025.08.09+wolfssl@mipsel-linux-musl@mips32+soft_float@fast+lto",
+    "sha256": "760544a88724e3b1b9eac79c9400231e81aa8786f8f00a979229e175811ffe6d",
+    "urls": [
+     "https://github.com/zfl9/chinadns-ng/releases/download/2025.08.09/chinadns-ng+wolfssl@mipsel-linux-musl@mips32+soft_float@fast+lto"
+    ]
+   },
+   {
+    "file": "chinadns-ng-2025.08.09+wolfssl@riscv64-linux-musl@baseline_rv64@fast+lto",
+    "sha256": "7056f47f4d6b20109e007792694dc83e5eac44c9265d7be20f6dc10375b35a9b",
+    "urls": [
+     "https://github.com/zfl9/chinadns-ng/releases/download/2025.08.09/chinadns-ng+wolfssl@riscv64-linux-musl@baseline_rv64@fast+lto"
+    ]
+   },
+   {
     "file": "chinadns-ng-2025.08.09+wolfssl@x86_64-linux-musl@x86_64@fast+lto",
     "sha256": "842ea4e9816efd91d39bc76ead5c4a42e79011757e37c521b4270b675cfcb30c",
     "urls": [

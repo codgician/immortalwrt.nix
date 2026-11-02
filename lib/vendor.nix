@@ -6,7 +6,7 @@
 # (GOPROXY=off) once copied to dl/go-mod-cache/cache/download.
 #
 # The hash is maintained by the refresh job in channels/<name>/vendor.json, keyed by the source
-# directory and recomputed whenever the package's source file changes.
+# directory and recomputed whenever the package's source file or patches change.
 {
   lib,
   pkgs,
