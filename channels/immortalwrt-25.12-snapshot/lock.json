@@ -2,10 +2,10 @@
   "feeds": [
     {
       "fetch": {
-        "narHash": "sha256-MBXQcWXO9ruuoolMQtYTibOO/BochfBR2CvrIMKwTpg=",
+        "narHash": "sha256-XgmKrUB9PO6K6fMmgv0ZV6vtK4AbAgLKKC4vj5m8EC8=",
         "owner": "immortalwrt",
         "repo": "packages",
-        "rev": "2dba1dd2af3b447faf52f85c0850a6f9667cac17",
+        "rev": "e071e533c3176712775e8932f5a650ef2dcda5e9",
         "type": "github"
       },
       "name": "packages",

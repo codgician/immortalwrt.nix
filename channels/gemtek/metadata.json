@@ -1,5 +1,5 @@
 {
-  "revision": "r42828-8f92c5427fd9",
+  "revision": "r42830-d194310cf406",
   "configSelects": [
     {"arches": ["aarch64", "arm", "i386", "loongarch64", "riscv64", "x86_64"], "packages": ["3proxy"]},
     {"arches": ["i386", "loongarch64", "riscv64", "x86_64"], "packages": ["mihomo", "v2ray-geoip"]},

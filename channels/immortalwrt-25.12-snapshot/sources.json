@@ -668,11 +668,11 @@
   ],
   "feeds/packages/kernel/ovpn-dco": [
    {
-    "file": "ovpn-backports-7.2.0.2026082800.tar.gz",
-    "sha256": "81443f40d1d825e7d2bcb08b34f4f3269d288e4558f04543e4a56f7f697c7c4d",
+    "file": "ovpn-backports-7.3.0.2026100801.tar.gz",
+    "sha256": "6edfd684c0339f605820eb52c808b948624ff2bcf4733d24ab97c8ea188931b8",
     "urls": [
-     "https://build.openvpn.net/downloads/releases/ovpn-backports-7.2.0.2026082800.tar.gz",
-     "https://swupdate.openvpn.net/community/releases/ovpn-backports-7.2.0.2026082800.tar.gz"
+     "https://build.openvpn.net/downloads/releases/ovpn-backports-7.3.0.2026100801.tar.gz",
+     "https://swupdate.openvpn.net/community/releases/ovpn-backports-7.3.0.2026100801.tar.gz"
     ]
    }
   ],
@@ -9061,22 +9061,22 @@
   ],
   "feeds/packages/net/apache": [
    {
-    "file": "httpd-2.4.65.tar.bz2",
-    "sha256": "58b8be97d9940ec17f7656c0c6b9f41b618aac468b894b534148e3296c53b8b3",
+    "file": "httpd-2.4.69.tar.bz2",
+    "sha256": "c5e6ebc66e349b87d7fc6916ae7cc2a808ed348003de134cf9e9d89d3e2cc73d",
     "urls": [
-     "https://mirrors.tencent.com/apache/httpd/httpd-2.4.65.tar.bz2",
-     "https://mirrors.aliyun.com/apache/httpd/httpd-2.4.65.tar.bz2",
-     "https://mirrors.tuna.tsinghua.edu.cn/apache/httpd/httpd-2.4.65.tar.bz2",
-     "https://mirrors.ustc.edu.cn/apache/httpd/httpd-2.4.65.tar.bz2",
-     "https://dlcdn.apache.org/httpd/httpd-2.4.65.tar.bz2",
-     "https://mirror.aarnet.edu.au/pub/apache/httpd/httpd-2.4.65.tar.bz2",
-     "https://mirror.csclub.uwaterloo.ca/apache/httpd/httpd-2.4.65.tar.bz2",
-     "https://archive.apache.org/dist/httpd/httpd-2.4.65.tar.bz2",
-     "https://mirror.cogentco.com/pub/apache/httpd/httpd-2.4.65.tar.bz2",
-     "https://mirror.navercorp.com/apache/httpd/httpd-2.4.65.tar.bz2",
-     "https://ftp.jaist.ac.jp/pub/apache/httpd/httpd-2.4.65.tar.bz2",
-     "https://apache.cs.utah.edu/httpd/httpd-2.4.65.tar.bz2",
-     "http://apache.mirrors.ovh.net/ftp.apache.org/dist/httpd/httpd-2.4.65.tar.bz2"
+     "https://mirrors.tencent.com/apache/httpd/httpd-2.4.69.tar.bz2",
+     "https://mirrors.aliyun.com/apache/httpd/httpd-2.4.69.tar.bz2",
+     "https://mirrors.tuna.tsinghua.edu.cn/apache/httpd/httpd-2.4.69.tar.bz2",
+     "https://mirrors.ustc.edu.cn/apache/httpd/httpd-2.4.69.tar.bz2",
+     "https://dlcdn.apache.org/httpd/httpd-2.4.69.tar.bz2",
+     "https://mirror.aarnet.edu.au/pub/apache/httpd/httpd-2.4.69.tar.bz2",
+     "https://mirror.csclub.uwaterloo.ca/apache/httpd/httpd-2.4.69.tar.bz2",
+     "https://archive.apache.org/dist/httpd/httpd-2.4.69.tar.bz2",
+     "https://mirror.cogentco.com/pub/apache/httpd/httpd-2.4.69.tar.bz2",
+     "https://mirror.navercorp.com/apache/httpd/httpd-2.4.69.tar.bz2",
+     "https://ftp.jaist.ac.jp/pub/apache/httpd/httpd-2.4.69.tar.bz2",
+     "https://apache.cs.utah.edu/httpd/httpd-2.4.69.tar.bz2",
+     "http://apache.mirrors.ovh.net/ftp.apache.org/dist/httpd/httpd-2.4.69.tar.bz2"
     ]
    }
   ],
@@ -11001,10 +11001,10 @@
   ],
   "feeds/packages/net/netatalk": [
    {
-    "file": "netatalk-4.4.3.tar.xz",
-    "sha256": "863d640ecc99f4923ead6c58e8d3406ab3a1ca9dd3b0d47ccdf6fdebb6efe3ab",
+    "file": "netatalk-4.6.1.tar.xz",
+    "sha256": "c97412f7f4bbbbfa922664f52b9d6a5f75282b99a52fe0463134bb477fea715e",
     "urls": [
-     "https://downloads.sourceforge.net/netatalk/netatalk-4.4.3.tar.xz"
+     "https://downloads.sourceforge.net/netatalk/netatalk-4.6.1.tar.xz"
     ]
    }
   ],
@@ -11019,10 +11019,10 @@
   ],
   "feeds/packages/net/netbird": [
    {
-    "file": "netbird-0.78.1.tar.gz",
-    "sha256": "2adde8bbd77ea595b5f50174be10574466f1c07fc9fbf827024245aec2f4dabc",
+    "file": "netbird-0.81.4.tar.gz",
+    "sha256": "c735ffec7dece473e61c8764fec7a5cb971bacc766620e9639c97c9a249bbcbb",
     "urls": [
-     "https://codeload.github.com/netbirdio/netbird/tar.gz/v0.78.1?/netbird-0.78.1.tar.gz"
+     "https://codeload.github.com/netbirdio/netbird/tar.gz/v0.81.4?/netbird-0.81.4.tar.gz"
     ]
    }
   ],
@@ -11088,10 +11088,10 @@
   ],
   "feeds/packages/net/nextdns": [
    {
-    "file": "nextdns-1.47.3.tar.gz",
-    "sha256": "73a57ff41074d32a7707b751da36c0a618edc6d2b41ddf61ca565222448f567b",
+    "file": "nextdns-1.49.0.tar.gz",
+    "sha256": "71acde630e1941f5e520ce71d6eab0fc2d655e5d1769b22930a73ff354d78069",
     "urls": [
-     "https://codeload.github.com/nextdns/nextdns/tar.gz/v1.47.3?/nextdns-1.47.3.tar.gz"
+     "https://codeload.github.com/nextdns/nextdns/tar.gz/v1.49.0?/nextdns-1.49.0.tar.gz"
     ]
    }
   ],
@@ -11427,11 +11427,11 @@
   ],
   "feeds/packages/net/openvpn": [
    {
-    "file": "openvpn-2.7.7.tar.gz",
-    "sha256": "3ab8f48fd6c26d49ba2333a092433949afdb5c85c0e6a1ff265784fbc04a2463",
+    "file": "openvpn-2.7.8.tar.gz",
+    "sha256": "c070d1d2440b5a6fca6c2c68645c98cd492116ac36ef4f0946177115532c8e36",
     "urls": [
-     "https://build.openvpn.net/downloads/releases/openvpn-2.7.7.tar.gz",
-     "https://swupdate.openvpn.net/community/releases/openvpn-2.7.7.tar.gz"
+     "https://build.openvpn.net/downloads/releases/openvpn-2.7.8.tar.gz",
+     "https://swupdate.openvpn.net/community/releases/openvpn-2.7.8.tar.gz"
     ]
    }
   ],
@@ -13009,10 +13009,10 @@
   ],
   "feeds/packages/net/xray-core": [
    {
-    "file": "xray-core-26.3.27.tar.gz",
-    "sha256": "992a4997e6bb846d11469435d687f99ef812fcde1e0a009bb8e95189ea20331d",
+    "file": "xray-core-26.10.21.tar.gz",
+    "sha256": "44ef4874529a03848c90f1fdcfb763350fbc5f1de741ec90e0024d651df25650",
     "urls": [
-     "https://codeload.github.com/XTLS/Xray-core/tar.gz/v26.3.27?/xray-core-26.3.27.tar.gz"
+     "https://codeload.github.com/XTLS/Xray-core/tar.gz/v26.10.21?/xray-core-26.10.21.tar.gz"
     ]
    }
   ],
@@ -14507,20 +14507,20 @@
   ],
   "feeds/packages/utils/gzip": [
    {
-    "file": "gzip-1.14.tar.xz",
-    "sha256": "01a7b881bd220bfdf615f97b8718f80bdfd3f6add385b993dcf6efd14e8c0ac6",
+    "file": "gzip-1.15.tar.xz",
+    "sha256": "9aa0cc780dec156b8282844833b342ab7cb08c25d2cd9a1869cdd0df31deff48",
     "urls": [
-     "https://mirrors.tencent.com/gnu/gzip/gzip-1.14.tar.xz",
-     "https://mirrors.aliyun.com/gnu/gzip/gzip-1.14.tar.xz",
-     "https://mirrors.tuna.tsinghua.edu.cn/gnu/gzip/gzip-1.14.tar.xz",
-     "https://mirrors.ustc.edu.cn/gnu/gzip/gzip-1.14.tar.xz",
-     "https://ftpmirror.gnu.org/gzip/gzip-1.14.tar.xz",
-     "https://mirror.csclub.uwaterloo.ca/gnu/gzip/gzip-1.14.tar.xz",
-     "https://mirror.netcologne.de/gnu/gzip/gzip-1.14.tar.xz",
-     "https://www.nic.funet.fi/pub/gnu/gnu/gzip/gzip-1.14.tar.xz",
-     "https://mirror.navercorp.com/gnu/gzip/gzip-1.14.tar.xz",
-     "https://mirrors.rit.edu/gnu/gzip/gzip-1.14.tar.xz",
-     "https://ftp.gnu.org/gnu/gzip/gzip-1.14.tar.xz"
+     "https://mirrors.tencent.com/gnu/gzip/gzip-1.15.tar.xz",
+     "https://mirrors.aliyun.com/gnu/gzip/gzip-1.15.tar.xz",
+     "https://mirrors.tuna.tsinghua.edu.cn/gnu/gzip/gzip-1.15.tar.xz",
+     "https://mirrors.ustc.edu.cn/gnu/gzip/gzip-1.15.tar.xz",
+     "https://ftpmirror.gnu.org/gzip/gzip-1.15.tar.xz",
+     "https://mirror.csclub.uwaterloo.ca/gnu/gzip/gzip-1.15.tar.xz",
+     "https://mirror.netcologne.de/gnu/gzip/gzip-1.15.tar.xz",
+     "https://www.nic.funet.fi/pub/gnu/gnu/gzip/gzip-1.15.tar.xz",
+     "https://mirror.navercorp.com/gnu/gzip/gzip-1.15.tar.xz",
+     "https://mirrors.rit.edu/gnu/gzip/gzip-1.15.tar.xz",
+     "https://ftp.gnu.org/gnu/gzip/gzip-1.15.tar.xz"
     ]
    }
   ],
@@ -14553,10 +14553,10 @@
   ],
   "feeds/packages/utils/haveged": [
    {
-    "file": "haveged-1.9.26.tar.gz",
-    "sha256": "74bc6052506451ca9f23ba186f72cf81b124f859351f8a4b777ead32d9bdd4da",
+    "file": "haveged-1.9.27.tar.gz",
+    "sha256": "098ec77c32bbb185f81eeabec93d67139c50573fe671286cba8a3d9dc865f310",
     "urls": [
-     "https://codeload.github.com/jirka-h/haveged/tar.gz/v1.9.26?/haveged-1.9.26.tar.gz"
+     "https://codeload.github.com/jirka-h/haveged/tar.gz/v1.9.27?/haveged-1.9.27.tar.gz"
     ]
    }
   ],

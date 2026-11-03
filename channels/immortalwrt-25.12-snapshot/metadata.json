@@ -1723,7 +1723,7 @@
     "feeds/packages/net/xfrpc": {"buildDepends": ["package/libs/libevent2", "package/libs/libjson-c", "package/libs/toolchain", "package/libs/zlib"]},
     "feeds/packages/net/xinetd": {"buildDepends": ["package/libs/toolchain", "package/libs/xcrypt/libcrypt-compat"]},
     "feeds/packages/net/xl2tpd": {"buildDepends": ["package/libs/toolchain", "package/network/services/ppp", "package/network/utils/resolveip"]},
-    "feeds/packages/net/xray-core": {"buildDepends": ["feeds/packages/lang/golang/golang", "package/libs/toolchain", "package/system/ca-certificates"], "go": true},
+    "feeds/packages/net/xray-core": {"buildDepends": ["feeds/packages/lang/golang/golang1.27", "package/libs/toolchain", "package/system/ca-certificates"], "go": true},
     "feeds/packages/net/xray-plugin": {"buildDepends": ["feeds/packages/lang/golang/golang", "package/libs/toolchain", "package/system/ca-certificates"], "go": true},
     "feeds/packages/net/xtables-addons": {"buildDepends": ["feeds/packages/lang/perl", "feeds/packages/lang/perl/perl-net-cidr-lite", "feeds/packages/lang/perl/perl-text-csv_xs", "feeds/packages/net/wget", "feeds/packages/utils/gzip", "package/kernel/linux", "package/libs/toolchain", "package/network/utils/iptables"]},
     "feeds/packages/net/yggdrasil": {"buildDepends": ["feeds/packages/lang/golang/golang", "package/kernel/linux", "package/libs/toolchain"], "go": true},

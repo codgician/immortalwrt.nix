@@ -115,10 +115,10 @@
     },
     {
       "fetch": {
-        "narHash": "sha256-Fy+Z/eL9g9AmdrlzdW3Ux9o/XlravMfUAuZSGc1feA0=",
+        "narHash": "sha256-i4QO073PbAdOi5u3BzCm8wWR9CQtCfPiF8gazfdlmik=",
         "owner": "fw876",
         "repo": "helloworld",
-        "rev": "04fe559424048d44aaf7c53f3b3c9a775c513a3b",
+        "rev": "b130d224e0d327d851f6aae871be509033595a1e",
         "type": "github"
       },
       "name": "helloworld",
@@ -1123,16 +1123,16 @@
       }
     }
   },
-  "revision": "r42828-8f92c5427fd9",
+  "revision": "r42830-d194310cf406",
   "src": {
     "fetch": {
-      "narHash": "sha256-SGh8c6VfOynQHHP+Bd7ZrQboSZ6ynDsmFtmphudt2M4=",
+      "narHash": "sha256-y0c+Xpb1BwATCrRAhAfs523QpuTXk90qdsTKq0UAHSs=",
       "owner": "naoki66",
       "repo": "ImmortalWrt-for-Gemtek-brightspeed",
-      "rev": "8f92c5427fd902eb5c32006d1bc1ed9954055378",
+      "rev": "d194310cf406acb201c4c74f2a30e47dba4072cf",
       "type": "github"
     },
-    "lastModified": 1792992530,
+    "lastModified": 1793685834,
     "ref": "master"
   },
   "version": "SNAPSHOT"
