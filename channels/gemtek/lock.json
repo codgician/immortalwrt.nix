@@ -115,10 +115,10 @@
     },
     {
       "fetch": {
-        "narHash": "sha256-i4QO073PbAdOi5u3BzCm8wWR9CQtCfPiF8gazfdlmik=",
+        "narHash": "sha256-tu+3xlugx93AuDkGEsk5O9ulCqsT1iPJWhx6E5RuyXo=",
         "owner": "fw876",
         "repo": "helloworld",
-        "rev": "b130d224e0d327d851f6aae871be509033595a1e",
+        "rev": "c66d5d3fbf8861a7eb2f0ef2a5190daa03bc5e1b",
         "type": "github"
       },
       "name": "helloworld",
@@ -175,7 +175,7 @@
       },
       "feeds/helloworld/luci-app-ssr-plus": {
         "po": "26.297.48464~652714b",
-        "src": "26.298.10628~31b180d"
+        "src": "26.307.48740~8b632b5"
       },
       "feeds/luci-app-pushbot": {
         "po": "26.286.15812~ca19630",
@@ -1123,16 +1123,16 @@
       }
     }
   },
-  "revision": "r42830-d194310cf406",
+  "revision": "r42832-218b2b82a1c3",
   "src": {
     "fetch": {
-      "narHash": "sha256-y0c+Xpb1BwATCrRAhAfs523QpuTXk90qdsTKq0UAHSs=",
+      "narHash": "sha256-rXgmo0c20CEzVEIci23x7p5I+6z8GzXFNZfrUvfOaao=",
       "owner": "naoki66",
       "repo": "ImmortalWrt-for-Gemtek-brightspeed",
-      "rev": "d194310cf406acb201c4c74f2a30e47dba4072cf",
+      "rev": "218b2b82a1c335c224a298bdf00c44453fade033",
       "type": "github"
     },
-    "lastModified": 1793685834,
+    "lastModified": 1793704293,
     "ref": "master"
   },
   "version": "SNAPSHOT"
