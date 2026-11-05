@@ -8497,10 +8497,10 @@
   ],
   "feeds/packages/mail/msmtp": [
    {
-    "file": "msmtp-1.8.32.tar.xz",
-    "sha256": "20cd58b58dd007acf7b937fa1a1e21f3afb3e9ef5bbcfb8b4f5650deadc64db4",
+    "file": "msmtp-1.8.34.tar.xz",
+    "sha256": "84e8fe2a5a80a1ee7802013b3fbdb846a3f27a4163cf37a1c6d7c7f888873ead",
     "urls": [
-     "https://marlam.de/msmtp/releases/msmtp-1.8.32.tar.xz"
+     "https://marlam.de/msmtp/releases/msmtp-1.8.34.tar.xz"
     ]
    }
   ],
@@ -9998,10 +9998,10 @@
   ],
   "feeds/packages/net/geoview": [
    {
-    "file": "geoview-0.2.8.tar.gz",
-    "sha256": "e9e957568250157459b4ccc3398a995202678a0dbf1e932c4b0b6179d8b79e5f",
+    "file": "geoview-0.2.9.tar.gz",
+    "sha256": "b080a141505a3180c3b81468304864e4373c4868680ff39fb82ee6973e3b5e94",
     "urls": [
-     "https://codeload.github.com/snowie2000/geoview/tar.gz/0.2.8?/geoview-0.2.8.tar.gz"
+     "https://codeload.github.com/snowie2000/geoview/tar.gz/0.2.9?/geoview-0.2.9.tar.gz"
     ]
    }
   ],
@@ -10914,10 +10914,10 @@
     ]
    },
    {
-    "file": "naiveproxy-154.0.8037.49-4.tar.gz",
-    "sha256": "11b4dd5642b9f41087e95ca099c50879d72f40c3f0db56a9fa3228eb3c06e104",
+    "file": "naiveproxy-154.0.8037.49-5.tar.gz",
+    "sha256": "945e89a43e38e15baf16a5d8489c55c47c325b5c9a86f2ee082ce688d0cee4eb",
     "urls": [
-     "https://codeload.github.com/klzgrad/naiveproxy/tar.gz/v154.0.8037.49-4?/naiveproxy-154.0.8037.49-4.tar.gz"
+     "https://codeload.github.com/klzgrad/naiveproxy/tar.gz/v154.0.8037.49-5?/naiveproxy-154.0.8037.49-5.tar.gz"
     ]
    }
   ],
@@ -12897,10 +12897,10 @@
   ],
   "feeds/packages/net/weechat": [
    {
-    "file": "weechat-4.10.1.tar.xz",
-    "sha256": "b8744c6f5dc5543062791f563e0516dbc96a36161e1a03c468b3b7dcc8be5aff",
+    "file": "weechat-4.10.2.tar.xz",
+    "sha256": "6fcd05f350c808a4206d6951af36a9eec11b145b6a1a2a8a2b29dd3502e07022",
     "urls": [
-     "https://weechat.org/files/src/weechat-4.10.1.tar.xz"
+     "https://weechat.org/files/src/weechat-4.10.2.tar.xz"
     ]
    }
   ],
@@ -16200,10 +16200,10 @@
   ],
   "feeds/packages/utils/telegraf": [
    {
-    "file": "telegraf-1.40.2.tar.gz",
-    "sha256": "519fbd63603acdd23f924f36c49b3f31917f9d2469c17f0d8c584be3be29092b",
+    "file": "telegraf-1.40.3.tar.gz",
+    "sha256": "27bfeaf8c56cbcffc289065623ff7e3b0ff9e48c1d9c00e2278ed453900a0e66",
     "urls": [
-     "https://codeload.github.com/influxdata/telegraf/tar.gz/v1.40.2?/telegraf-1.40.2.tar.gz"
+     "https://codeload.github.com/influxdata/telegraf/tar.gz/v1.40.3?/telegraf-1.40.3.tar.gz"
     ]
    }
   ],
@@ -16558,17 +16558,17 @@
   ],
   "feeds/packages/utils/zoneinfo": [
    {
-    "file": "tzcode2026e.tar.gz",
-    "sha256": "cc3d27ca2a0d8399504551b920970d80af83bfb9c216e8082a15491921935d54",
+    "file": "tzcode2026f.tar.gz",
+    "sha256": "5a18da01393679ef2559214dc687563f7f3d05691f6f58b7fbc0166f3e796cd6",
     "urls": [
-     "https://data.iana.org/time-zones/releases/tzcode2026e.tar.gz"
+     "https://data.iana.org/time-zones/releases/tzcode2026f.tar.gz"
     ]
    },
    {
-    "file": "tzdata2026e.tar.gz",
-    "sha256": "b26882805f26aac59d5b222978e6580484b834ccdc98be89df2f05a6dc53a652",
+    "file": "tzdata2026f.tar.gz",
+    "sha256": "01b4a91cec5167ed48c11e8ab78f2048cead78ce94b0cafcad0ae8c5a3044d3d",
     "urls": [
-     "https://data.iana.org/time-zones/releases/tzdata2026e.tar.gz"
+     "https://data.iana.org/time-zones/releases/tzdata2026f.tar.gz"
     ]
    }
   ],

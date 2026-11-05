@@ -2,10 +2,10 @@
   "feeds": [
     {
       "fetch": {
-        "narHash": "sha256-V1XNXmHqEBvWYHnatfLVDkY2ZRt2yWwvAmQYO1lcYMU=",
+        "narHash": "sha256-wL6uRThsZ+RsOgJePUfL/NkP0der+kcqhIVV0OFOdw8=",
         "owner": "immortalwrt",
         "repo": "packages",
-        "rev": "48f609040f2e4beb16c1aa62af6a6aaafd2eb6cd",
+        "rev": "395ca4d2df4754cdb8e89bc4b37cdbcf54d905b0",
         "type": "github"
       },
       "name": "packages",
@@ -13,10 +13,10 @@
     },
     {
       "fetch": {
-        "narHash": "sha256-wDqzUKjBUurA6buemdH1E+hAskKvAXEnbIbXfVbNDMo=",
+        "narHash": "sha256-Gkt2sKq0/YLb+iqoOAUInd64d5KoYL9UVUYUtMoIYJY=",
         "owner": "immortalwrt",
         "repo": "luci",
-        "rev": "df794c7f69361641195a4b336634d1b1c918099c",
+        "rev": "319f7c96e3530246cf91cfdd9bacb3fa44dc3a4e",
         "type": "github"
       },
       "name": "luci",
@@ -57,7 +57,7 @@
     }
   ],
   "packageVersions": {
-    "baseFilesRelease": "1957",
+    "baseFilesRelease": "1961",
     "luci": {
       "feeds/luci/applications/luci-app-3cat": {
         "po": "25.165.47678~2fcc26e",
@@ -468,8 +468,8 @@
         "src": "26.047.05385~b07c683"
       },
       "feeds/luci/applications/luci-app-passwall": {
-        "po": "26.302.04020~df794c7",
-        "src": "26.302.04020~df794c7"
+        "po": "26.309.25274~1edeea8",
+        "src": "26.309.25274~1edeea8"
       },
       "feeds/luci/applications/luci-app-pbr": {
         "po": "26.291.65693~03c6023",
@@ -965,7 +965,7 @@
       },
       "feeds/luci/themes/luci-theme-argon": {
         "po": "26.294.34279~ebc4118",
-        "src": "26.300.29022~aa26422"
+        "src": "26.309.25350~319f7c9"
       },
       "feeds/luci/themes/luci-theme-bootstrap": {
         "po": "0",
@@ -989,16 +989,16 @@
       }
     }
   },
-  "revision": "r42943-89f1ef18c888",
+  "revision": "r43172-4765b657625e",
   "src": {
     "fetch": {
-      "narHash": "sha256-BOFHIuJ1g5IkwWfJ4xP5QV7BBmiMh+AJbga05L08R5Y=",
+      "narHash": "sha256-U9KFk4yaxkh88RDbWSLT2DBdLgtefHp3/3islZynRG4=",
       "owner": "immortalwrt",
       "repo": "immortalwrt",
-      "rev": "89f1ef18c888f841633f19f92655ee4b7f7716a4",
+      "rev": "4765b657625ec5bbda74b44400465fe043802b30",
       "type": "github"
     },
-    "lastModified": 1793345437,
+    "lastModified": 1793851573,
     "ref": "master"
   },
   "version": "SNAPSHOT"

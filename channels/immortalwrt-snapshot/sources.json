@@ -44,19 +44,17 @@
   ],
   "feeds/packages/admin/bottom": [
    {
-    "file": "bottom-0.11.1.tar.gz",
-    "sha256": "0095ea9edb386ad7c49d845176314097713661d22ec42314e3be46426bc769ee",
-    "urls": [
-     "https://codeload.github.com/ClementTsang/bottom/tar.gz/0.11.1?/bottom-0.11.1.tar.gz"
-    ]
+    "file": "bottom-0.11.1-vendor.tar.zst",
+    "sha256": "2154c30f6ffbdbd432f854d59e67ef731e2740eb45e83ad4363118b9ae81cbe4",
+    "urls": []
    }
   ],
   "feeds/packages/admin/btop": [
    {
-    "file": "btop-1.4.7.tar.gz",
-    "sha256": "933de2e4d1b2211a638be463eb6e8616891bfba73aef5d38060bd8319baeefc6",
+    "file": "btop-1.4.8.tar.gz",
+    "sha256": "67e07c21b770a6d884c5e50ba1d2cfc90732ea57459367d8732ec7ecbeb3be5f",
     "urls": [
-     "https://codeload.github.com/aristocratos/btop/tar.gz/v1.4.7?/btop-1.4.7.tar.gz"
+     "https://codeload.github.com/aristocratos/btop/tar.gz/v1.4.8?/btop-1.4.8.tar.gz"
     ]
    }
   ],
@@ -297,11 +295,11 @@
   ],
   "feeds/packages/admin/zabbix": [
    {
-    "file": "zabbix-7.0.31.tar.gz",
-    "sha256": "9df1069aa1cfdf67b7131e93f2f5fe6d0ad005e416c9902016fd8cb68f330e8c",
+    "file": "zabbix-7.0.32.tar.gz",
+    "sha256": "ead5b0723ad965eb0e79f98d5d2b89088e7c898ae194eeba767e5d1fb2d50a96",
     "urls": [
-     "https://cdn.zabbix.com/zabbix/sources/stable/7.0/zabbix-7.0.31.tar.gz",
-     "https://cdn.zabbix.com/zabbix/sources/oldstable/7.0/zabbix-7.0.31.tar.gz"
+     "https://cdn.zabbix.com/zabbix/sources/stable/7.0/zabbix-7.0.32.tar.gz",
+     "https://cdn.zabbix.com/zabbix/sources/oldstable/7.0/zabbix-7.0.32.tar.gz"
     ]
    }
   ],
@@ -1358,11 +1356,11 @@
   ],
   "feeds/packages/lang/node/node-argon2": [
    {
-    "file": "argon2-0.45.1.tgz",
-    "sha256": "4acffbd5e5a87fe8fad926afc9a9ac450d69b7082686dd2836be0d8309dbd8aa",
+    "file": "argon2-0.45.2.tgz",
+    "sha256": "1f5f177ba0e1ce88ed26983d5ea565a55fa0e4eb4c6213943667ea945f61dba2",
     "urls": [
-     "https://mirrors.tencent.com/npm/argon2/-/argon2-0.45.1.tgz",
-     "https://registry.npmjs.org/argon2/-/argon2-0.45.1.tgz"
+     "https://mirrors.tencent.com/npm/argon2/-/argon2-0.45.2.tgz",
+     "https://registry.npmjs.org/argon2/-/argon2-0.45.2.tgz"
     ]
    }
   ],
@@ -1398,11 +1396,11 @@
   ],
   "feeds/packages/lang/node/node-aws-crt": [
    {
-    "file": "aws-crt-1.33.1.tgz",
-    "sha256": "1b235d54d35a105e30009633aa8b7cefe7408ceda1ee44352a39bbd763446db6",
+    "file": "aws-crt-1.33.3.tgz",
+    "sha256": "9e862d31a5ab938f09ece7aabb09a501df87464f8175e8ee73e8c9ed05a3cb02",
     "urls": [
-     "https://mirrors.tencent.com/npm/aws-crt/-/aws-crt-1.33.1.tgz",
-     "https://registry.npmjs.org/aws-crt/-/aws-crt-1.33.1.tgz"
+     "https://mirrors.tencent.com/npm/aws-crt/-/aws-crt-1.33.3.tgz",
+     "https://registry.npmjs.org/aws-crt/-/aws-crt-1.33.3.tgz"
     ]
    }
   ],
@@ -1418,11 +1416,11 @@
   ],
   "feeds/packages/lang/node/node-aws-iot-device-sdk-v2": [
    {
-    "file": "aws-iot-device-sdk-v2-1.28.0.tgz",
-    "sha256": "353781b11cee0d9f1caac985c98880a97ea1b676056fcd0ea8b6103dd17a6edc",
+    "file": "aws-iot-device-sdk-v2-1.28.2.tgz",
+    "sha256": "24bc90e1ba5ceaf452d19c90c763658c897162437936a290c27bda3c748ab377",
     "urls": [
-     "https://mirrors.tencent.com/npm/aws-iot-device-sdk-v2/-/aws-iot-device-sdk-v2-1.28.0.tgz",
-     "https://registry.npmjs.org/aws-iot-device-sdk-v2/-/aws-iot-device-sdk-v2-1.28.0.tgz"
+     "https://mirrors.tencent.com/npm/aws-iot-device-sdk-v2/-/aws-iot-device-sdk-v2-1.28.2.tgz",
+     "https://registry.npmjs.org/aws-iot-device-sdk-v2/-/aws-iot-device-sdk-v2-1.28.2.tgz"
     ]
    }
   ],
@@ -1680,11 +1678,11 @@
   ],
   "feeds/packages/lang/node/node-deasync": [
    {
-    "file": "deasync-0.1.31.tgz",
-    "sha256": "d38d22c2e9e0dc49e03719ab9a625342553f2a0651b02a98093bde1db752b028",
+    "file": "deasync-0.1.32.tgz",
+    "sha256": "1beaf8fc3e5adfd23db851e4b1cf760b1d870b74b5102d65facc1e6fd807a608",
     "urls": [
-     "https://mirrors.tencent.com/npm/deasync/-/deasync-0.1.31.tgz",
-     "https://registry.npmjs.org/deasync/-/deasync-0.1.31.tgz"
+     "https://mirrors.tencent.com/npm/deasync/-/deasync-0.1.32.tgz",
+     "https://registry.npmjs.org/deasync/-/deasync-0.1.32.tgz"
     ]
    }
   ],
@@ -1770,11 +1768,11 @@
   ],
   "feeds/packages/lang/node/node-express": [
    {
-    "file": "express-5.2.1.tgz",
-    "sha256": "1773a16c02b4422653479b9c4d211268f7022bdac0d817b5698535bb485dd005",
+    "file": "express-5.3.0.tgz",
+    "sha256": "62450d99e36dc393295f1ddd93cb9291e658c169f3b700b0110c1ae8fa799930",
     "urls": [
-     "https://mirrors.tencent.com/npm/express/-/express-5.2.1.tgz",
-     "https://registry.npmjs.org/express/-/express-5.2.1.tgz"
+     "https://mirrors.tencent.com/npm/express/-/express-5.3.0.tgz",
+     "https://registry.npmjs.org/express/-/express-5.3.0.tgz"
     ]
    }
   ],
@@ -1840,11 +1838,11 @@
   ],
   "feeds/packages/lang/node/node-gyp": [
    {
-    "file": "node-gyp-13.0.2.tgz",
-    "sha256": "1b1524d914331bd01312729e31a828192d53af84e113dacb6e36afabb6c21a6d",
+    "file": "node-gyp-13.1.0.tgz",
+    "sha256": "15663ca4944844139023390f057e86f1897d855959ea7e96f151d4873be8c71f",
     "urls": [
-     "https://mirrors.tencent.com/npm/node-gyp/-/node-gyp-13.0.2.tgz",
-     "https://registry.npmjs.org/node-gyp/-/node-gyp-13.0.2.tgz"
+     "https://mirrors.tencent.com/npm/node-gyp/-/node-gyp-13.1.0.tgz",
+     "https://registry.npmjs.org/node-gyp/-/node-gyp-13.1.0.tgz"
     ]
    }
   ],
@@ -1900,11 +1898,11 @@
   ],
   "feeds/packages/lang/node/node-homebridge": [
    {
-    "file": "homebridge-2.4.0.tgz",
-    "sha256": "6ae8d4919027f1be62d6878b480eca3fdfd134e5db947c48205da3a9a03666bd",
+    "file": "homebridge-2.5.0.tgz",
+    "sha256": "96af1b102c5f4cae50e26ffb68bba20abdbd5114502ecb4730c636ed5e02db2f",
     "urls": [
-     "https://mirrors.tencent.com/npm/homebridge/-/homebridge-2.4.0.tgz",
-     "https://registry.npmjs.org/homebridge/-/homebridge-2.4.0.tgz"
+     "https://mirrors.tencent.com/npm/homebridge/-/homebridge-2.5.0.tgz",
+     "https://registry.npmjs.org/homebridge/-/homebridge-2.5.0.tgz"
     ]
    }
   ],
@@ -1940,11 +1938,11 @@
   ],
   "feeds/packages/lang/node/node-homebridge-config-ui-x": [
    {
-    "file": "homebridge-config-ui-x-5.29.0.tgz",
-    "sha256": "cdc2516c023ea825886267a1e348cdca9e9ba08eee02c58d67ddf446a460ea75",
+    "file": "homebridge-config-ui-x-5.30.0.tgz",
+    "sha256": "bba5a10dd9b8f136e5d029ea1b0b63ee2799ec23fb33ee9f98892cabfd8cd544",
     "urls": [
-     "https://mirrors.tencent.com/npm/homebridge-config-ui-x/-/homebridge-config-ui-x-5.29.0.tgz",
-     "https://registry.npmjs.org/homebridge-config-ui-x/-/homebridge-config-ui-x-5.29.0.tgz"
+     "https://mirrors.tencent.com/npm/homebridge-config-ui-x/-/homebridge-config-ui-x-5.30.0.tgz",
+     "https://registry.npmjs.org/homebridge-config-ui-x/-/homebridge-config-ui-x-5.30.0.tgz"
     ]
    }
   ],
@@ -1960,11 +1958,11 @@
   ],
   "feeds/packages/lang/node/node-homebridge-ewelink": [
    {
-    "file": "homebridge-ewelink-12.18.3.tgz",
-    "sha256": "451ea873d68469505534c7b46bbff391ca678e465de34c62fb6037205938fdb9",
+    "file": "homebridge-ewelink-12.19.0.tgz",
+    "sha256": "a7121b00a50c60e4b17b45b00b907ce0142a4a632c94a6b2d4aee8bcb762cde1",
     "urls": [
-     "https://mirrors.tencent.com/npm/@homebridge-plugins/homebridge-ewelink/-/homebridge-ewelink-12.18.3.tgz",
-     "https://registry.npmjs.org/@homebridge-plugins/homebridge-ewelink/-/homebridge-ewelink-12.18.3.tgz"
+     "https://mirrors.tencent.com/npm/@homebridge-plugins/homebridge-ewelink/-/homebridge-ewelink-12.19.0.tgz",
+     "https://registry.npmjs.org/@homebridge-plugins/homebridge-ewelink/-/homebridge-ewelink-12.19.0.tgz"
     ]
    }
   ],
@@ -1980,31 +1978,31 @@
   ],
   "feeds/packages/lang/node/node-homebridge-miot": [
    {
-    "file": "homebridge-miot-1.9.1.tgz",
-    "sha256": "e2f870e01ddecfd6079bbc9dcc87602fb9942f042754ec8385f003eb119b336e",
+    "file": "homebridge-miot-2.1.0.tgz",
+    "sha256": "5bc6c54f01b07eae41e6b84906f67236581ad75a7ff65d04c4d3a94cf16cd348",
     "urls": [
-     "https://mirrors.tencent.com/npm/homebridge-miot/-/homebridge-miot-1.9.1.tgz",
-     "https://registry.npmjs.org/homebridge-miot/-/homebridge-miot-1.9.1.tgz"
+     "https://mirrors.tencent.com/npm/homebridge-miot/-/homebridge-miot-2.1.0.tgz",
+     "https://registry.npmjs.org/homebridge-miot/-/homebridge-miot-2.1.0.tgz"
     ]
    }
   ],
   "feeds/packages/lang/node/node-homebridge-mqttthing": [
    {
-    "file": "homebridge-mqttthing-1.1.49.tgz",
-    "sha256": "9ace09a06e002fd0600ead48dfd4155d5ad727b5433c6b6687ad9d393bc8fd77",
+    "file": "homebridge-mqttthing-1.1.50.tgz",
+    "sha256": "7b9988016307713a8719584b11aa2f0c7c22ff44c3e5f7a8b785bf4c5505a04f",
     "urls": [
-     "https://mirrors.tencent.com/npm/homebridge-mqttthing/-/homebridge-mqttthing-1.1.49.tgz",
-     "https://registry.npmjs.org/homebridge-mqttthing/-/homebridge-mqttthing-1.1.49.tgz"
+     "https://mirrors.tencent.com/npm/homebridge-mqttthing/-/homebridge-mqttthing-1.1.50.tgz",
+     "https://registry.npmjs.org/homebridge-mqttthing/-/homebridge-mqttthing-1.1.50.tgz"
     ]
    }
   ],
   "feeds/packages/lang/node/node-homebridge-node-pty-prebuilt-multiarch": [
    {
-    "file": "homebridge-node-pty-prebuilt-multiarch-0.14.1.tgz",
-    "sha256": "70f9b750b0cd527ba0e7d8157e4b3c66337d55a1304c08c254a538fd32859f77",
+    "file": "homebridge-node-pty-prebuilt-multiarch-0.15.0.tgz",
+    "sha256": "e84851f4942505a702f8d9a7c37f3ab8bc4e22d7e4ca56e5782ca70feb650981",
     "urls": [
-     "https://mirrors.tencent.com/npm/@homebridge/node-pty-prebuilt-multiarch/-/node-pty-prebuilt-multiarch-0.14.1.tgz",
-     "https://registry.npmjs.org/@homebridge/node-pty-prebuilt-multiarch/-/node-pty-prebuilt-multiarch-0.14.1.tgz"
+     "https://mirrors.tencent.com/npm/@homebridge/node-pty-prebuilt-multiarch/-/node-pty-prebuilt-multiarch-0.15.0.tgz",
+     "https://registry.npmjs.org/@homebridge/node-pty-prebuilt-multiarch/-/node-pty-prebuilt-multiarch-0.15.0.tgz"
     ]
    }
   ],
@@ -2100,11 +2098,11 @@
   ],
   "feeds/packages/lang/node/node-javascript-obfuscator": [
    {
-    "file": "javascript-obfuscator-5.8.0.tgz",
-    "sha256": "33fbeb745d49d72fba27c31f90ac50f48fc73de4e81abe1c09c4a02d3f400f91",
+    "file": "javascript-obfuscator-5.9.1.tgz",
+    "sha256": "a02997fd93586e1a8b83f4efd71a375682911b2c33edb4301c01129258dce326",
     "urls": [
-     "https://mirrors.tencent.com/npm/javascript-obfuscator/-/javascript-obfuscator-5.8.0.tgz",
-     "https://registry.npmjs.org/javascript-obfuscator/-/javascript-obfuscator-5.8.0.tgz"
+     "https://mirrors.tencent.com/npm/javascript-obfuscator/-/javascript-obfuscator-5.9.1.tgz",
+     "https://registry.npmjs.org/javascript-obfuscator/-/javascript-obfuscator-5.9.1.tgz"
     ]
    }
   ],
@@ -2125,6 +2123,16 @@
     "urls": [
      "https://mirrors.tencent.com/npm/jsonfile/-/jsonfile-6.2.1.tgz",
      "https://registry.npmjs.org/jsonfile/-/jsonfile-6.2.1.tgz"
+    ]
+   }
+  ],
+  "feeds/packages/lang/node/node-lambda": [
+   {
+    "file": "node-lambda-1.3.0.tgz",
+    "sha256": "36e6b836e98ff4dec45b671bc53f755728089c9f30a749786b0dcdc8e4439e45",
+    "urls": [
+     "https://mirrors.tencent.com/npm/node-lambda/-/node-lambda-1.3.0.tgz",
+     "https://registry.npmjs.org/node-lambda/-/node-lambda-1.3.0.tgz"
     ]
    }
   ],
@@ -2180,11 +2188,11 @@
   ],
   "feeds/packages/lang/node/node-mocha": [
    {
-    "file": "mocha-12.0.2.tgz",
-    "sha256": "c44e7d5d1bc321d106002c71a1c0e97786ea4db6fd7d29d61e1ec39c193087f9",
+    "file": "mocha-12.0.3.tgz",
+    "sha256": "3a93ba09b4b5f591a947ef5226ca9ae76220b124fe610dbcd5b76eb320512919",
     "urls": [
-     "https://mirrors.tencent.com/npm/mocha/-/mocha-12.0.2.tgz",
-     "https://registry.npmjs.org/mocha/-/mocha-12.0.2.tgz"
+     "https://mirrors.tencent.com/npm/mocha/-/mocha-12.0.3.tgz",
+     "https://registry.npmjs.org/mocha/-/mocha-12.0.3.tgz"
     ]
    }
   ],
@@ -2210,11 +2218,11 @@
   ],
   "feeds/packages/lang/node/node-mqtt": [
    {
-    "file": "mqtt-5.16.0.tgz",
-    "sha256": "c7d13d6dedf4c15063fb61d645c82d07d2a24f79b15736f313e96e116177950f",
+    "file": "mqtt-5.16.1.tgz",
+    "sha256": "201b46d016e56bdc638f06d2de983fb07f1ec914afc1e96ed32c607998d737c2",
     "urls": [
-     "https://mirrors.tencent.com/npm/mqtt/-/mqtt-5.16.0.tgz",
-     "https://registry.npmjs.org/mqtt/-/mqtt-5.16.0.tgz"
+     "https://mirrors.tencent.com/npm/mqtt/-/mqtt-5.16.1.tgz",
+     "https://registry.npmjs.org/mqtt/-/mqtt-5.16.1.tgz"
     ]
    }
   ],
@@ -2260,21 +2268,21 @@
   ],
   "feeds/packages/lang/node/node-npm-check-updates": [
    {
-    "file": "npm-check-updates-23.1.0.tgz",
-    "sha256": "bc1a4b712c260f2bbf0f1bf3a4cbfdad8e56e35160e5573adcaa8fc0d01b5667",
+    "file": "npm-check-updates-23.1.1.tgz",
+    "sha256": "725dd4f00b14a5d58913c665a263b432d88decffb92ab49654c2ca1499fab9f5",
     "urls": [
-     "https://mirrors.tencent.com/npm/npm-check-updates/-/npm-check-updates-23.1.0.tgz",
-     "https://registry.npmjs.org/npm-check-updates/-/npm-check-updates-23.1.0.tgz"
+     "https://mirrors.tencent.com/npm/npm-check-updates/-/npm-check-updates-23.1.1.tgz",
+     "https://registry.npmjs.org/npm-check-updates/-/npm-check-updates-23.1.1.tgz"
     ]
    }
   ],
   "feeds/packages/lang/node/node-npm-run-all2": [
    {
-    "file": "npm-run-all2-9.0.3.tgz",
-    "sha256": "b5830971deac73fbbfa8a66aa3f73a5be642d20ec783c97925be91305f01dd4d",
+    "file": "npm-run-all2-9.0.4.tgz",
+    "sha256": "0a62ae200c7829f102ce264f8dfd1246e232aa1edb09769fb9363acd9a85af7d",
     "urls": [
-     "https://mirrors.tencent.com/npm/npm-run-all2/-/npm-run-all2-9.0.3.tgz",
-     "https://registry.npmjs.org/npm-run-all2/-/npm-run-all2-9.0.3.tgz"
+     "https://mirrors.tencent.com/npm/npm-run-all2/-/npm-run-all2-9.0.4.tgz",
+     "https://registry.npmjs.org/npm-run-all2/-/npm-run-all2-9.0.4.tgz"
     ]
    }
   ],
@@ -2330,21 +2338,21 @@
   ],
   "feeds/packages/lang/node/node-pm2": [
    {
-    "file": "pm2-7.0.4.tgz",
-    "sha256": "5efd8e2c586d7fc1e878d4d0742e2c0aae76c68814308c4b9c08cab25ef24894",
+    "file": "pm2-7.1.2.tgz",
+    "sha256": "813460116d2de809175bf40c57bcc8bc38f1c5bcf98f5ff671ad17ddb545a1e5",
     "urls": [
-     "https://mirrors.tencent.com/npm/pm2/-/pm2-7.0.4.tgz",
-     "https://registry.npmjs.org/pm2/-/pm2-7.0.4.tgz"
+     "https://mirrors.tencent.com/npm/pm2/-/pm2-7.1.2.tgz",
+     "https://registry.npmjs.org/pm2/-/pm2-7.1.2.tgz"
     ]
    }
   ],
   "feeds/packages/lang/node/node-pnpm": [
    {
-    "file": "pnpm-11.27.1.tgz",
-    "sha256": "d50f8841e67ef0b1d82e7c90b240656c7ca04d5f1aa33f06108007c81fd76766",
+    "file": "pnpm-11.28.10.tgz",
+    "sha256": "4cc170b9f8b28abc79e1473af97cbe9dc44854aa3fc192ec56239f66921609a2",
     "urls": [
-     "https://mirrors.tencent.com/npm/pnpm/-/pnpm-11.27.1.tgz",
-     "https://registry.npmjs.org/pnpm/-/pnpm-11.27.1.tgz"
+     "https://mirrors.tencent.com/npm/pnpm/-/pnpm-11.28.10.tgz",
+     "https://registry.npmjs.org/pnpm/-/pnpm-11.28.10.tgz"
     ]
    }
   ],
@@ -2370,11 +2378,11 @@
   ],
   "feeds/packages/lang/node/node-red": [
    {
-    "file": "node-red-5.0.7.tgz",
-    "sha256": "e701362fda8930bba62a138276f147c21fcbeb61fb9778d6d130467f6d02e753",
+    "file": "node-red-5.0.9.tgz",
+    "sha256": "1f88a60af9cf305f0e94b9045ee2451abdbefe98a33e9a71acb468affbf6d126",
     "urls": [
-     "https://mirrors.tencent.com/npm/node-red/-/node-red-5.0.7.tgz",
-     "https://registry.npmjs.org/node-red/-/node-red-5.0.7.tgz"
+     "https://mirrors.tencent.com/npm/node-red/-/node-red-5.0.9.tgz",
+     "https://registry.npmjs.org/node-red/-/node-red-5.0.9.tgz"
     ]
    }
   ],
@@ -2400,11 +2408,11 @@
   ],
   "feeds/packages/lang/node/node-red-contrib-modbus": [
    {
-    "file": "node-red-contrib-modbus-5.60.2.tgz",
-    "sha256": "03c0b957780db2b6a9342e01f8a36ac33203a2601f104bc79af56ece0946f653",
+    "file": "node-red-contrib-modbus-5.62.1.tgz",
+    "sha256": "52a99129532fe7cb65ea7417c1e96363e2693c9d53ffd47cf2727b9ba24bd93f",
     "urls": [
-     "https://mirrors.tencent.com/npm/node-red-contrib-modbus/-/node-red-contrib-modbus-5.60.2.tgz",
-     "https://registry.npmjs.org/node-red-contrib-modbus/-/node-red-contrib-modbus-5.60.2.tgz"
+     "https://mirrors.tencent.com/npm/node-red-contrib-modbus/-/node-red-contrib-modbus-5.62.1.tgz",
+     "https://registry.npmjs.org/node-red-contrib-modbus/-/node-red-contrib-modbus-5.62.1.tgz"
     ]
    }
   ],
@@ -2460,11 +2468,11 @@
   ],
   "feeds/packages/lang/node/node-rimraf": [
    {
-    "file": "rimraf-6.1.3.tgz",
-    "sha256": "3e0b33bb2cac954eddbadc3816f72ca7168bb69660fb298f4e5f1c25bf6ea368",
+    "file": "rimraf-6.1.4.tgz",
+    "sha256": "a0d85772811c6ff771df415784de534ff2c2ed310b90a075ad1061c48a5bd381",
     "urls": [
-     "https://mirrors.tencent.com/npm/rimraf/-/rimraf-6.1.3.tgz",
-     "https://registry.npmjs.org/rimraf/-/rimraf-6.1.3.tgz"
+     "https://mirrors.tencent.com/npm/rimraf/-/rimraf-6.1.4.tgz",
+     "https://registry.npmjs.org/rimraf/-/rimraf-6.1.4.tgz"
     ]
    }
   ],
@@ -2550,21 +2558,21 @@
   ],
   "feeds/packages/lang/node/node-socket.io": [
    {
-    "file": "socket.io-4.8.3.tgz",
-    "sha256": "11cae5cf64fb97ee8cfa4bae48878f4b0a3bdd0c790c62f3fdce44aa0bca4fb7",
+    "file": "socket.io-4.8.4.tgz",
+    "sha256": "eac2f8dd36bd1ddc827407c6890cc9fa305e5f94038b9abdba98a4351934c6c2",
     "urls": [
-     "https://mirrors.tencent.com/npm/socket.io/-/socket.io-4.8.3.tgz",
-     "https://registry.npmjs.org/socket.io/-/socket.io-4.8.3.tgz"
+     "https://mirrors.tencent.com/npm/socket.io/-/socket.io-4.8.4.tgz",
+     "https://registry.npmjs.org/socket.io/-/socket.io-4.8.4.tgz"
     ]
    }
   ],
   "feeds/packages/lang/node/node-socket.io-client": [
    {
-    "file": "socket.io-client-4.8.3.tgz",
-    "sha256": "543db976b72705768dddb3e909e2cf4b1a850ade75ae0ed1bbc1e6fc41720529",
+    "file": "socket.io-client-4.8.4.tgz",
+    "sha256": "0b40f47a2e2fe81182785dfcd333156d854e50bc4a5f23e654de7d7f7b0c151b",
     "urls": [
-     "https://mirrors.tencent.com/npm/socket.io-client/-/socket.io-client-4.8.3.tgz",
-     "https://registry.npmjs.org/socket.io-client/-/socket.io-client-4.8.3.tgz"
+     "https://mirrors.tencent.com/npm/socket.io-client/-/socket.io-client-4.8.4.tgz",
+     "https://registry.npmjs.org/socket.io-client/-/socket.io-client-4.8.4.tgz"
     ]
    }
   ],
@@ -2640,11 +2648,11 @@
   ],
   "feeds/packages/lang/node/node-twilio": [
    {
-    "file": "twilio-6.1.1.tgz",
-    "sha256": "03d033f998b2a4c0fbc209c61bb88259c8d90340b6aff2e9b75bbd5c43e9d7a3",
+    "file": "twilio-6.2.0.tgz",
+    "sha256": "30e2372f79f1faa8a64dd1205800ff9265d18d6f88772acb89cc2af910c20eec",
     "urls": [
-     "https://mirrors.tencent.com/npm/twilio/-/twilio-6.1.1.tgz",
-     "https://registry.npmjs.org/twilio/-/twilio-6.1.1.tgz"
+     "https://mirrors.tencent.com/npm/twilio/-/twilio-6.2.0.tgz",
+     "https://registry.npmjs.org/twilio/-/twilio-6.2.0.tgz"
     ]
    }
   ],
@@ -2680,11 +2688,11 @@
   ],
   "feeds/packages/lang/node/node-usb": [
    {
-    "file": "usb-2.18.0.tgz",
-    "sha256": "3c3cf0f22f33bbbb7f1a5239224c0920fadb43a05ded293c89e12c60aae437aa",
+    "file": "usb-2.19.1.tgz",
+    "sha256": "862c148e7ea5640e95a829ef63e8e83fe8674757eae6a81106ddf65b88f6e7a4",
     "urls": [
-     "https://mirrors.tencent.com/npm/usb/-/usb-2.18.0.tgz",
-     "https://registry.npmjs.org/usb/-/usb-2.18.0.tgz"
+     "https://mirrors.tencent.com/npm/usb/-/usb-2.19.1.tgz",
+     "https://registry.npmjs.org/usb/-/usb-2.19.1.tgz"
     ]
    }
   ],
@@ -2700,11 +2708,11 @@
   ],
   "feeds/packages/lang/node/node-vonage-client-sdk": [
    {
-    "file": "vonage-client-sdk-2.7.3.tgz",
-    "sha256": "2f1ead1e048629e407b398c628828b89d22a77991079daf6f8f55e062c7e3e16",
+    "file": "vonage-client-sdk-2.11.0.tgz",
+    "sha256": "586ab947b743371f5f9dd8b805f3ca8bf9bdccae69d21da4aefe710b24b81a3a",
     "urls": [
-     "https://mirrors.tencent.com/npm/@vonage/client-sdk/-/client-sdk-2.7.3.tgz",
-     "https://registry.npmjs.org/@vonage/client-sdk/-/client-sdk-2.7.3.tgz"
+     "https://mirrors.tencent.com/npm/@vonage/client-sdk/-/client-sdk-2.11.0.tgz",
+     "https://registry.npmjs.org/@vonage/client-sdk/-/client-sdk-2.11.0.tgz"
     ]
    }
   ],
@@ -2730,11 +2738,11 @@
   ],
   "feeds/packages/lang/node/node-ws": [
    {
-    "file": "ws-8.21.3.tgz",
-    "sha256": "df3454ef205791ce50b5b9241762dcf9bfe1aa9f7f01d3057229be7dac0c2dc3",
+    "file": "ws-8.22.1.tgz",
+    "sha256": "a5cdb19c7090b816ffc109b6d928d352aa2bce73e38f73bd9678d484a62d2f75",
     "urls": [
-     "https://mirrors.tencent.com/npm/ws/-/ws-8.21.3.tgz",
-     "https://registry.npmjs.org/ws/-/ws-8.21.3.tgz"
+     "https://mirrors.tencent.com/npm/ws/-/ws-8.22.1.tgz",
+     "https://registry.npmjs.org/ws/-/ws-8.22.1.tgz"
     ]
    }
   ],
@@ -2760,30 +2768,30 @@
   ],
   "feeds/packages/lang/node/node-zigbee2mqtt": [
    {
-    "file": "zigbee2mqtt-2.14.1.tgz",
-    "sha256": "0730286b1e6300011f5da7ddc01ca029dd62b402cb8a1b5020e9c0bacc384e53",
+    "file": "zigbee2mqtt-2.14.3.tgz",
+    "sha256": "c257df3750ceabe42f3d1a549febf6592a6df6189efa0400fa1e3579c560fe39",
     "urls": [
-     "https://mirrors.tencent.com/npm/zigbee2mqtt/-/zigbee2mqtt-2.14.1.tgz",
-     "https://registry.npmjs.org/zigbee2mqtt/-/zigbee2mqtt-2.14.1.tgz"
+     "https://mirrors.tencent.com/npm/zigbee2mqtt/-/zigbee2mqtt-2.14.3.tgz",
+     "https://registry.npmjs.org/zigbee2mqtt/-/zigbee2mqtt-2.14.3.tgz"
     ]
    }
   ],
   "feeds/packages/lang/node/node-zwave-js-ui": [
    {
-    "file": "zwave-js-ui-11.24.1.tgz",
-    "sha256": "ab837c60ed13a0e6837b52a80d723d4714cd399231659226b28732b545cb4dd2",
+    "file": "zwave-js-ui-11.25.2.tgz",
+    "sha256": "12be71fae1885c910046115ac3cd701f3069d011f68878288e72e1b410bfc5d3",
     "urls": [
-     "https://mirrors.tencent.com/npm/zwave-js-ui/-/zwave-js-ui-11.24.1.tgz",
-     "https://registry.npmjs.org/zwave-js-ui/-/zwave-js-ui-11.24.1.tgz"
+     "https://mirrors.tencent.com/npm/zwave-js-ui/-/zwave-js-ui-11.25.2.tgz",
+     "https://registry.npmjs.org/zwave-js-ui/-/zwave-js-ui-11.25.2.tgz"
     ]
    }
   ],
   "feeds/packages/lang/node/node-zwave-js-ui-bundle": [
    {
-    "file": "zwave-js-ui-bundle-11.24.1.tar.gz",
-    "sha256": "71a1161d05ef7a83e8f3eb3385d760c951d386a56895eeb80f49d2178dd362e5",
+    "file": "zwave-js-ui-bundle-11.25.2.tar.gz",
+    "sha256": "0bfc794304ef8fc7ca0205bae87f27c505b8e2ed0a7fc8cacb3a4713afd1c7e1",
     "urls": [
-     "https://github.com/zwave-js/zwave-js-ui/archive/refs/tags/v11.24.1.tar.gz"
+     "https://github.com/zwave-js/zwave-js-ui/archive/refs/tags/v11.25.2.tar.gz"
     ]
    }
   ],
@@ -2799,10 +2807,10 @@
   ],
   "feeds/packages/lang/perl": [
    {
-    "file": "perl-5.40.0.tar.gz",
-    "sha256": "c740348f357396327a9795d3e8323bafd0fe8a5c7835fc1cbaba0cc8dfe7161f",
+    "file": "perl-5.44.0.tar.gz",
+    "sha256": "3b855066b92491cb40e86affb1ca57d1a388aa43e51b91c7806a32c2f65f96c3",
     "urls": [
-     "https://www.cpan.org/src/5.0/perl-5.40.0.tar.gz"
+     "https://www.cpan.org/src/5.0/perl-5.44.0.tar.gz"
     ]
    }
   ],
@@ -3277,15 +3285,6 @@
     ]
    }
   ],
-  "feeds/packages/lang/perl/perl-test-harness": [
-   {
-    "file": "Test-Harness-3.42.tar.gz",
-    "sha256": "0fd90d4efea82d6e262e6933759e85d27cbcfa4091b14bf4042ae20bab528e53",
-    "urls": [
-     "https://cpan.metacpan.org/authors/id/L/LE/LEONT/Test-Harness-3.42.tar.gz"
-    ]
-   }
-  ],
   "feeds/packages/lang/perl/perl-test-warn": [
    {
     "file": "Test-Warn-0.36.tar.gz",
@@ -3702,11 +3701,9 @@
   ],
   "feeds/packages/lang/python/python-bcrypt": [
    {
-    "file": "bcrypt-5.0.0.tar.gz",
-    "sha256": "f748f7c2d6fd375cc93d3fba7ef4a9e3a092421b8dbf34d8d4dc06be9492dfdd",
-    "urls": [
-     "https://files.pythonhosted.org/packages/source/b/bcrypt/bcrypt-5.0.0.tar.gz"
-    ]
+    "file": "python-bcrypt-5.0.0-vendor.tar.zst",
+    "sha256": "a7197d753cafef65a09eb8c47c1fc6c01345de33d6f8fa5bf870cb52043ff8ae",
+    "urls": []
    }
   ],
   "feeds/packages/lang/python/python-bidict": [
@@ -3900,11 +3897,9 @@
   ],
   "feeds/packages/lang/python/python-cryptography": [
    {
-    "file": "cryptography-50.0.2.tar.gz",
-    "sha256": "7b46165bb56eb4704e2eaaf86f3c940d19154535d9b0ca7d6d590b04060e00d5",
-    "urls": [
-     "https://files.pythonhosted.org/packages/source/c/cryptography/cryptography-50.0.2.tar.gz"
-    ]
+    "file": "python-cryptography-50.0.2-vendor.tar.zst",
+    "sha256": "9a20f99850bc1b0aa46e39e894585e646c9a69f2c98e3dc5c81caacf55d6940a",
+    "urls": []
    }
   ],
   "feeds/packages/lang/python/python-curl": [
@@ -4404,11 +4399,9 @@
   ],
   "feeds/packages/lang/python/python-maturin": [
    {
-    "file": "maturin-1.15.0.tar.gz",
-    "sha256": "94b26cc8e8aba61a5f2099715fe640e18c5f678e9a500408b38761263954228a",
-    "urls": [
-     "https://files.pythonhosted.org/packages/source/m/maturin/maturin-1.15.0.tar.gz"
-    ]
+    "file": "python-maturin-1.15.0-vendor.tar.zst",
+    "sha256": "0572e3feb48168bd94c3c1a7f624d860aa44ef7ac50fc9619ac93a8ca786c900",
+    "urls": []
    }
   ],
   "feeds/packages/lang/python/python-maxminddb": [
@@ -4854,11 +4847,9 @@
   ],
   "feeds/packages/lang/python/python-rpds-py": [
    {
-    "file": "rpds_py-2026.9.1.tar.gz",
-    "sha256": "4793ef7f78268b124b73fa933440f01d258bbae01de9fa53e9080c9ab0425a12",
-    "urls": [
-     "https://files.pythonhosted.org/packages/source/r/rpds-py/rpds_py-2026.9.1.tar.gz"
-    ]
+    "file": "python-rpds-py-2026.9.1-vendor.tar.zst",
+    "sha256": "c09d674fd9536836b7e2b95e71b7c84f627fca69590c3aa4c12c61a0d5afb936",
+    "urls": []
    }
   ],
   "feeds/packages/lang/python/python-rsa": [
@@ -6163,24 +6154,6 @@
     ]
    }
   ],
-  "feeds/packages/libs/libdbi": [
-   {
-    "file": "libdbi-0.9.0.tar.gz",
-    "sha256": "dafb6cdca524c628df832b6dd0bf8fabceb103248edb21762c02d3068fca4503",
-    "urls": [
-     "https://downloads.sourceforge.net/libdbi/libdbi-0.9.0.tar.gz"
-    ]
-   }
-  ],
-  "feeds/packages/libs/libdbi-drivers": [
-   {
-    "file": "libdbi-drivers-0.9.0.tar.gz",
-    "sha256": "43d2eacd573a4faff296fa925dd97fbf2aedbf1ae35c6263478210c61004c854",
-    "urls": [
-     "https://downloads.sourceforge.net/libdbi-drivers/libdbi-drivers-0.9.0.tar.gz"
-    ]
-   }
-  ],
   "feeds/packages/libs/libdeflate": [
    {
     "file": "libdeflate-1.25.tar.gz",
@@ -7175,18 +7148,6 @@
     "urls": [
      "https://github.com/libsndfile/libsndfile/releases/download/1.2.2/libsndfile-1.2.2.tar.xz"
     ]
-   }
-  ],
-  "feeds/packages/libs/libsoc": [
-   {
-    "file": "libsoc-2016.12.22~5b788d4d.tar.zst",
-    "git": {
-     "rev": "5b788d4d558a78c52e6cfe97325e4564b307a3a0",
-     "subdir": "libsoc-2016.12.22~5b788d4d",
-     "submodules": [],
-     "url": "https://github.com/jackmitch/libsoc.git"
-    },
-    "sha256": "6aefbd76922fd6b606b9fcbda555dfe079f3afe445a6180d8be0fbb8fd27f424"
    }
   ],
   "feeds/packages/libs/libsocketcan": [
@@ -8247,10 +8208,10 @@
   ],
   "feeds/packages/libs/udns": [
    {
-    "file": "udns-0.4.tar.gz",
-    "sha256": "115108dc791a2f9e99e150012bcb459d9095da2dd7d80699b584ac0ac3768710",
+    "file": "udns-0.7.tar.gz",
+    "sha256": "69df35dc42b6d11710ce1abdf4a0e1613feba8fca009f9c9a93d1716926ccac3",
     "urls": [
-     "https://www.corpit.ru/mjt/udns/udns-0.4.tar.gz"
+     "https://www.corpit.ru/mjt/udns/udns-0.7.tar.gz"
     ]
    }
   ],
@@ -8653,6 +8614,15 @@
     "sha256": "2b681170ddc22b6b283cafeed48f427c30a17056974a6a9ed137c354e0f7730c",
     "urls": [
      "https://gstreamer.freedesktop.org/src/gst-plugins-ugly/gst-plugins-ugly-1.28.7.tar.xz"
+    ]
+   }
+  ],
+  "feeds/packages/multimedia/gst1-rtsp-server": [
+   {
+    "file": "gst-rtsp-server-1.28.7.tar.xz",
+    "sha256": "de43a59a0c89a14eb1c14ae8e81e5b45c4e9d7b1f930b0ebaad360f9b5e0b5c4",
+    "urls": [
+     "https://gstreamer.freedesktop.org/src/gst-rtsp-server/gst-rtsp-server-1.28.7.tar.xz"
     ]
    }
   ],
@@ -9073,10 +9043,10 @@
   ],
   "feeds/packages/net/apfree-wifidog": [
    {
-    "file": "apfree-wifidog-9.09.2938.tar.gz",
-    "sha256": "0ffcba3a076d79a7b1bd85d017bf5ffa711c33d322334878cb9e71772887ce3c",
+    "file": "apfree-wifidog-9.10.2968.tar.gz",
+    "sha256": "33e1aa4d2696e742cfb4a63f03bfde2a34219d270d669d7afaeb0e59f07bb3bd",
     "urls": [
-     "https://codeload.github.com/liudf0716/apfree-wifidog/tar.gz/9.09.2938?/apfree-wifidog-9.09.2938.tar.gz"
+     "https://codeload.github.com/liudf0716/apfree-wifidog/tar.gz/9.10.2968?/apfree-wifidog-9.10.2968.tar.gz"
     ]
    }
   ],
@@ -9440,10 +9410,10 @@
   ],
   "feeds/packages/net/cloudflared": [
    {
-    "file": "cloudflared-2026.10.5.tar.gz",
-    "sha256": "cca0918e869d6e303ab9d0a31bc1d96ae7dbbbfe6ff2bde9208159ea91f793d6",
+    "file": "cloudflared-2026.10.6.tar.gz",
+    "sha256": "eb4d6b02b017cd3e49676934f14fe3025cebb07f9f272cd60dd790a2d812b90b",
     "urls": [
-     "https://codeload.github.com/cloudflare/cloudflared/tar.gz/2026.10.5?/cloudflared-2026.10.5.tar.gz"
+     "https://codeload.github.com/cloudflare/cloudflared/tar.gz/2026.10.6?/cloudflared-2026.10.6.tar.gz"
     ]
    }
   ],
@@ -9480,10 +9450,10 @@
     ]
    },
    {
-    "file": "comrade-0.3.1.tar.gz",
-    "sha256": "f52f70bfa2a08dbcb282bdd34649ce963948d27d40ef0003ad81e8b263106583",
+    "file": "comrade-0.3.3.tar.gz",
+    "sha256": "1ea0b4b4880eb59b6ff9fabc8bb0c7f411b7c01c32656443b6e82cbe4161a4a5",
     "urls": [
-     "https://github.com/dangowrt/comrade/releases/download/v0.3.1/comrade-0.3.1.tar.gz"
+     "https://github.com/dangowrt/comrade/releases/download/v0.3.3/comrade-0.3.3.tar.gz"
     ]
    }
   ],
@@ -9516,14 +9486,14 @@
   ],
   "feeds/packages/net/coredns": [
    {
-    "file": "coredns-1.14.7.tar.zst",
+    "file": "coredns-1.15.0.tar.zst",
     "git": {
-     "rev": "v1.14.7",
-     "subdir": "coredns-1.14.7",
+     "rev": "v1.15.0",
+     "subdir": "coredns-1.15.0",
      "submodules": [],
      "url": "https://github.com/coredns/coredns.git"
     },
-    "sha256": "c89b0abdd671f86f0b139bfa1530abbefc5c67f16a1ff7dc76aa0aaed5c2fabb"
+    "sha256": "93aa34fee51cd478365859810f239e6a86ed4d88c93ca8a48f7a83a48ed1c0bc"
    }
   ],
   "feeds/packages/net/croc": [
@@ -9721,18 +9691,6 @@
     "urls": [
      "https://codeload.github.com/zfl9/dns2tcp/tar.gz/v1.1.2?/dns2tcp-1.1.2.tar.gz"
     ]
-   }
-  ],
-  "feeds/packages/net/dnscrypt-proxy": [
-   {
-    "file": "dnscrypt-proxy-2019.08.20~07ac3825.tar.zst",
-    "git": {
-     "rev": "07ac3825b5069adc28e2547c16b1d983a8ed8d80",
-     "subdir": "dnscrypt-proxy-2019.08.20~07ac3825",
-     "submodules": [],
-     "url": "https://github.com/dyne/dnscrypt-proxy"
-    },
-    "sha256": "0733dfa25b97840dd7ffc1b72db203476e4b02b2c00af2418955380a70c2e361"
    }
   ],
   "feeds/packages/net/dnscrypt-proxy2": [
@@ -10954,10 +10912,10 @@
     ]
    },
    {
-    "file": "naiveproxy-154.0.8037.49-4.tar.gz",
-    "sha256": "11b4dd5642b9f41087e95ca099c50879d72f40c3f0db56a9fa3228eb3c06e104",
+    "file": "naiveproxy-154.0.8037.49-5.tar.gz",
+    "sha256": "945e89a43e38e15baf16a5d8489c55c47c325b5c9a86f2ee082ce688d0cee4eb",
     "urls": [
-     "https://codeload.github.com/klzgrad/naiveproxy/tar.gz/v154.0.8037.49-4?/naiveproxy-154.0.8037.49-4.tar.gz"
+     "https://codeload.github.com/klzgrad/naiveproxy/tar.gz/v154.0.8037.49-5?/naiveproxy-154.0.8037.49-5.tar.gz"
     ]
    }
   ],
@@ -11059,10 +11017,10 @@
   ],
   "feeds/packages/net/netbird": [
    {
-    "file": "netbird-0.81.4.tar.gz",
-    "sha256": "c735ffec7dece473e61c8764fec7a5cb971bacc766620e9639c97c9a249bbcbb",
+    "file": "netbird-0.82.0.tar.gz",
+    "sha256": "9553375fdd487572a4fdfeefd4cce95622686a80b8f0d10077c9913bebefe021",
     "urls": [
-     "https://codeload.github.com/netbirdio/netbird/tar.gz/v0.81.4?/netbird-0.81.4.tar.gz"
+     "https://codeload.github.com/netbirdio/netbird/tar.gz/v0.82.0?/netbird-0.82.0.tar.gz"
     ]
    }
   ],
@@ -11128,10 +11086,10 @@
   ],
   "feeds/packages/net/nextdns": [
    {
-    "file": "nextdns-1.47.3.tar.gz",
-    "sha256": "73a57ff41074d32a7707b751da36c0a618edc6d2b41ddf61ca565222448f567b",
+    "file": "nextdns-1.49.0.tar.gz",
+    "sha256": "71acde630e1941f5e520ce71d6eab0fc2d655e5d1769b22930a73ff354d78069",
     "urls": [
-     "https://codeload.github.com/nextdns/nextdns/tar.gz/v1.47.3?/nextdns-1.47.3.tar.gz"
+     "https://codeload.github.com/nextdns/nextdns/tar.gz/v1.49.0?/nextdns-1.49.0.tar.gz"
     ]
    }
   ],
@@ -11225,10 +11183,10 @@
   ],
   "feeds/packages/net/nmap": [
    {
-    "file": "nmap-7.992.tar.bz2",
-    "sha256": "0c12660eddbf7eabeff6996cb0c044a4eadf2bb0c6fbcb340d6cf72b1caee402",
+    "file": "nmap-7.993.tar.bz2",
+    "sha256": "270e55f04915bfcecb5db8feb959d4c5ba86a48c094520a4f1c07571e1c79c59",
     "urls": [
-     "https://nmap.org/dist/nmap-7.992.tar.bz2"
+     "https://nmap.org/dist/nmap-7.993.tar.bz2"
     ]
    }
   ],
@@ -11435,17 +11393,17 @@
   ],
   "feeds/packages/net/openlist": [
    {
-    "file": "openlist-4.2.7.tar.gz",
-    "sha256": "5d2201596a81e85146eb8aec4028f66aacff65945fef5936193cbd41fc7e68b5",
+    "file": "openlist-4.2.9.tar.gz",
+    "sha256": "a762ff50b71b384f03af2996cac2aba471b0d5ec44aad0255e646a41c8af7f49",
     "urls": [
-     "https://codeload.github.com/OpenListTeam/OpenList/tar.gz/v4.2.7?/openlist-4.2.7.tar.gz"
+     "https://codeload.github.com/OpenListTeam/OpenList/tar.gz/v4.2.9?/openlist-4.2.9.tar.gz"
     ]
    },
    {
-    "file": "openlist-frontend-dist-v4.2.7.tar.gz",
-    "sha256": "88aba5260646ed784847a11e473880d749b17b80af53caf895fe1f31f36aa3e3",
+    "file": "openlist-frontend-dist-v4.2.9.tar.gz",
+    "sha256": "b147ff4e6c6eee5dda5785a6c3028d9896ee7522a2c66c404dd7ba97fb4e78ed",
     "urls": [
-     "https://github.com/OpenListTeam/OpenList-Frontend/releases/download/v4.2.7/openlist-frontend-dist-v4.2.7.tar.gz"
+     "https://github.com/OpenListTeam/OpenList-Frontend/releases/download/v4.2.9/openlist-frontend-dist-v4.2.9.tar.gz"
     ]
    }
   ],
@@ -11606,11 +11564,9 @@
   ],
   "feeds/packages/net/pdns-recursor": [
    {
-    "file": "pdns-recursor-5.2.13.tar.bz2",
-    "sha256": "ee0eacc776aa48ef0be92f6b910048ee8606d1715133649806356ec38fed1e86",
-    "urls": [
-     "https://downloads.powerdns.com/releases/pdns-recursor-5.2.13.tar.bz2"
-    ]
+    "file": "pdns-recursor-5.2.13-vendor.tar.zst",
+    "sha256": "1de7bef950d7f474a3999e6fde401ebd6a1380d5d4d7f1f4bdb46a253c6c8818",
+    "urls": []
    }
   ],
   "feeds/packages/net/pen": [
@@ -12385,10 +12341,10 @@
   ],
   "feeds/packages/net/tailscale": [
    {
-    "file": "tailscale-1.104.1.tar.gz",
-    "sha256": "bf868b2b1a46b9485d55bcda12c2d7573279ce4474bc6d607f42f1495db36ed8",
+    "file": "tailscale-1.104.4.tar.gz",
+    "sha256": "862f12b3177d5e961f2a86cf82fb1ff3551786afcaf95f2dc9a8318889f98732",
     "urls": [
-     "https://codeload.github.com/tailscale/tailscale/tar.gz/v1.104.1?/tailscale-1.104.1.tar.gz"
+     "https://codeload.github.com/tailscale/tailscale/tar.gz/v1.104.4?/tailscale-1.104.4.tar.gz"
     ]
    }
   ],
@@ -12843,10 +12799,10 @@
   ],
   "feeds/packages/net/vnstat2": [
    {
-    "file": "vnstat-2.13.tar.gz",
-    "sha256": "c9fe19312d1ec3ddfbc4672aa951cf9e61ca98dc14cad3d3565f7d9803a6b187",
+    "file": "vnstat-2.14.tar.gz",
+    "sha256": "8ba2119b3c6f780775135f9c9fa7236867da67e2f93649f1313319b9cf48f87c",
     "urls": [
-     "https://humdi.net/vnstat/vnstat-2.13.tar.gz"
+     "https://humdi.net/vnstat/vnstat-2.14.tar.gz"
     ]
    }
   ],
@@ -12903,10 +12859,10 @@
   ],
   "feeds/packages/net/weechat": [
    {
-    "file": "weechat-4.10.1.tar.xz",
-    "sha256": "b8744c6f5dc5543062791f563e0516dbc96a36161e1a03c468b3b7dcc8be5aff",
+    "file": "weechat-4.10.2.tar.xz",
+    "sha256": "6fcd05f350c808a4206d6951af36a9eec11b145b6a1a2a8a2b29dd3502e07022",
     "urls": [
-     "https://weechat.org/files/src/weechat-4.10.1.tar.xz"
+     "https://weechat.org/files/src/weechat-4.10.2.tar.xz"
     ]
    }
   ],
@@ -13063,10 +13019,10 @@
   ],
   "feeds/packages/net/yggdrasil": [
    {
-    "file": "yggdrasil-0.5.13.tar.gz",
-    "sha256": "e19a3c3121d6a5e9abdc9f4d42decbd62ed97ccbe301c842f2d30ac1eba9c4c2",
+    "file": "yggdrasil-0.5.15.tar.gz",
+    "sha256": "f1b2202d27e7a250eead4f76e4f83c3e9d9eee7ca5b148c3ae1504d430e7c7ee",
     "urls": [
-     "https://codeload.github.com/yggdrasil-network/yggdrasil-go/tar.gz/v0.5.13?/yggdrasil-0.5.13.tar.gz"
+     "https://codeload.github.com/yggdrasil-network/yggdrasil-go/tar.gz/v0.5.15?/yggdrasil-0.5.15.tar.gz"
     ]
    }
   ],
@@ -14101,10 +14057,10 @@
   ],
   "feeds/packages/utils/docker-compose": [
    {
-    "file": "compose-v5.6.1.tar.gz",
-    "sha256": "bd1318503f131bc7f02538f153a7ead52f27ea30a99aee09f153a5dab9e6230a",
+    "file": "compose-v5.7.0.tar.gz",
+    "sha256": "98f5b7dd4a66d8a2d9289e918fa0f63e5ff9821623950e53e633571a78b30d63",
     "urls": [
-     "https://codeload.github.com/docker/compose/tar.gz/v5.6.1?/compose-v5.6.1.tar.gz"
+     "https://codeload.github.com/docker/compose/tar.gz/v5.7.0?/compose-v5.7.0.tar.gz"
     ]
    }
   ],
@@ -14570,10 +14526,10 @@
   ],
   "feeds/packages/utils/haveged": [
    {
-    "file": "haveged-1.9.26.tar.gz",
-    "sha256": "74bc6052506451ca9f23ba186f72cf81b124f859351f8a4b777ead32d9bdd4da",
+    "file": "haveged-1.9.27.tar.gz",
+    "sha256": "098ec77c32bbb185f81eeabec93d67139c50573fe671286cba8a3d9dc865f310",
     "urls": [
-     "https://codeload.github.com/jirka-h/haveged/tar.gz/v1.9.26?/haveged-1.9.26.tar.gz"
+     "https://codeload.github.com/jirka-h/haveged/tar.gz/v1.9.27?/haveged-1.9.27.tar.gz"
     ]
    }
   ],
@@ -15995,14 +15951,14 @@
   ],
   "feeds/packages/utils/sms-tool": [
    {
-    "file": "sms-tool-2025.08.23~491ffdb0.tar.zst",
+    "file": "sms-tool-2026.08.15~866e7d72.tar.zst",
     "git": {
-     "rev": "491ffdb0bfbc170929c1c7e947f5b889865df348",
-     "subdir": "sms-tool-2025.08.23~491ffdb0",
+     "rev": "866e7d72d2b7a788ded6c4e4772f4d5f5c55eac9",
+     "subdir": "sms-tool-2026.08.15~866e7d72",
      "submodules": [],
      "url": "https://github.com/obsy/sms_tool"
     },
-    "sha256": "c3dc663923851240ed1c755341626cda34e03f43c14608752e7bb5f879eec486"
+    "sha256": "e77e3bad0f8ad7b840e12486b393737ed64c8bed1c01d616851e24d12c2bebe3"
    }
   ],
   "feeds/packages/utils/smstools3": [
@@ -16206,10 +16162,10 @@
   ],
   "feeds/packages/utils/telegraf": [
    {
-    "file": "telegraf-1.40.2.tar.gz",
-    "sha256": "519fbd63603acdd23f924f36c49b3f31917f9d2469c17f0d8c584be3be29092b",
+    "file": "telegraf-1.40.3.tar.gz",
+    "sha256": "27bfeaf8c56cbcffc289065623ff7e3b0ff9e48c1d9c00e2278ed453900a0e66",
     "urls": [
-     "https://codeload.github.com/influxdata/telegraf/tar.gz/v1.40.2?/telegraf-1.40.2.tar.gz"
+     "https://codeload.github.com/influxdata/telegraf/tar.gz/v1.40.3?/telegraf-1.40.3.tar.gz"
     ]
    }
   ],
@@ -18858,19 +18814,19 @@
   ],
   "package/kernel/bpf-headers": [
    {
-    "file": "linux-6.18.55.tar.xz",
-    "sha256": "f410638061a165c12f42ab871d2f3fcd525515359b5faeee80969cff84524df9",
+    "file": "linux-6.18.60.tar.xz",
+    "sha256": "3c2f44ef6acc021a7ad444d9a2e6ec1ef488ff09368793d0004a6080f69d621e",
     "urls": [
-     "https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/v6.x/linux-6.18.55.tar.xz",
-     "https://mirror.nju.edu.cn/kernel.org/linux/kernel/v6.x/linux-6.18.55.tar.xz",
-     "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.18.55.tar.xz",
-     "https://mirrors.mit.edu/kernel/linux/kernel/v6.x/linux-6.18.55.tar.xz",
-     "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/linux/kernel/v6.x/linux-6.18.55.tar.xz",
-     "https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/v6.x/longterm/v6.18.55/linux-6.18.55.tar.xz",
-     "https://mirror.nju.edu.cn/kernel.org/linux/kernel/v6.x/longterm/v6.18.55/linux-6.18.55.tar.xz",
-     "https://cdn.kernel.org/pub/linux/kernel/v6.x/longterm/v6.18.55/linux-6.18.55.tar.xz",
-     "https://mirrors.mit.edu/kernel/linux/kernel/v6.x/longterm/v6.18.55/linux-6.18.55.tar.xz",
-     "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/linux/kernel/v6.x/longterm/v6.18.55/linux-6.18.55.tar.xz"
+     "https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/v6.x/linux-6.18.60.tar.xz",
+     "https://mirror.nju.edu.cn/kernel.org/linux/kernel/v6.x/linux-6.18.60.tar.xz",
+     "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.18.60.tar.xz",
+     "https://mirrors.mit.edu/kernel/linux/kernel/v6.x/linux-6.18.60.tar.xz",
+     "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/linux/kernel/v6.x/linux-6.18.60.tar.xz",
+     "https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/v6.x/longterm/v6.18.60/linux-6.18.60.tar.xz",
+     "https://mirror.nju.edu.cn/kernel.org/linux/kernel/v6.x/longterm/v6.18.60/linux-6.18.60.tar.xz",
+     "https://cdn.kernel.org/pub/linux/kernel/v6.x/longterm/v6.18.60/linux-6.18.60.tar.xz",
+     "https://mirrors.mit.edu/kernel/linux/kernel/v6.x/longterm/v6.18.60/linux-6.18.60.tar.xz",
+     "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/linux/kernel/v6.x/longterm/v6.18.60/linux-6.18.60.tar.xz"
     ]
    }
   ],
@@ -19423,6 +19379,15 @@
     ]
    }
   ],
+  "package/libs/libstd-rust": [
+   {
+    "file": "rustc-1.99.1-src.tar.xz",
+    "sha256": "6451598a99e77f07571960f6b21d577399d3a30f33e80cbd2e3a4aae6535d265",
+    "urls": [
+     "https://static.rust-lang.org/dist/rustc-1.99.1-src.tar.xz"
+    ]
+   }
+  ],
   "package/libs/libtool": [
    {
     "file": "libtool-2.5.4.tar.xz",
@@ -19462,14 +19427,14 @@
   ],
   "package/libs/libubox": [
    {
-    "file": "libubox-2026.07.21~e7608b69.tar.zst",
+    "file": "libubox-2026.11.03~a396f38a.tar.zst",
     "git": {
-     "rev": "e7608b69283d919d031d13cc8e21692503f5dbea",
-     "subdir": "libubox-2026.07.21~e7608b69",
+     "rev": "a396f38a8568a1d670c240465cd8d24fdfdf6463",
+     "subdir": "libubox-2026.11.03~a396f38a",
      "submodules": [],
      "url": "https://git.openwrt.org/project/libubox.git"
     },
-    "sha256": "8f3257ae536c827805cf5ffa25f60d6089feb1387ac93c0cd302389ecd47de6e"
+    "sha256": "398874b0063c7cfce2dd53953dd1dc076675539e05d1d5f6e3da541c8081b8f8"
    }
   ],
   "package/libs/libunistring": [
@@ -19782,14 +19747,14 @@
   ],
   "package/network/config/qosify": [
    {
-    "file": "qosify-2026.10.14~b3ee50ef.tar.zst",
+    "file": "qosify-2026.10.15~143d71d2.tar.zst",
     "git": {
-     "rev": "b3ee50eff9d924a6c7a0c02b9ab1afc6056b7a00",
-     "subdir": "qosify-2026.10.14~b3ee50ef",
+     "rev": "143d71d2479176ad5fdb0f9ce191affa2dc9640d",
+     "subdir": "qosify-2026.10.15~143d71d2",
      "submodules": [],
      "url": "https://git.openwrt.org/project/qosify.git"
     },
-    "sha256": "924dd93cfc3205da58127bbd0397322e0b48819be28db3538e6ab9fc6196c536"
+    "sha256": "23f337614c2a1b806b4e34c20c8f742b41bd47e7da3d7085584216d4a65f15d9"
    }
   ],
   "package/network/config/soloscli": [
@@ -19889,26 +19854,26 @@
   ],
   "package/network/services/odhcpd": [
    {
-    "file": "odhcpd-2026.10.28~5f5f900a.tar.zst",
+    "file": "odhcpd-2026.10.28~26aa64a0.tar.zst",
     "git": {
-     "rev": "5f5f900a7177b23588f290685609cec1b9ddd7c5",
-     "subdir": "odhcpd-2026.10.28~5f5f900a",
+     "rev": "26aa64a0bd819ba34bfcaebf02d0a3d8da530723",
+     "subdir": "odhcpd-2026.10.28~26aa64a0",
      "submodules": [],
      "url": "https://git.openwrt.org/project/odhcpd.git"
     },
-    "sha256": "52c861067b98cc389694a929e003b067d269b5d3eca1145315fef236efbea113"
+    "sha256": "f30d47dbec4429b4bd80d97e3176bfc1660c21842b017920d54a72d9862df68d"
    }
   ],
   "package/network/services/omcproxy": [
    {
-    "file": "omcproxy-2026.03.07~3abb601a.tar.zst",
+    "file": "omcproxy-2026.10.28~5f4dbd73.tar.zst",
     "git": {
-     "rev": "3abb601ab77f5e914a3203e5d0c8ae7fb1579bae",
-     "subdir": "omcproxy-2026.03.07~3abb601a",
+     "rev": "5f4dbd73cd45caf828b492b7fcaa3fce11f84323",
+     "subdir": "omcproxy-2026.10.28~5f4dbd73",
      "submodules": [],
      "url": "https://git.openwrt.org/project/omcproxy.git"
     },
-    "sha256": "41d85cf544e3833df6a605827ab625a4028274ff46aadee13b8644eb25f8edae"
+    "sha256": "f5b7d4d33afff3b43067c0793f9a79674b26628b378d89773cde63eaff0f3d6f"
    }
   ],
   "package/network/services/ppp": [
@@ -20312,14 +20277,14 @@
   ],
   "package/system/procd": [
    {
-    "file": "procd-2026.10.18~5aef7c33.tar.zst",
+    "file": "procd-2026.11.03~fb611687.tar.zst",
     "git": {
-     "rev": "5aef7c33b01455157c1373a14e2a3fa47d024c6c",
-     "subdir": "procd-2026.10.18~5aef7c33",
+     "rev": "fb6116870115a66686709017ecabfd724804bbdf",
+     "subdir": "procd-2026.11.03~fb611687",
      "submodules": [],
      "url": "https://git.openwrt.org/project/procd.git"
     },
-    "sha256": "8d2e4f8ab27dbdc06b3f0aef1220e7de7edea492b9d8a69371121c58cb6ddfa1"
+    "sha256": "b0c247636d57362d593bc7ac38a014d6c50d7317f23acb1c3455fb774f05ac59"
    }
   ],
   "package/system/refpolicy": [
@@ -20910,19 +20875,19 @@
   ],
   "toolchain/kernel-headers": [
    {
-    "file": "linux-6.18.55.tar.xz",
-    "sha256": "f410638061a165c12f42ab871d2f3fcd525515359b5faeee80969cff84524df9",
+    "file": "linux-6.18.60.tar.xz",
+    "sha256": "3c2f44ef6acc021a7ad444d9a2e6ec1ef488ff09368793d0004a6080f69d621e",
     "urls": [
-     "https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/v6.x/linux-6.18.55.tar.xz",
-     "https://mirror.nju.edu.cn/kernel.org/linux/kernel/v6.x/linux-6.18.55.tar.xz",
-     "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.18.55.tar.xz",
-     "https://mirrors.mit.edu/kernel/linux/kernel/v6.x/linux-6.18.55.tar.xz",
-     "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/linux/kernel/v6.x/linux-6.18.55.tar.xz",
-     "https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/v6.x/longterm/v6.18.55/linux-6.18.55.tar.xz",
-     "https://mirror.nju.edu.cn/kernel.org/linux/kernel/v6.x/longterm/v6.18.55/linux-6.18.55.tar.xz",
-     "https://cdn.kernel.org/pub/linux/kernel/v6.x/longterm/v6.18.55/linux-6.18.55.tar.xz",
-     "https://mirrors.mit.edu/kernel/linux/kernel/v6.x/longterm/v6.18.55/linux-6.18.55.tar.xz",
-     "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/linux/kernel/v6.x/longterm/v6.18.55/linux-6.18.55.tar.xz"
+     "https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/v6.x/linux-6.18.60.tar.xz",
+     "https://mirror.nju.edu.cn/kernel.org/linux/kernel/v6.x/linux-6.18.60.tar.xz",
+     "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.18.60.tar.xz",
+     "https://mirrors.mit.edu/kernel/linux/kernel/v6.x/linux-6.18.60.tar.xz",
+     "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/linux/kernel/v6.x/linux-6.18.60.tar.xz",
+     "https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/v6.x/longterm/v6.18.60/linux-6.18.60.tar.xz",
+     "https://mirror.nju.edu.cn/kernel.org/linux/kernel/v6.x/longterm/v6.18.60/linux-6.18.60.tar.xz",
+     "https://cdn.kernel.org/pub/linux/kernel/v6.x/longterm/v6.18.60/linux-6.18.60.tar.xz",
+     "https://mirrors.mit.edu/kernel/linux/kernel/v6.x/longterm/v6.18.60/linux-6.18.60.tar.xz",
+     "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/linux/kernel/v6.x/longterm/v6.18.60/linux-6.18.60.tar.xz"
     ]
    }
   ],
@@ -21060,6 +21025,13 @@
     ]
    }
   ],
+  "tools/bindgen": [
+   {
+    "file": "bindgen-cli-0.73.2-vendor.tar.zst",
+    "sha256": "344dc1b59d2cdb9c8795c5f2fad5d813dd40fc7ee725876097a3c259a06e2807",
+    "urls": []
+   }
+  ],
   "tools/bison": [
    {
     "file": "bison-3.8.2.tar.gz",
@@ -21086,6 +21058,13 @@
     "urls": [
      "https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz"
     ]
+   }
+  ],
+  "tools/cbindgen": [
+   {
+    "file": "cbindgen-0.28.0-vendor.tar.zst",
+    "sha256": "834a03b4fcbbcbd6a2547bf15f8854b075aeb1460a6107c6db47b28a90dee15d",
+    "urls": []
    }
   ],
   "tools/cbootimage": [
@@ -21147,6 +21126,15 @@
      "https://mirror.navercorp.com/gnu/coreutils/coreutils-9.6.tar.gz",
      "https://mirrors.rit.edu/gnu/coreutils/coreutils-9.6.tar.gz",
      "https://ftp.gnu.org/gnu/coreutils/coreutils-9.6.tar.gz"
+    ]
+   }
+  ],
+  "tools/corrosion": [
+   {
+    "file": "corrosion-0.5.1.tar.gz",
+    "sha256": "843334a9f0f5efbc225dccfa88031fe0f2ec6fd787ca1e7d55ed27b2c25d9c97",
+    "urls": [
+     "https://codeload.github.com/corrosion-rs/corrosion/tar.gz/v0.5.1?/corrosion-0.5.1.tar.gz"
     ]
    }
   ],
@@ -21619,20 +21607,20 @@
   ],
   "tools/patch": [
    {
-    "file": "patch-2.8.tar.gz",
-    "sha256": "308a4983ff324521b9b21310bfc2398ca861798f02307c79eb99bb0e0d2bf980",
+    "file": "patch-2.8.1.tar.gz",
+    "sha256": "0f7b43c7ea450c5d3e9eaf8301177628bc0171d580b2bd6a72822409767144ff",
     "urls": [
-     "https://mirrors.tencent.com/gnu/patch/patch-2.8.tar.gz",
-     "https://mirrors.aliyun.com/gnu/patch/patch-2.8.tar.gz",
-     "https://mirrors.tuna.tsinghua.edu.cn/gnu/patch/patch-2.8.tar.gz",
-     "https://mirrors.ustc.edu.cn/gnu/patch/patch-2.8.tar.gz",
-     "https://ftpmirror.gnu.org/patch/patch-2.8.tar.gz",
-     "https://mirror.csclub.uwaterloo.ca/gnu/patch/patch-2.8.tar.gz",
-     "https://mirror.netcologne.de/gnu/patch/patch-2.8.tar.gz",
-     "https://www.nic.funet.fi/pub/gnu/gnu/patch/patch-2.8.tar.gz",
-     "https://mirror.navercorp.com/gnu/patch/patch-2.8.tar.gz",
-     "https://mirrors.rit.edu/gnu/patch/patch-2.8.tar.gz",
-     "https://ftp.gnu.org/gnu/patch/patch-2.8.tar.gz"
+     "https://mirrors.tencent.com/gnu/patch/patch-2.8.1.tar.gz",
+     "https://mirrors.aliyun.com/gnu/patch/patch-2.8.1.tar.gz",
+     "https://mirrors.tuna.tsinghua.edu.cn/gnu/patch/patch-2.8.1.tar.gz",
+     "https://mirrors.ustc.edu.cn/gnu/patch/patch-2.8.1.tar.gz",
+     "https://ftpmirror.gnu.org/patch/patch-2.8.1.tar.gz",
+     "https://mirror.csclub.uwaterloo.ca/gnu/patch/patch-2.8.1.tar.gz",
+     "https://mirror.netcologne.de/gnu/patch/patch-2.8.1.tar.gz",
+     "https://www.nic.funet.fi/pub/gnu/gnu/patch/patch-2.8.1.tar.gz",
+     "https://mirror.navercorp.com/gnu/patch/patch-2.8.1.tar.gz",
+     "https://mirrors.rit.edu/gnu/patch/patch-2.8.1.tar.gz",
+     "https://ftp.gnu.org/gnu/patch/patch-2.8.1.tar.gz"
     ]
    }
   ],
@@ -21675,6 +21663,29 @@
      "https://nongnu.uib.no/quilt/quilt-0.69.tar.gz",
      "https://cdimage.debian.org/mirror/gnu.org/savannah/quilt/quilt-0.69.tar.gz"
     ]
+   }
+  ],
+  "tools/rust": [
+   {
+    "file": "llvm-tools-1.99.1-x86_64-unknown-linux-gnu.tar.xz",
+    "sha256": "8429c5117debfb45c22cf2f97712ef00e0e94976c96cf92f661974a458ca7e84",
+    "urls": [
+     "https://static.rust-lang.org/dist/2026-10-15/llvm-tools-1.99.1-x86_64-unknown-linux-gnu.tar.xz"
+    ]
+   },
+   {
+    "file": "rust-src-1.99.1.tar.xz",
+    "sha256": "e485a88c45db546b73571df7bebfcb4454ba4fb552c492e25fc5b00eeb5bf22d",
+    "urls": [
+     "https://static.rust-lang.org/dist/2026-10-15/rust-src-1.99.1.tar.xz"
+    ]
+   }
+  ],
+  "tools/sccache": [
+   {
+    "file": "sccache-0.18.0-vendor.tar.zst",
+    "sha256": "763980f6d9369d3f5f91d3bebdefd2da334973b0d844b5fdd769197ba50dfa5a",
+    "urls": []
    }
   ],
   "tools/sdimage": [
@@ -21847,20 +21858,20 @@
   ]
  },
  "kernel": {
-  "6.18.55": {
-   "file": "linux-6.18.55.tar.xz",
-   "sha256": "f410638061a165c12f42ab871d2f3fcd525515359b5faeee80969cff84524df9",
+  "6.18.60": {
+   "file": "linux-6.18.60.tar.xz",
+   "sha256": "3c2f44ef6acc021a7ad444d9a2e6ec1ef488ff09368793d0004a6080f69d621e",
    "urls": [
-    "https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/v6.x/linux-6.18.55.tar.xz",
-    "https://mirror.nju.edu.cn/kernel.org/linux/kernel/v6.x/linux-6.18.55.tar.xz",
-    "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.18.55.tar.xz",
-    "https://mirrors.mit.edu/kernel/linux/kernel/v6.x/linux-6.18.55.tar.xz",
-    "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/linux/kernel/v6.x/linux-6.18.55.tar.xz",
-    "https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/v6.x/longterm/v6.18.55/linux-6.18.55.tar.xz",
-    "https://mirror.nju.edu.cn/kernel.org/linux/kernel/v6.x/longterm/v6.18.55/linux-6.18.55.tar.xz",
-    "https://cdn.kernel.org/pub/linux/kernel/v6.x/longterm/v6.18.55/linux-6.18.55.tar.xz",
-    "https://mirrors.mit.edu/kernel/linux/kernel/v6.x/longterm/v6.18.55/linux-6.18.55.tar.xz",
-    "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/linux/kernel/v6.x/longterm/v6.18.55/linux-6.18.55.tar.xz"
+    "https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/v6.x/linux-6.18.60.tar.xz",
+    "https://mirror.nju.edu.cn/kernel.org/linux/kernel/v6.x/linux-6.18.60.tar.xz",
+    "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.18.60.tar.xz",
+    "https://mirrors.mit.edu/kernel/linux/kernel/v6.x/linux-6.18.60.tar.xz",
+    "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/linux/kernel/v6.x/linux-6.18.60.tar.xz",
+    "https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/v6.x/longterm/v6.18.60/linux-6.18.60.tar.xz",
+    "https://mirror.nju.edu.cn/kernel.org/linux/kernel/v6.x/longterm/v6.18.60/linux-6.18.60.tar.xz",
+    "https://cdn.kernel.org/pub/linux/kernel/v6.x/longterm/v6.18.60/linux-6.18.60.tar.xz",
+    "https://mirrors.mit.edu/kernel/linux/kernel/v6.x/longterm/v6.18.60/linux-6.18.60.tar.xz",
+    "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/linux/kernel/v6.x/longterm/v6.18.60/linux-6.18.60.tar.xz"
    ]
   }
  },
@@ -21873,5 +21884,5 @@
   "https://sources.openwrt.org",
   "https://mirror2.openwrt.org/sources"
  ],
- "revision": "r42943-89f1ef18c888"
+ "revision": "r43172-4765b657625e"
 }

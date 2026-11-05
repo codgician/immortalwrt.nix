@@ -2,10 +2,10 @@
   "feeds": [
     {
       "fetch": {
-        "narHash": "sha256-XgmKrUB9PO6K6fMmgv0ZV6vtK4AbAgLKKC4vj5m8EC8=",
+        "narHash": "sha256-9nSKv/42JRDK/unKUJAbpfe5TGJp5poLR8lT28iVdYA=",
         "owner": "immortalwrt",
         "repo": "packages",
-        "rev": "e071e533c3176712775e8932f5a650ef2dcda5e9",
+        "rev": "fa25995d74a720c1c98bf6265d3dd8b4eb620d1f",
         "type": "github"
       },
       "name": "packages",
@@ -14,10 +14,10 @@
     },
     {
       "fetch": {
-        "narHash": "sha256-uv75OM5cpGphja2jpYcpMTrc5UxZPPMF6tstgB7AV1A=",
+        "narHash": "sha256-g1DqbECWMdUg3b5mM9PXcadfeVnWyXv8nOXKL4l3hsQ=",
         "owner": "immortalwrt",
         "repo": "luci",
-        "rev": "c84adb975e207ae8b14982191838ec6218d632cd",
+        "rev": "c38e5665e826f5e6e2ac9168e167ee368d0969d9",
         "type": "github"
       },
       "name": "luci",
@@ -481,8 +481,8 @@
         "src": "26.052.56300~90d5914"
       },
       "feeds/luci/applications/luci-app-passwall": {
-        "po": "26.298.29275~c84adb9",
-        "src": "26.298.29275~c84adb9"
+        "po": "26.309.25225~c38e566",
+        "src": "26.309.25225~c38e566"
       },
       "feeds/luci/applications/luci-app-pbr": {
         "po": "26.283.50138~350fc91",
