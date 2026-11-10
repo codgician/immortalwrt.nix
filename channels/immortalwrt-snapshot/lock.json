@@ -13,10 +13,10 @@
     },
     {
       "fetch": {
-        "narHash": "sha256-Gkt2sKq0/YLb+iqoOAUInd64d5KoYL9UVUYUtMoIYJY=",
+        "narHash": "sha256-N51Od2acbvV48oHep6fg5ngSKbBfIGZUhFKbfMP1iHY=",
         "owner": "immortalwrt",
         "repo": "luci",
-        "rev": "319f7c96e3530246cf91cfdd9bacb3fa44dc3a4e",
+        "rev": "64cb10331bd3204da8a6a30107c2bf02e5e2399c",
         "type": "github"
       },
       "name": "luci",
@@ -965,7 +965,7 @@
       },
       "feeds/luci/themes/luci-theme-argon": {
         "po": "26.294.34279~ebc4118",
-        "src": "26.309.25350~319f7c9"
+        "src": "26.314.09277~64cb103"
       },
       "feeds/luci/themes/luci-theme-bootstrap": {
         "po": "0",
