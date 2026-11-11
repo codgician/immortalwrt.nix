@@ -371,10 +371,10 @@
   ],
   "feeds/packages/devel/delve": [
    {
-    "file": "delve-1.27.1.tar.gz",
-    "sha256": "dca9ec6f2c392a00449ad748b3a229e92ba4efa67f4e7582f2cc45974429928f",
+    "file": "delve-1.27.2.tar.gz",
+    "sha256": "8ea5979dfc5978c9690dc1dd533a830815441dd33617f4a61bcdff7d2c3c7e90",
     "urls": [
-     "https://codeload.github.com/go-delve/delve/tar.gz/v1.27.1?/delve-1.27.1.tar.gz"
+     "https://codeload.github.com/go-delve/delve/tar.gz/v1.27.2?/delve-1.27.2.tar.gz"
     ]
    }
   ],
@@ -765,13 +765,13 @@
   ],
   "feeds/packages/lang/golang/golang1.27": [
    {
-    "file": "go1.27.3.src.tar.gz",
-    "sha256": "6e7749035cf360f06b2575d162ea79df9fda8ef671889e5c375f8e50777f26bb",
+    "file": "go1.27.4.src.tar.gz",
+    "sha256": "73cfb8571aec0c01177687db87163d46aa20e9779672772891aa17654d9a6099",
     "urls": [
-     "https://go.dev/dl/go1.27.3.src.tar.gz",
-     "https://golang.google.cn/dl/go1.27.3.src.tar.gz",
-     "https://mirrors.nju.edu.cn/golang/go1.27.3.src.tar.gz",
-     "https://mirrors.ustc.edu.cn/golang/go1.27.3.src.tar.gz"
+     "https://go.dev/dl/go1.27.4.src.tar.gz",
+     "https://golang.google.cn/dl/go1.27.4.src.tar.gz",
+     "https://mirrors.nju.edu.cn/golang/go1.27.4.src.tar.gz",
+     "https://mirrors.ustc.edu.cn/golang/go1.27.4.src.tar.gz"
     ]
    }
   ],
@@ -3485,10 +3485,10 @@
   ],
   "feeds/packages/lang/python/django": [
    {
-    "file": "django-6.1.2.tar.gz",
-    "sha256": "a1e92451ccb8b514e91bbb3b6d186d20b4030558f116b5d9de6535455ff210b7",
+    "file": "django-6.1.3.tar.gz",
+    "sha256": "b5d2d9e35295065d13b1927b3f19a59bd119f737aa6299def14ccca1ae3c8c0d",
     "urls": [
-     "https://files.pythonhosted.org/packages/source/d/django/django-6.1.2.tar.gz"
+     "https://files.pythonhosted.org/packages/source/d/django/django-6.1.3.tar.gz"
     ]
    }
   ],
@@ -3620,10 +3620,10 @@
   ],
   "feeds/packages/lang/python/python-asgiref": [
    {
-    "file": "asgiref-3.12.1.tar.gz",
-    "sha256": "59dcb51c272ad209d59bed5708a64a333083e86017d7fcdd67498eeab7784340",
+    "file": "asgiref-3.13.0.tar.gz",
+    "sha256": "034cc8cbf72d00553b4be256703ac545120b4e50af13b49dec99da899aeeecb4",
     "urls": [
-     "https://files.pythonhosted.org/packages/source/a/asgiref/asgiref-3.12.1.tar.gz"
+     "https://files.pythonhosted.org/packages/source/a/asgiref/asgiref-3.13.0.tar.gz"
     ]
    }
   ],
@@ -4505,10 +4505,10 @@
   ],
   "feeds/packages/lang/python/python-pip": [
    {
-    "file": "pip-26.2.1.tar.gz",
-    "sha256": "f6ad667e89a1fe78046c8f13232b247200f5258d7828f3f7883d660878e0813f",
+    "file": "pip-26.2.2.tar.gz",
+    "sha256": "3a8e5c800492787f33a4114ef54444546c340df428974ebba17e0fd47e11af2f",
     "urls": [
-     "https://files.pythonhosted.org/packages/source/p/pip/pip-26.2.1.tar.gz"
+     "https://files.pythonhosted.org/packages/source/p/pip/pip-26.2.2.tar.gz"
     ]
    }
   ],
@@ -5043,10 +5043,10 @@
   ],
   "feeds/packages/lang/python/python-sqlparse": [
    {
-    "file": "sqlparse-0.6.0.tar.gz",
-    "sha256": "113c35c75365ab9cc9c7231d68c6428fb11c085fc8e9eb1ad659b7ddbf6cd2b9",
+    "file": "sqlparse-0.6.1.tar.gz",
+    "sha256": "ca722573f848ff2d30e40ea30f53a104b7dea7635ea9285891263eb2c58fb6e7",
     "urls": [
-     "https://files.pythonhosted.org/packages/source/s/sqlparse/sqlparse-0.6.0.tar.gz"
+     "https://files.pythonhosted.org/packages/source/s/sqlparse/sqlparse-0.6.1.tar.gz"
     ]
    }
   ],
@@ -5259,10 +5259,10 @@
   ],
   "feeds/packages/lang/python/python3": [
    {
-    "file": "Python-3.14.7.tar.xz",
-    "sha256": "3b48dac8fb59f62eaa67ac83c1eb12bda1b7a08406dd286e252c11a66be27f81",
+    "file": "Python-3.14.10.tar.xz",
+    "sha256": "de414a57119abef52784d8993e341d53aed635fc2b05c2607d9f98a2c5b72032",
     "urls": [
-     "https://www.python.org/ftp/python/3.14.7/Python-3.14.7.tar.xz"
+     "https://www.python.org/ftp/python/3.14.10/Python-3.14.10.tar.xz"
     ]
    }
   ],
@@ -5340,10 +5340,10 @@
   ],
   "feeds/packages/lang/rust": [
    {
-    "file": "rustc-1.96.0-src.tar.xz",
-    "sha256": "b99ce16cdf0ecfc761b585ac84d131b46733465a02f8ecd0ff2de9713c62ee09",
+    "file": "rustc-1.96.1-src.tar.xz",
+    "sha256": "77a6ff3003a4ad0cb00697b043c879e3e1a15d945b1a1f63818903bfc3fa8b98",
     "urls": [
-     "https://static.rust-lang.org/dist/rustc-1.96.0-src.tar.xz"
+     "https://static.rust-lang.org/dist/rustc-1.96.1-src.tar.xz"
     ]
    }
   ],
@@ -5780,10 +5780,10 @@
   ],
   "feeds/packages/libs/gperftools": [
    {
-    "file": "gperftools-2.17.2.tar.gz",
-    "sha256": "885dbbf1f25a922de0cdc78b0703c3ab93c43850e1d2f7c889e41be7c824c53d",
+    "file": "gperftools-2.19.2.tar.gz",
+    "sha256": "2a6f46418a668b03769ae40f296df65c378a24c8ea5cd7f64f2904a9bb2665d1",
     "urls": [
-     "https://codeload.github.com/gperftools/gperftools/tar.gz/gperftools-2.17.2?/gperftools-2.17.2.tar.gz"
+     "https://codeload.github.com/gperftools/gperftools/tar.gz/gperftools-2.19.2?/gperftools-2.19.2.tar.gz"
     ]
    }
   ],
@@ -5846,10 +5846,10 @@
   ],
   "feeds/packages/libs/icu": [
    {
-    "file": "icu4c-78.3-sources.tgz",
-    "sha256": "3a2e7a47604ba702f345878308e6fefeca612ee895cf4a5f222e7955fabfe0c0",
+    "file": "icu4c-79.1-sources.tgz",
+    "sha256": "06fa63ecb521048f8082f12ad988f6b678d90cbd88aafce24cbc94902b191d99",
     "urls": [
-     "https://github.com/unicode-org/icu/releases/download/release-78.3/icu4c-78.3-sources.tgz"
+     "https://github.com/unicode-org/icu/releases/download/release-79.1/icu4c-79.1-sources.tgz"
     ]
    }
   ],
@@ -6652,10 +6652,10 @@
   ],
   "feeds/packages/libs/libmaxminddb": [
    {
-    "file": "libmaxminddb-1.13.3.tar.gz",
-    "sha256": "a66502ea76eadbe17f2cd6fd708946777253972d2ae8157dee1b23a2fb528171",
+    "file": "libmaxminddb-1.14.1.tar.gz",
+    "sha256": "ca5c87d41339f8bc4daabb53e8a9356b3c995f2d2419b85d7bff823b2ecc252d",
     "urls": [
-     "https://github.com/maxmind/libmaxminddb/releases/download/1.13.3/libmaxminddb-1.13.3.tar.gz"
+     "https://github.com/maxmind/libmaxminddb/releases/download/1.14.1/libmaxminddb-1.14.1.tar.gz"
     ]
    }
   ],
@@ -6844,15 +6844,6 @@
     ]
    }
   ],
-  "feeds/packages/libs/libnopoll": [
-   {
-    "file": "nopoll-0.4.6.tar.gz",
-    "sha256": "16eae3885d572495ba1f22d85fa9032139c761fb21ef1d80205039acd3143f5a",
-    "urls": [
-     "https://codeload.github.com/ASPLes/nopoll/tar.gz/0.4.6?/nopoll-0.4.6.tar.gz"
-    ]
-   }
-  ],
   "feeds/packages/libs/libnpupnp": [
    {
     "file": "libnpupnp-6.3.0.tar.gz",
@@ -6878,18 +6869,6 @@
     "urls": [
      "https://downloads.xiph.org/releases/ogg/libogg-1.3.5.tar.xz"
     ]
-   }
-  ],
-  "feeds/packages/libs/libopen62541": [
-   {
-    "file": "libopen62541-1.3.6.tar.zst",
-    "git": {
-     "rev": "v1.3.6",
-     "subdir": "libopen62541-1.3.6",
-     "submodules": [],
-     "url": "https://github.com/open62541/open62541.git"
-    },
-    "sha256": "4e1513dfea70c2be52cc9c096386063e9e20ef757912a197f78e669a7e9dfb3d"
    }
   ],
   "feeds/packages/libs/liboping": [
@@ -6958,15 +6937,6 @@
     ]
    }
   ],
-  "feeds/packages/libs/libpbc": [
-   {
-    "file": "pbc-1.0.0.tar.gz",
-    "sha256": "18275a367283077bafe35f443200499e3b19c4a3754953da2a1b2f0d6b5922dc",
-    "urls": [
-     "https://crypto.stanford.edu/pbc/files/pbc-1.0.0.tar.gz"
-    ]
-   }
-  ],
   "feeds/packages/libs/libpciaccess": [
    {
     "file": "libpciaccess-0.18.1.tar.xz",
@@ -7001,18 +6971,6 @@
     "urls": [
      "https://downloads.sourceforge.net/libpng/libpng-1.6.50.tar.xz"
     ]
-   }
-  ],
-  "feeds/packages/libs/libpqxx": [
-   {
-    "file": "libpqxx-7.9.2.tar.zst",
-    "git": {
-     "rev": "7.9.2",
-     "subdir": "libpqxx-7.9.2",
-     "submodules": [],
-     "url": "https://github.com/jtv/libpqxx"
-    },
-    "sha256": "3bc0572b06b6030d046aa1f11b64d644e78a688f58febbc2b4597f07672b22a8"
    }
   ],
   "feeds/packages/libs/libpsl": [
@@ -7087,15 +7045,6 @@
     ]
    }
   ],
-  "feeds/packages/libs/libroxml": [
-   {
-    "file": "libroxml-3.0.2.tar.gz",
-    "sha256": "ed6d68d1bceabf98e5e76907411e2e4d93b2dbd48479ab41dede851f59dad6a3",
-    "urls": [
-     "https://download.libroxml.net/pool/v3.x/libroxml-3.0.2.tar.gz"
-    ]
-   }
-  ],
   "feeds/packages/libs/libsamplerate": [
    {
     "file": "libsamplerate-0.2.2.tar.xz",
@@ -7150,15 +7099,6 @@
     ]
    }
   ],
-  "feeds/packages/libs/libsocketcan": [
-   {
-    "file": "libsocketcan-0.0.12.tar.bz2",
-    "sha256": "be8280124707701935e6294d366e2474158b758fa4b2e3cae571d5b256d2fe34",
-    "urls": [
-     "https://www.pengutronix.de/software/libsocketcan/download/libsocketcan-0.0.12.tar.bz2"
-    ]
-   }
-  ],
   "feeds/packages/libs/libsodium": [
    {
     "file": "libsodium-1.0.22.tar.gz",
@@ -7203,15 +7143,6 @@
     "sha256": "d9ec76cbe34db98eec3539fe2c899d26b0c837cb3eb466a56b0f109cabf658f7",
     "urls": [
      "https://www.libssh2.org/download/libssh2-1.11.1.tar.gz"
-    ]
-   }
-  ],
-  "feeds/packages/libs/libstrophe": [
-   {
-    "file": "libstrophe-0.13.1.tar.xz",
-    "sha256": "86c0abd348ae66feb40b6886f2c7f04525f1d5b20a48c10d4db4ed532dc63f22",
-    "urls": [
-     "https://github.com/strophe/libstrophe/releases/download/0.13.1/libstrophe-0.13.1.tar.xz"
     ]
    }
   ],
@@ -7456,15 +7387,6 @@
     "sha256": "905c6696fb43fab730b1a485a17bd49fd77eeceaec99b8b51b890be6bd0ccde4"
    }
   ],
-  "feeds/packages/libs/libuwsc": [
-   {
-    "file": "libuwsc-3.3.5.tar.gz",
-    "sha256": "a06b7324671e181ffe3165e93e6f94c7ac1380f69e32a52e80c8da7016acd60d",
-    "urls": [
-     "https://github.com/zhaojh329/libuwsc/releases/download/v3.3.5/libuwsc-3.3.5.tar.gz"
-    ]
-   }
-  ],
   "feeds/packages/libs/libvorbis": [
    {
     "file": "libvorbis-1.3.7.tar.xz",
@@ -7687,10 +7609,10 @@
   ],
   "feeds/packages/libs/minizip": [
    {
-    "file": "minizip-ng-4.0.7.tar.gz",
-    "sha256": "a87f1f734f97095fe1ef0018217c149d53d0f78438bcb77af38adc21dff2dfbc",
+    "file": "minizip-ng-4.2.2.tar.gz",
+    "sha256": "71af7b9799856d8b03619df3949e9c1be9703f8de0795af71399ba283cb27aac",
     "urls": [
-     "https://codeload.github.com/zlib-ng/minizip-ng/tar.gz/4.0.7?/minizip-ng-4.0.7.tar.gz"
+     "https://codeload.github.com/zlib-ng/minizip-ng/tar.gz/4.2.2?/minizip-ng-4.2.2.tar.gz"
     ]
    }
   ],
@@ -8132,10 +8054,10 @@
   ],
   "feeds/packages/libs/taglib": [
    {
-    "file": "taglib-2.3.1.tar.gz",
-    "sha256": "a19d90e6fd41d09a0281ec0fe762d51491d7a6ccffc923c4f7868c5e647ca230",
+    "file": "taglib-2.3.2.tar.gz",
+    "sha256": "3ca2d8afaa7f1cf7f6ed10e511ebc368bfacd6dcaa3dbfa690b89e502e8963dc",
     "urls": [
-     "https://github.com/taglib/taglib/releases/download/v2.3.1/taglib-2.3.1.tar.gz"
+     "https://github.com/taglib/taglib/releases/download/v2.3.2/taglib-2.3.2.tar.gz"
     ]
    }
   ],
@@ -8928,17 +8850,17 @@
   ],
   "feeds/packages/net/adguardhome": [
    {
-    "file": "adguardhome-0.107.79.tar.gz",
-    "sha256": "5f4fa119f24ea741bb8cecfa74203165fe6b86b904cef05ff429fb227b07d425",
+    "file": "adguardhome-0.107.80.tar.gz",
+    "sha256": "c67cf289f1d4b05c78994f4d1d169962540814a212244eb191cd599795d90278",
     "urls": [
-     "https://codeload.github.com/AdguardTeam/AdGuardHome/tar.gz/v0.107.79?/adguardhome-0.107.79.tar.gz"
+     "https://codeload.github.com/AdguardTeam/AdGuardHome/tar.gz/v0.107.80?/adguardhome-0.107.80.tar.gz"
     ]
    },
    {
-    "file": "adguardhome-frontend-0.107.79.tar.gz",
-    "sha256": "30184c157d4aefe5371b575a43c0ab5a7314aef039a820cc421ea67bab994ce8",
+    "file": "adguardhome-frontend-0.107.80.tar.gz",
+    "sha256": "f01f3c7713a8190dd0aaaf18c3f9a0e38235c21d696325bfca9dc681e389d894",
     "urls": [
-     "https://github.com/AdguardTeam/AdGuardHome/releases/download/v0.107.79/AdGuardHome_frontend.tar.gz"
+     "https://github.com/AdguardTeam/AdGuardHome/releases/download/v0.107.80/AdGuardHome_frontend.tar.gz"
     ]
    }
   ],
@@ -9410,10 +9332,10 @@
   ],
   "feeds/packages/net/cloudflared": [
    {
-    "file": "cloudflared-2026.10.6.tar.gz",
-    "sha256": "eb4d6b02b017cd3e49676934f14fe3025cebb07f9f272cd60dd790a2d812b90b",
+    "file": "cloudflared-2026.10.7.tar.gz",
+    "sha256": "d268031cb8906675b6b6353f18a007e6fc028f170094c5ac9220493bc8147016",
     "urls": [
-     "https://codeload.github.com/cloudflare/cloudflared/tar.gz/2026.10.6?/cloudflared-2026.10.6.tar.gz"
+     "https://codeload.github.com/cloudflare/cloudflared/tar.gz/2026.10.7?/cloudflared-2026.10.7.tar.gz"
     ]
    }
   ],
@@ -9450,10 +9372,10 @@
     ]
    },
    {
-    "file": "comrade-0.3.3.tar.gz",
-    "sha256": "1ea0b4b4880eb59b6ff9fabc8bb0c7f411b7c01c32656443b6e82cbe4161a4a5",
+    "file": "comrade-0.3.4.tar.gz",
+    "sha256": "9c54ad3e025c7c9b7c553e18c03dd22c339beb6535f47c9aabc66682b53b3770",
     "urls": [
-     "https://github.com/dangowrt/comrade/releases/download/v0.3.3/comrade-0.3.3.tar.gz"
+     "https://github.com/dangowrt/comrade/releases/download/v0.3.4/comrade-0.3.4.tar.gz"
     ]
    }
   ],
@@ -9620,22 +9542,22 @@
   ],
   "feeds/packages/net/dawn": [
    {
-    "file": "dawn-2026.06.10~806166bc.tar.zst",
+    "file": "dawn-2026.11.11~cf43b0f1.tar.zst",
     "git": {
-     "rev": "806166bce0badb383f72e4942744dab9e26a591f",
-     "subdir": "dawn-2026.06.10~806166bc",
+     "rev": "cf43b0f1d3c6abfa1e9b0d22a8c01c15668874db",
+     "subdir": "dawn-2026.11.11~cf43b0f1",
      "submodules": [],
      "url": "https://github.com/berlin-open-wireless-lab/DAWN.git"
     },
-    "sha256": "8b5eaa42a2c579c45662fa84ccd9d639a27ec0a43d88a5c812b2e99c11514d02"
+    "sha256": "1f6838efa7a08d68afd7670a94a0b0a4a95a871c39b5436eac3ee2457c79cab1"
    }
   ],
   "feeds/packages/net/ddns-go": [
    {
-    "file": "ddns-go-6.17.6.tar.gz",
-    "sha256": "5fd986644132678b6e80be6dfa5d57253b1640d661053e4820daa57320b42720",
+    "file": "ddns-go-6.17.8.tar.gz",
+    "sha256": "39b3d8755bd809c0731e81d5a3b5a025704205de68d95e5a9dd1ea192482cbf7",
     "urls": [
-     "https://codeload.github.com/jeessy2/ddns-go/tar.gz/v6.17.6?/ddns-go-6.17.6.tar.gz"
+     "https://codeload.github.com/jeessy2/ddns-go/tar.gz/v6.17.8?/ddns-go-6.17.8.tar.gz"
     ]
    }
   ],
@@ -9761,11 +9683,9 @@
   ],
   "feeds/packages/net/dufs": [
    {
-    "file": "dufs-0.47.0.tar.gz",
-    "sha256": "bab9d4fa1654adc6c88523b61bb8697f575334248cf554282e1f87e2329c0569",
-    "urls": [
-     "https://codeload.github.com/sigoden/dufs/tar.gz/v0.47.0?/dufs-0.47.0.tar.gz"
-    ]
+    "file": "dufs-0.47.0-vendor.tar.zst",
+    "sha256": "33b7618c4050e247afcb00f8a8ba346081bede821cb466be7ebfda82dc1c6c8a",
+    "urls": []
    }
   ],
   "feeds/packages/net/eoip": [
@@ -9902,10 +9822,10 @@
   ],
   "feeds/packages/net/frp": [
    {
-    "file": "frp-0.71.0.tar.gz",
-    "sha256": "1dd367d6d822a7fce1d3012fce0a6e778bc90c454e2c7baa0eb1e6de6054c61b",
+    "file": "frp-0.71.1.tar.gz",
+    "sha256": "079f5fdebfbf8b8fa42c8b03245d169a7b5298697d754d7345ea25f09e496722",
     "urls": [
-     "https://codeload.github.com/fatedier/frp/tar.gz/v0.71.0?/frp-0.71.0.tar.gz"
+     "https://codeload.github.com/fatedier/frp/tar.gz/v0.71.1?/frp-0.71.1.tar.gz"
     ]
    }
   ],
@@ -11418,11 +11338,11 @@
   ],
   "feeds/packages/net/openssh": [
    {
-    "file": "openssh-10.6p1.tar.gz",
-    "sha256": "a9dc9565dffe8640f64d863cd29a32bc4a3dbdec0566a7fc44c5d6ee767d5f39",
+    "file": "openssh-10.6p2.tar.gz",
+    "sha256": "9ae44872090cf2f06b3cf9ff147e7f16f309671340763ed2f99248398ae29d5b",
     "urls": [
-     "https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.6p1.tar.gz",
-     "https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.6p1.tar.gz"
+     "https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.6p2.tar.gz",
+     "https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.6p2.tar.gz"
     ]
    }
   ],
@@ -11734,10 +11654,10 @@
   ],
   "feeds/packages/net/radicale3": [
    {
-    "file": "radicale-3.8.3.tar.gz",
-    "sha256": "24be9a55485341be367eec6adf1ab73e96125e0d96e8efab22aa94615abce3bc",
+    "file": "radicale-3.9.0.tar.gz",
+    "sha256": "25fe89613d77a5bed182860407235efa3a77adead4ddc6022784801521992741",
     "urls": [
-     "https://files.pythonhosted.org/packages/source/R/Radicale/radicale-3.8.3.tar.gz"
+     "https://files.pythonhosted.org/packages/source/R/Radicale/radicale-3.9.0.tar.gz"
     ]
    }
   ],
@@ -11800,10 +11720,10 @@
   ],
   "feeds/packages/net/rclone": [
    {
-    "file": "rclone-1.75.2.tar.gz",
-    "sha256": "68afd7f68c84bd978966feae2116339aa7bf454b39c573910c462e87c3774d5a",
+    "file": "rclone-1.76.0.tar.gz",
+    "sha256": "8cb7e5d576fe9a3aef8b1a0785e2ffc6c1953f8ed109f42000b0b86718f6628b",
     "urls": [
-     "https://codeload.github.com/rclone/rclone/tar.gz/v1.75.2?/rclone-1.75.2.tar.gz"
+     "https://codeload.github.com/rclone/rclone/tar.gz/v1.76.0?/rclone-1.76.0.tar.gz"
     ]
    }
   ],
@@ -11905,10 +11825,10 @@
   ],
   "feeds/packages/net/rsync": [
    {
-    "file": "rsync-3.5.1.tar.gz",
-    "sha256": "c55f9c9dc10fb8bec397b399a0fdded53cc9a2d8e30891bb0d63724d25c37bef",
+    "file": "rsync-3.5.2.tar.gz",
+    "sha256": "a10d591825251e070f74c98df3daad195def4ed81b4a2de16169026aea33f6c8",
     "urls": [
-     "https://download.samba.org/pub/rsync/src/rsync-3.5.1.tar.gz"
+     "https://download.samba.org/pub/rsync/src/rsync-3.5.2.tar.gz"
     ]
    }
   ],
@@ -12095,10 +12015,10 @@
   ],
   "feeds/packages/net/socat": [
    {
-    "file": "socat-1.8.1.1.tar.bz2",
-    "sha256": "5ebc636b7f427053f98806696521653a614c7e06464910353cbf54e2327adc1b",
+    "file": "socat-1.8.1.3.tar.bz2",
+    "sha256": "25bc6476292b2e614220989c77b0b6fca87bb2525d9747b31a6639b1fb602418",
     "urls": [
-     "http://www.dest-unreach.org/socat/download/socat-1.8.1.1.tar.bz2"
+     "http://www.dest-unreach.org/socat/download/socat-1.8.1.3.tar.bz2"
     ]
    }
   ],
@@ -12616,6 +12536,18 @@
     ]
    }
   ],
+  "feeds/packages/net/udp-broadcast-relay-redux": [
+   {
+    "file": "udp-broadcast-relay-redux-2026.07.26~aa9adef3.tar.zst",
+    "git": {
+     "rev": "aa9adef316824e88a28b0e19a4a7a29ababe92fc",
+     "subdir": "udp-broadcast-relay-redux-2026.07.26~aa9adef3",
+     "submodules": [],
+     "url": "https://github.com/accwebs/udp-broadcast-relay-redux"
+    },
+    "sha256": "5462b1d17b8e8e0bdc873ad778fc3d7760fcff39f0b49cbb535f6cf249966272"
+   }
+  ],
   "feeds/packages/net/udp2raw": [
    {
     "file": "udp2raw-20230206.0.tar.gz",
@@ -12744,10 +12676,10 @@
   ],
   "feeds/packages/net/v2ray-core": [
    {
-    "file": "v2ray-core-5.53.0.tar.gz",
-    "sha256": "f2a78ff50ce36c4a577a39016485cdfb835a75137d514a0a5e8e9e983f0d38bb",
+    "file": "v2ray-core-5.56.0.tar.gz",
+    "sha256": "ab0f2c416d90e6449a49e4ae0da015778a11fc3884dc782e17553234be928475",
     "urls": [
-     "https://codeload.github.com/v2fly/v2ray-core/tar.gz/v5.53.0?/v2ray-core-5.53.0.tar.gz"
+     "https://codeload.github.com/v2fly/v2ray-core/tar.gz/v5.56.0?/v2ray-core-5.56.0.tar.gz"
     ]
    }
   ],
@@ -12859,10 +12791,10 @@
   ],
   "feeds/packages/net/weechat": [
    {
-    "file": "weechat-4.10.2.tar.xz",
-    "sha256": "6fcd05f350c808a4206d6951af36a9eec11b145b6a1a2a8a2b29dd3502e07022",
+    "file": "weechat-4.10.4.tar.xz",
+    "sha256": "9b67a869330f34498f08dcab49edc1c54e9a8af136188d30d5ed1fb8257106da",
     "urls": [
-     "https://weechat.org/files/src/weechat-4.10.2.tar.xz"
+     "https://weechat.org/files/src/weechat-4.10.4.tar.xz"
     ]
    }
   ],
@@ -12989,10 +12921,10 @@
   ],
   "feeds/packages/net/xray-core": [
    {
-    "file": "xray-core-26.10.21.tar.gz",
-    "sha256": "44ef4874529a03848c90f1fdcfb763350fbc5f1de741ec90e0024d651df25650",
+    "file": "xray-core-26.11.9.tar.gz",
+    "sha256": "d5a47bed1b85e1cdfe3cb2f88a02e2db7144f0f8bee541d20b84fafa8fdf6c8d",
     "urls": [
-     "https://codeload.github.com/XTLS/Xray-core/tar.gz/v26.10.21?/xray-core-26.10.21.tar.gz"
+     "https://codeload.github.com/XTLS/Xray-core/tar.gz/v26.11.9?/xray-core-26.11.9.tar.gz"
     ]
    }
   ],
@@ -13529,14 +13461,14 @@
   ],
   "feeds/packages/utils/bcm27xx-eeprom": [
    {
-    "file": "bcm27xx-eeprom-2026.05.27~05d94be4.tar.zst",
+    "file": "bcm27xx-eeprom-2026.11.03~236b4406.tar.zst",
     "git": {
-     "rev": "05d94be4554ce44a057bfce8d0dd37d951703dab",
-     "subdir": "bcm27xx-eeprom-2026.05.27~05d94be4",
+     "rev": "236b4406753e604fde3315cb521a2f843c9f8f85",
+     "subdir": "bcm27xx-eeprom-2026.11.03~236b4406",
      "submodules": [],
      "url": "https://github.com/raspberrypi/rpi-eeprom"
     },
-    "sha256": "d9e9f6cf293cf0b7fb8d651b21fe48bd7553a56bba3796af27d8874423a0f47c"
+    "sha256": "72048c49836c6830241ebc42e1670b4ec3df51f2adfb03ca465d8155c9f68ef2"
    }
   ],
   "feeds/packages/utils/beep": [
@@ -14075,10 +14007,10 @@
   ],
   "feeds/packages/utils/domoticz": [
    {
-    "file": "domoticz-2025.2.tar.gz",
-    "sha256": "fd016f4ffe419e8d559bc0a7f9de5ec4fcaf485fc9d1464c8e8221102b13f589",
+    "file": "domoticz_src_2026.18387.tar.gz",
+    "sha256": "88964b791050abf6b6df3ec9e1d262d18e198a6fa108638974eca8600d1a4568",
     "urls": [
-     "https://codeload.github.com/domoticz/domoticz/tar.gz/2025.2?/domoticz-2025.2.tar.gz"
+     "https://github.com/domoticz/domoticz/releases/download/2026.4/domoticz_src_2026.18387.tar.gz"
     ]
    }
   ],
@@ -14338,10 +14270,10 @@
   ],
   "feeds/packages/utils/fuse3": [
    {
-    "file": "fuse-3.18.2.tar.gz",
-    "sha256": "f01de85717e20adf5f98aff324acd85dd73d61a5ca3834d573dcf0bd6e54a298",
+    "file": "fuse-3.18.3.tar.gz",
+    "sha256": "bcd19582c5e30f7fe45dd86a5540e998590aa01903afc7ebcbeea6c8ac5421ee",
     "urls": [
-     "https://github.com/libfuse/libfuse/releases/download/fuse-3.18.2/fuse-3.18.2.tar.gz"
+     "https://github.com/libfuse/libfuse/releases/download/fuse-3.18.3/fuse-3.18.3.tar.gz"
     ]
    }
   ],
@@ -14595,10 +14527,10 @@
   ],
   "feeds/packages/utils/hwdata": [
    {
-    "file": "hwdata-0.410.tar.gz",
-    "sha256": "2864b061b179b8ad8cb6a7339ca07678240a183d9cedce8677a4950acaf798e0",
+    "file": "hwdata-0.412.tar.gz",
+    "sha256": "f0c64cd7e31d70a5fb3a52e53ab50a61e74c0421a6381eaa45114eec3bde5fe7",
     "urls": [
-     "https://codeload.github.com/vcrhonek/hwdata/tar.gz/v0.410?/hwdata-0.410.tar.gz"
+     "https://codeload.github.com/vcrhonek/hwdata/tar.gz/v0.412?/hwdata-0.412.tar.gz"
     ]
    }
   ],
@@ -14796,21 +14728,21 @@
   ],
   "feeds/packages/utils/less": [
    {
-    "file": "less-704.tar.gz",
-    "sha256": "20a0b0a2bb2525fa53c7eee9beb854b4c9cf172eabb209af7020743547bfe9fb",
+    "file": "less-710.tar.gz",
+    "sha256": "d1008fb78dcae1323ddab664bcb352a61f022b1b131bd8018548e021d975ec7a",
     "urls": [
-     "https://mirrors.tencent.com/gnu/less/less-704.tar.gz",
-     "https://mirrors.aliyun.com/gnu/less/less-704.tar.gz",
-     "https://mirrors.tuna.tsinghua.edu.cn/gnu/less/less-704.tar.gz",
-     "https://mirrors.ustc.edu.cn/gnu/less/less-704.tar.gz",
-     "https://ftpmirror.gnu.org/less/less-704.tar.gz",
-     "https://mirror.csclub.uwaterloo.ca/gnu/less/less-704.tar.gz",
-     "https://mirror.netcologne.de/gnu/less/less-704.tar.gz",
-     "https://www.nic.funet.fi/pub/gnu/gnu/less/less-704.tar.gz",
-     "https://mirror.navercorp.com/gnu/less/less-704.tar.gz",
-     "https://mirrors.rit.edu/gnu/less/less-704.tar.gz",
-     "https://ftp.gnu.org/gnu/less/less-704.tar.gz",
-     "https://www.greenwoodsoftware.com/less/less-704.tar.gz"
+     "https://mirrors.tencent.com/gnu/less/less-710.tar.gz",
+     "https://mirrors.aliyun.com/gnu/less/less-710.tar.gz",
+     "https://mirrors.tuna.tsinghua.edu.cn/gnu/less/less-710.tar.gz",
+     "https://mirrors.ustc.edu.cn/gnu/less/less-710.tar.gz",
+     "https://ftpmirror.gnu.org/less/less-710.tar.gz",
+     "https://mirror.csclub.uwaterloo.ca/gnu/less/less-710.tar.gz",
+     "https://mirror.netcologne.de/gnu/less/less-710.tar.gz",
+     "https://www.nic.funet.fi/pub/gnu/gnu/less/less-710.tar.gz",
+     "https://mirror.navercorp.com/gnu/less/less-710.tar.gz",
+     "https://mirrors.rit.edu/gnu/less/less-710.tar.gz",
+     "https://ftp.gnu.org/gnu/less/less-710.tar.gz",
+     "https://www.greenwoodsoftware.com/less/less-710.tar.gz"
     ]
    }
   ],
@@ -15338,14 +15270,14 @@
   ],
   "feeds/packages/utils/owut": [
    {
-    "file": "owut-2026.10.25~65d67aad.tar.zst",
+    "file": "owut-2026.11.08~55ed17f8.tar.zst",
     "git": {
-     "rev": "65d67aad5a125d6c32a848876bee3c8325b89bb2",
-     "subdir": "owut-2026.10.25~65d67aad",
+     "rev": "55ed17f8199719ad4c4f3ff6881b5648fae1f612",
+     "subdir": "owut-2026.11.08~55ed17f8",
      "submodules": [],
      "url": "https://github.com/efahl/owut.git"
     },
-    "sha256": "091673d86dcdaffb36aeaa6970ed09bd30ae1749bf34e73f6743c3ce13d60eb7"
+    "sha256": "62564f503624e3cbbcfc5f6777c4a834f84594573c963bbdc4dd3b8c29bdb6e5"
    }
   ],
   "feeds/packages/utils/parted": [
@@ -15566,19 +15498,19 @@
   ],
   "feeds/packages/utils/pv": [
    {
-    "file": "pv-1.11.0.tar.gz",
-    "sha256": "fc02c9fc2b82b20a92cc8d98f844be63f22abd98751a8e4abc875e1d803662eb",
+    "file": "pv-1.12.0.tar.gz",
+    "sha256": "31fdbdb449c7143cd2968567bef7599e9f031950e6158ee7bb76e40aebf6ffb8",
     "urls": [
-     "https://www.ivarch.com/programs/sources/pv-1.11.0.tar.gz"
+     "https://www.ivarch.com/programs/sources/pv-1.12.0.tar.gz"
     ]
    }
   ],
   "feeds/packages/utils/qemu": [
    {
-    "file": "qemu-11.1.2.tar.xz",
-    "sha256": "731b5681e4bb18be313231579b8efd0296c5b015fa36dc533874b639ba838016",
+    "file": "qemu-11.1.3.tar.xz",
+    "sha256": "5a8289c7940dc77d3873c81a6c29ba3afe1446fc9d36e77fa1658cdbecb84b22",
     "urls": [
-     "https://download.qemu.org/qemu-11.1.2.tar.xz"
+     "https://download.qemu.org/qemu-11.1.3.tar.xz"
     ]
    }
   ],
@@ -16038,10 +15970,10 @@
   ],
   "feeds/packages/utils/stress-ng": [
    {
-    "file": "stress-ng-0.22.00.tar.gz",
-    "sha256": "4dab6440b81a05468c256e3540285d167f4b8b35f48788723f46fada3b7b71a9",
+    "file": "stress-ng-0.22.01.tar.gz",
+    "sha256": "67e75894da3f634b85992069b0a888893221a77a3db5e3293cdddd0b1c0d4705",
     "urls": [
-     "https://codeload.github.com/ColinIanKing/stress-ng/tar.gz/refs/tags/V0.22.00?/stress-ng-0.22.00.tar.gz"
+     "https://codeload.github.com/ColinIanKing/stress-ng/tar.gz/refs/tags/V0.22.01?/stress-ng-0.22.01.tar.gz"
     ]
    }
   ],
@@ -16495,10 +16427,10 @@
   ],
   "feeds/packages/utils/yq": [
    {
-    "file": "yq-4.54.1.tar.gz",
-    "sha256": "0cec36e7035dd56c508bda56245cbd71e4495d2317bc2528165c4162bce79335",
+    "file": "yq-4.54.3.tar.gz",
+    "sha256": "93143d49b2a3bd6cb723477f585366b29f70c636af4653191d61b49b0c47de7f",
     "urls": [
-     "https://codeload.github.com/mikefarah/yq/tar.gz/v4.54.1?/yq-4.54.1.tar.gz"
+     "https://codeload.github.com/mikefarah/yq/tar.gz/v4.54.3?/yq-4.54.3.tar.gz"
     ]
    }
   ],
@@ -16523,17 +16455,17 @@
   ],
   "feeds/packages/utils/zoneinfo": [
    {
-    "file": "tzcode2026e.tar.gz",
-    "sha256": "cc3d27ca2a0d8399504551b920970d80af83bfb9c216e8082a15491921935d54",
+    "file": "tzcode2026f.tar.gz",
+    "sha256": "5a18da01393679ef2559214dc687563f7f3d05691f6f58b7fbc0166f3e796cd6",
     "urls": [
-     "https://data.iana.org/time-zones/releases/tzcode2026e.tar.gz"
+     "https://data.iana.org/time-zones/releases/tzcode2026f.tar.gz"
     ]
    },
    {
-    "file": "tzdata2026e.tar.gz",
-    "sha256": "b26882805f26aac59d5b222978e6580484b834ccdc98be89df2f05a6dc53a652",
+    "file": "tzdata2026f.tar.gz",
+    "sha256": "01b4a91cec5167ed48c11e8ab78f2048cead78ce94b0cafcad0ae8c5a3044d3d",
     "urls": [
-     "https://data.iana.org/time-zones/releases/tzdata2026e.tar.gz"
+     "https://data.iana.org/time-zones/releases/tzdata2026f.tar.gz"
     ]
    }
   ],
@@ -17148,6 +17080,42 @@
     "sha256": "100e676ca5eda629ae8bcf444d9117d388c5f8ca472c0b7aede2afa24eb1971f",
     "urls": [
      "https://download.qt.io/archive/qt/5.15/5.15.16/submodules/qtvirtualkeyboard-everywhere-opensource-src-5.15.16.tar.xz"
+    ]
+   }
+  ],
+  "feeds/video/frameworks/qt6/qt6quick": [
+   {
+    "file": "qtdeclarative-everywhere-src-6.9.3.tar.xz",
+    "sha256": "5a071b227229afbf5c976b7b59a0d850818d06ae861fcdf6d690351ca3f8a260",
+    "urls": [
+     "https://download.qt.io/archive/qt/6.9/6.9.3/submodules/qtdeclarative-everywhere-src-6.9.3.tar.xz"
+    ]
+   }
+  ],
+  "feeds/video/frameworks/qt6/qt6shadertools": [
+   {
+    "file": "qtshadertools-everywhere-src-6.9.3.tar.xz",
+    "sha256": "629804ee86a35503e4b616f9ab5175caef3da07bd771cf88a24da3b5d4284567",
+    "urls": [
+     "https://download.qt.io/archive/qt/6.9/6.9.3/submodules/qtshadertools-everywhere-src-6.9.3.tar.xz"
+    ]
+   }
+  ],
+  "feeds/video/frameworks/qt6/qt6svg": [
+   {
+    "file": "qtsvg-everywhere-src-6.9.3.tar.xz",
+    "sha256": "db76aa3358cbbe6fce7da576ff4669cb9801920188c750d3b12783bbe97026e2",
+    "urls": [
+     "https://download.qt.io/archive/qt/6.9/6.9.3/submodules/qtsvg-everywhere-src-6.9.3.tar.xz"
+    ]
+   }
+  ],
+  "feeds/video/frameworks/qt6/qt6translations": [
+   {
+    "file": "qttranslations-everywhere-src-6.9.3.tar.xz",
+    "sha256": "f36d545e6681b146fd79b3ebb74ef275e88694cf81eae8323327cae3bfc490a1",
+    "urls": [
+     "https://download.qt.io/archive/qt/6.9/6.9.3/submodules/qttranslations-everywhere-src-6.9.3.tar.xz"
     ]
    }
   ],

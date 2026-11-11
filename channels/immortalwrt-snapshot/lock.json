@@ -2,10 +2,10 @@
   "feeds": [
     {
       "fetch": {
-        "narHash": "sha256-wL6uRThsZ+RsOgJePUfL/NkP0der+kcqhIVV0OFOdw8=",
+        "narHash": "sha256-zWaPBwtc/3fAwAiYyfdO0OO8s1hx5iBQ+DFLxqZ3ZWc=",
         "owner": "immortalwrt",
         "repo": "packages",
-        "rev": "395ca4d2df4754cdb8e89bc4b37cdbcf54d905b0",
+        "rev": "decf94639ffd6ddd26591c190b547c6b7eea150b",
         "type": "github"
       },
       "name": "packages",
@@ -13,10 +13,10 @@
     },
     {
       "fetch": {
-        "narHash": "sha256-N51Od2acbvV48oHep6fg5ngSKbBfIGZUhFKbfMP1iHY=",
+        "narHash": "sha256-/R6qS3Tap+LSCgXPaY5hlRflOlk8xRABtYA/C4qJGO0=",
         "owner": "immortalwrt",
         "repo": "luci",
-        "rev": "64cb10331bd3204da8a6a30107c2bf02e5e2399c",
+        "rev": "ad75cde88e694b511100576bfbe0a280e5efe6ef",
         "type": "github"
       },
       "name": "luci",
@@ -46,10 +46,10 @@
     },
     {
       "fetch": {
-        "narHash": "sha256-y7V2ndcqfkWk/4r+QPPt+PMOygk6/gz/DYYvA6ZqSqo=",
+        "narHash": "sha256-o1BK0+JP++Vu6a3ADIyxZCb7/6q16jbq4GG0dplFCYs=",
         "owner": "openwrt",
         "repo": "video",
-        "rev": "2cb1f4bd2293184d80d053cc4da6e0b9ab629916",
+        "rev": "92f51f0f3fffa718fc9d3717a5e852e8ddb2b1e7",
         "type": "github"
       },
       "name": "video",
@@ -68,27 +68,27 @@
         "src": "25.232.42430~52127c8"
       },
       "feeds/luci/applications/luci-app-acl": {
-        "po": "26.278.51556~9c9ad92",
+        "po": "26.310.60063~9a62efc",
         "src": "26.154.38947~8dd088d"
       },
       "feeds/luci/applications/luci-app-acme": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.034.28144~20e8277"
       },
       "feeds/luci/applications/luci-app-adblock": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.288.56961~b0cead4"
       },
       "feeds/luci/applications/luci-app-adblock-fast": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.200.01623~092aee7"
       },
       "feeds/luci/applications/luci-app-adguardhome": {
-        "po": "26.287.65283~327d358",
+        "po": "26.310.60063~9a62efc",
         "src": "26.083.07222~ada55af"
       },
       "feeds/luci/applications/luci-app-advanced-reboot": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.167.80091~f851025"
       },
       "feeds/luci/applications/luci-app-airplay2": {
@@ -100,11 +100,11 @@
         "src": "25.272.27379~18cbbf3"
       },
       "feeds/luci/applications/luci-app-antiblock": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.248.54994~82966a6"
       },
       "feeds/luci/applications/luci-app-apinger": {
-        "po": "26.287.65283~327d358",
+        "po": "26.310.60063~9a62efc",
         "src": "26.047.05385~b07c683"
       },
       "feeds/luci/applications/luci-app-appfilter": {
@@ -112,7 +112,7 @@
         "src": "26.203.15109~cc320be"
       },
       "feeds/luci/applications/luci-app-aria2": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.261.08411~adc898b"
       },
       "feeds/luci/applications/luci-app-arpbind": {
@@ -120,7 +120,7 @@
         "src": "25.217.47483~63df2f8"
       },
       "feeds/luci/applications/luci-app-attendedsysupgrade": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.223.24468~39dca4a"
       },
       "feeds/luci/applications/luci-app-autoreboot": {
@@ -128,15 +128,15 @@
         "src": "25.218.38818~14ea92e"
       },
       "feeds/luci/applications/luci-app-babeld": {
-        "po": "26.257.24212~22edfb6",
+        "po": "26.310.60063~9a62efc",
         "src": "26.178.83810~4a1dbd9"
       },
       "feeds/luci/applications/luci-app-banip": {
-        "po": "26.291.65693~03c6023",
-        "src": "26.288.56364~e988440"
+        "po": "26.310.60063~9a62efc",
+        "src": "26.304.26341~6387443"
       },
       "feeds/luci/applications/luci-app-bcp38": {
-        "po": "26.278.51556~9c9ad92",
+        "po": "26.310.60063~9a62efc",
         "src": "26.088.70151~1e23538"
       },
       "feeds/luci/applications/luci-app-bitsrunlogin-go": {
@@ -144,7 +144,7 @@
         "src": "25.218.38818~14ea92e"
       },
       "feeds/luci/applications/luci-app-bmx7": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.201.67232~5890760"
       },
       "feeds/luci/applications/luci-app-cd8021x": {
@@ -152,7 +152,7 @@
         "src": "25.272.27379~18cbbf3"
       },
       "feeds/luci/applications/luci-app-chrony": {
-        "po": "26.287.65283~327d358",
+        "po": "26.310.60063~9a62efc",
         "src": "25.314.75244~2e22430"
       },
       "feeds/luci/applications/luci-app-cifs-mount": {
@@ -160,19 +160,19 @@
         "src": "25.218.38818~14ea92e"
       },
       "feeds/luci/applications/luci-app-clamav": {
-        "po": "26.278.51556~9c9ad92",
+        "po": "26.310.60063~9a62efc",
         "src": "25.295.80195~0563adb"
       },
       "feeds/luci/applications/luci-app-cloudflared": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.163.23041~0ee9456"
       },
       "feeds/luci/applications/luci-app-commands": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.201.70536~610053f"
       },
       "feeds/luci/applications/luci-app-coovachilli": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "24.290.06888~09a1a58"
       },
       "feeds/luci/applications/luci-app-cpufreq": {
@@ -184,11 +184,11 @@
         "src": "25.272.27379~18cbbf3"
       },
       "feeds/luci/applications/luci-app-crowdsec-firewall-bouncer": {
-        "po": "26.287.65283~327d358",
+        "po": "26.310.60063~9a62efc",
         "src": "26.034.28144~63299fe"
       },
       "feeds/luci/applications/luci-app-csshnpd": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "25.188.80264~834b5d0"
       },
       "feeds/luci/applications/luci-app-dae": {
@@ -200,12 +200,12 @@
         "src": "26.181.31416~15b34e7"
       },
       "feeds/luci/applications/luci-app-dawn": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "25.005.50814~15a8136"
       },
       "feeds/luci/applications/luci-app-ddns": {
-        "po": "26.291.67080~0a601b6",
-        "src": "26.215.47314~8b5f528"
+        "po": "26.310.60063~9a62efc",
+        "src": "26.304.33642~5599f42"
       },
       "feeds/luci/applications/luci-app-ddns-go": {
         "po": "25.234.61163~7d31555",
@@ -220,7 +220,7 @@
         "src": "25.272.27379~18cbbf3"
       },
       "feeds/luci/applications/luci-app-dockerman": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.201.68934~ed11e49"
       },
       "feeds/luci/applications/luci-app-dufs": {
@@ -228,15 +228,15 @@
         "src": "25.218.38818~14ea92e"
       },
       "feeds/luci/applications/luci-app-dump1090": {
-        "po": "26.278.51556~9c9ad92",
+        "po": "26.310.60063~9a62efc",
         "src": "24.338.55521~22d4830"
       },
       "feeds/luci/applications/luci-app-email": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.147.46185~958ef14"
       },
       "feeds/luci/applications/luci-app-eoip": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.147.46185~ca2a549"
       },
       "feeds/luci/applications/luci-app-eqos": {
@@ -244,7 +244,7 @@
         "src": "26.052.24447~584852c"
       },
       "feeds/luci/applications/luci-app-example": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.280.63529~d175293"
       },
       "feeds/luci/applications/luci-app-fancontrol": {
@@ -260,23 +260,23 @@
         "src": "25.257.46572~f0567b4"
       },
       "feeds/luci/applications/luci-app-filemanager": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.147.46185~177cf48"
       },
       "feeds/luci/applications/luci-app-firewall": {
-        "po": "26.293.12901~62f0fbb",
+        "po": "26.315.10273~ad75cde",
         "src": "26.153.26146~147f021"
       },
       "feeds/luci/applications/luci-app-frpc": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.255.21994~842f055"
       },
       "feeds/luci/applications/luci-app-frps": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.255.21994~8961ed5"
       },
       "feeds/luci/applications/luci-app-fwknopd": {
-        "po": "26.278.51556~9c9ad92",
+        "po": "26.310.60063~9a62efc",
         "src": "26.047.05385~b07c683"
       },
       "feeds/luci/applications/luci-app-gost": {
@@ -292,7 +292,7 @@
         "src": "26.288.37172~7a64c17"
       },
       "feeds/luci/applications/luci-app-https-dns-proxy": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.200.01609~d90ee37"
       },
       "feeds/luci/applications/luci-app-ipsec-vpnd": {
@@ -300,7 +300,7 @@
         "src": "25.218.38818~14ea92e"
       },
       "feeds/luci/applications/luci-app-irqbalance": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.237.54178~13d2926"
       },
       "feeds/luci/applications/luci-app-k3screenctrl": {
@@ -308,43 +308,43 @@
         "src": "25.272.27379~18cbbf3"
       },
       "feeds/luci/applications/luci-app-keepalived": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.270.59738~60c5307"
       },
       "feeds/luci/applications/luci-app-ksmbd": {
-        "po": "26.287.65283~327d358",
+        "po": "26.310.60063~9a62efc",
         "src": "25.340.31413~02a4c75"
       },
       "feeds/luci/applications/luci-app-ledtrig-rssi": {
-        "po": "26.272.65915~80de46c",
+        "po": "26.310.60063~9a62efc",
         "src": "26.047.05385~b07c683"
       },
       "feeds/luci/applications/luci-app-ledtrig-switch": {
-        "po": "26.272.65915~80de46c",
+        "po": "26.310.60063~9a62efc",
         "src": "26.047.05385~b07c683"
       },
       "feeds/luci/applications/luci-app-ledtrig-usbport": {
-        "po": "26.278.51556~9c9ad92",
+        "po": "26.310.60063~9a62efc",
         "src": "26.047.05385~b07c683"
       },
       "feeds/luci/applications/luci-app-librespeed": {
-        "po": "26.251.45557~c46cf74",
-        "src": "26.251.45557~c46cf74"
+        "po": "26.301.33231~3b0f7cd",
+        "src": "26.301.33231~3b0f7cd"
       },
       "feeds/luci/applications/luci-app-libreswan": {
-        "po": "26.287.65283~327d358",
+        "po": "26.310.60063~9a62efc",
         "src": "26.047.05385~b07c683"
       },
       "feeds/luci/applications/luci-app-lldpd": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.256.49187~22e4e76"
       },
       "feeds/luci/applications/luci-app-lorawan-basicstation": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.047.05385~b07c683"
       },
       "feeds/luci/applications/luci-app-lxc": {
-        "po": "26.287.65283~327d358",
+        "po": "26.310.60063~9a62efc",
         "src": "26.201.70829~c8e1aa4"
       },
       "feeds/luci/applications/luci-app-microsocks": {
@@ -352,7 +352,7 @@
         "src": "26.100.10353~63fa756"
       },
       "feeds/luci/applications/luci-app-minidlna": {
-        "po": "26.278.51556~9c9ad92",
+        "po": "26.310.60063~9a62efc",
         "src": "25.017.24408~69ae9ef"
       },
       "feeds/luci/applications/luci-app-modemband": {
@@ -360,7 +360,7 @@
         "src": "24.317.52405~9417288"
       },
       "feeds/luci/applications/luci-app-mosquitto": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.034.28144~20bc788"
       },
       "feeds/luci/applications/luci-app-msd_lite": {
@@ -372,7 +372,7 @@
         "src": "25.272.27379~18cbbf3"
       },
       "feeds/luci/applications/luci-app-mwan3": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.190.71895~a18dc50"
       },
       "feeds/luci/applications/luci-app-n2n": {
@@ -380,7 +380,7 @@
         "src": "25.272.27379~18cbbf3"
       },
       "feeds/luci/applications/luci-app-natmap": {
-        "po": "26.278.51556~9c9ad92",
+        "po": "26.310.60063~9a62efc",
         "src": "26.221.34389~7a1fc28"
       },
       "feeds/luci/applications/luci-app-netdata": {
@@ -388,7 +388,7 @@
         "src": "25.293.47459~e7567cf"
       },
       "feeds/luci/applications/luci-app-nextdns": {
-        "po": "26.278.51556~9c9ad92",
+        "po": "26.310.60063~9a62efc",
         "src": "26.034.28145~cd67192"
       },
       "feeds/luci/applications/luci-app-nfs": {
@@ -404,7 +404,7 @@
         "src": "25.272.27379~18cbbf3"
       },
       "feeds/luci/applications/luci-app-nlbwmon": {
-        "po": "26.283.46862~a92c0d4",
+        "po": "26.310.60063~9a62efc",
         "src": "26.222.44595~1c70b2b"
       },
       "feeds/luci/applications/luci-app-nps": {
@@ -412,11 +412,11 @@
         "src": "25.272.27379~18cbbf3"
       },
       "feeds/luci/applications/luci-app-nut": {
-        "po": "26.278.51556~9c9ad92",
+        "po": "26.310.60063~9a62efc",
         "src": "26.248.54896~3319564"
       },
       "feeds/luci/applications/luci-app-ocserv": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.205.35795~96a255d"
       },
       "feeds/luci/applications/luci-app-oled": {
@@ -424,23 +424,23 @@
         "src": "25.272.27379~18cbbf3"
       },
       "feeds/luci/applications/luci-app-olsr": {
-        "po": "26.291.65693~03c6023",
-        "src": "26.203.33044~d98f03e"
+        "po": "26.310.60063~9a62efc",
+        "src": "26.309.80019~2cd0c0b"
       },
       "feeds/luci/applications/luci-app-olsr-services": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.047.02577~c567bfc"
       },
       "feeds/luci/applications/luci-app-olsr-viz": {
-        "po": "26.225.36130~c62742f",
+        "po": "26.310.60063~9a62efc",
         "src": "26.047.02577~c567bfc"
       },
       "feeds/luci/applications/luci-app-omcproxy": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "24.339.56439~c4b6cb8"
       },
       "feeds/luci/applications/luci-app-openlist": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.047.05385~b07c683"
       },
       "feeds/luci/applications/luci-app-openvpn-server": {
@@ -448,7 +448,7 @@
         "src": "25.272.27379~18cbbf3"
       },
       "feeds/luci/applications/luci-app-openwisp": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.034.28145~b8c380c"
       },
       "feeds/luci/applications/luci-app-oscam": {
@@ -456,23 +456,23 @@
         "src": "25.272.27379~18cbbf3"
       },
       "feeds/luci/applications/luci-app-p910nd": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.070.23192~a973953"
       },
       "feeds/luci/applications/luci-app-package-manager": {
-        "po": "26.287.65283~327d358",
+        "po": "26.310.60063~9a62efc",
         "src": "26.249.67624~9aff465"
       },
       "feeds/luci/applications/luci-app-pagekitec": {
-        "po": "26.278.51556~9c9ad92",
+        "po": "26.310.60063~9a62efc",
         "src": "26.047.05385~b07c683"
       },
       "feeds/luci/applications/luci-app-passwall": {
-        "po": "26.309.25274~1edeea8",
-        "src": "26.309.25274~1edeea8"
+        "po": "26.314.85035~86aef7f",
+        "src": "26.314.85035~86aef7f"
       },
       "feeds/luci/applications/luci-app-pbr": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.200.01616~60f87e5"
       },
       "feeds/luci/applications/luci-app-pppoe-relay": {
@@ -484,7 +484,7 @@
         "src": "25.272.27379~18cbbf3"
       },
       "feeds/luci/applications/luci-app-privoxy": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.165.23692~f4d0a44"
       },
       "feeds/luci/applications/luci-app-ps3netsrv": {
@@ -496,15 +496,15 @@
         "src": "26.129.12611~06572bb"
       },
       "feeds/luci/applications/luci-app-qos-legacy": {
-        "po": "26.287.65283~327d358",
+        "po": "26.310.60063~9a62efc",
         "src": "26.217.60947~bea787c"
       },
       "feeds/luci/applications/luci-app-qosify": {
-        "po": "26.291.65693~03c6023",
-        "src": "26.273.63965~32775cf"
+        "po": "26.311.62251~217e71d",
+        "src": "26.311.62251~217e71d"
       },
       "feeds/luci/applications/luci-app-radicale3": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.245.64121~506ca60"
       },
       "feeds/luci/applications/luci-app-ramfree": {
@@ -516,7 +516,7 @@
         "src": "25.272.27379~18cbbf3"
       },
       "feeds/luci/applications/luci-app-rp-pppoe-server": {
-        "po": "26.278.51556~9c9ad92",
+        "po": "26.310.60063~9a62efc",
         "src": "25.161.59556~1719a4d"
       },
       "feeds/luci/applications/luci-app-rtp2httpd": {
@@ -528,7 +528,7 @@
         "src": "25.218.38818~14ea92e"
       },
       "feeds/luci/applications/luci-app-samba4": {
-        "po": "26.278.51556~9c9ad92",
+        "po": "26.310.60063~9a62efc",
         "src": "26.180.11865~972e2dc"
       },
       "feeds/luci/applications/luci-app-scutclient": {
@@ -536,19 +536,19 @@
         "src": "25.272.27379~18cbbf3"
       },
       "feeds/luci/applications/luci-app-ser2net": {
-        "po": "26.287.65283~327d358",
+        "po": "26.310.60063~9a62efc",
         "src": "24.338.55521~22d4830"
       },
       "feeds/luci/applications/luci-app-sfp-info": {
-        "po": "26.278.51556~9c9ad92",
+        "po": "26.310.60063~9a62efc",
         "src": "26.231.21336~77dad3f"
       },
       "feeds/luci/applications/luci-app-shunt": {
-        "po": "26.278.67349~0257cc0",
-        "src": "26.287.29910~e5080a3"
+        "po": "26.310.60063~9a62efc",
+        "src": "26.314.68308~c833f9b"
       },
       "feeds/luci/applications/luci-app-smartdns": {
-        "po": "26.293.12901~62f0fbb",
+        "po": "26.315.10273~ad75cde",
         "src": "26.161.28904~eef854a"
       },
       "feeds/luci/applications/luci-app-sms-tool-js": {
@@ -556,11 +556,11 @@
         "src": "25.232.42518~1a13678"
       },
       "feeds/luci/applications/luci-app-snmpd": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.220.05649~d404b02"
       },
       "feeds/luci/applications/luci-app-softether": {
-        "po": "26.257.24212~22edfb6",
+        "po": "26.310.60063~9a62efc",
         "src": "24.148.86114~27fc389"
       },
       "feeds/luci/applications/luci-app-softethervpn": {
@@ -572,24 +572,24 @@
         "src": "26.100.10353~63fa756"
       },
       "feeds/luci/applications/luci-app-sqm": {
-        "po": "26.287.65283~327d358",
+        "po": "26.310.60063~9a62efc",
         "src": "26.215.35902~6876211"
       },
       "feeds/luci/applications/luci-app-squid": {
-        "po": "26.278.51556~9c9ad92",
+        "po": "26.310.60063~9a62efc",
         "src": "25.060.22463~56e0867"
       },
       "feeds/luci/applications/luci-app-sshtunnel": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.051.10564~c25c0be"
       },
       "feeds/luci/applications/luci-app-statistics": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.205.35795~96a255d"
       },
       "feeds/luci/applications/luci-app-strongswan-swanctl": {
-        "po": "26.291.65693~03c6023",
-        "src": "26.287.44160~9705a89"
+        "po": "26.310.60063~9a62efc",
+        "src": "26.303.30762~41b036f"
       },
       "feeds/luci/applications/luci-app-syncdial": {
         "po": "0",
@@ -604,7 +604,7 @@
         "src": "25.218.38818~14ea92e"
       },
       "feeds/luci/applications/luci-app-tailscale-community": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.280.64122~4bc2f85"
       },
       "feeds/luci/applications/luci-app-timewol": {
@@ -612,23 +612,23 @@
         "src": "25.272.27379~18cbbf3"
       },
       "feeds/luci/applications/luci-app-tinyproxy": {
-        "po": "26.287.65283~327d358",
+        "po": "26.310.60063~9a62efc",
         "src": "25.338.04327~a9341c4"
       },
       "feeds/luci/applications/luci-app-tor": {
-        "po": "26.287.65283~327d358",
+        "po": "26.310.60063~9a62efc",
         "src": "24.338.55521~22d4830"
       },
       "feeds/luci/applications/luci-app-transmission": {
-        "po": "26.287.65283~327d358",
+        "po": "26.310.60063~9a62efc",
         "src": "26.039.34916~440f60d"
       },
       "feeds/luci/applications/luci-app-travelmate": {
-        "po": "26.291.65693~03c6023",
-        "src": "26.287.39261~b954bdc"
+        "po": "26.310.60063~9a62efc",
+        "src": "26.303.28046~b8708bf"
       },
       "feeds/luci/applications/luci-app-ttyd": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.039.34916~440f60d"
       },
       "feeds/luci/applications/luci-app-ua2f": {
@@ -636,23 +636,23 @@
         "src": "25.218.38818~14ea92e"
       },
       "feeds/luci/applications/luci-app-udpxy": {
-        "po": "26.287.65283~327d358",
+        "po": "26.310.60063~9a62efc",
         "src": "26.050.30115~1d7c3e5"
       },
       "feeds/luci/applications/luci-app-uhttpd": {
-        "po": "26.287.65283~327d358",
-        "src": "26.291.65564~d38658b"
+        "po": "26.310.60063~9a62efc",
+        "src": "26.314.24545~a7614a6"
       },
       "feeds/luci/applications/luci-app-unblockneteasemusic": {
         "po": "0",
         "src": "26.293.27844~6dafdfc"
       },
       "feeds/luci/applications/luci-app-unbound": {
-        "po": "26.287.65283~327d358",
-        "src": "26.147.46185~79e8d8b"
+        "po": "26.310.60063~9a62efc",
+        "src": "26.308.28877~1881281"
       },
       "feeds/luci/applications/luci-app-upnp": {
-        "po": "26.293.12901~62f0fbb",
+        "po": "26.315.10273~ad75cde",
         "src": "26.215.35902~fe9534b"
       },
       "feeds/luci/applications/luci-app-usb-printer": {
@@ -660,15 +660,15 @@
         "src": "25.272.27379~18cbbf3"
       },
       "feeds/luci/applications/luci-app-usteer": {
-        "po": "26.291.65693~03c6023",
-        "src": "26.078.75025~18e0538"
+        "po": "26.310.60063~9a62efc",
+        "src": "26.312.47156~4a3d16e"
       },
       "feeds/luci/applications/luci-app-ustreamer": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.064.01456~1c35eec"
       },
       "feeds/luci/applications/luci-app-v2raya": {
-        "po": "26.293.12901~62f0fbb",
+        "po": "26.315.10273~ad75cde",
         "src": "25.163.60953~ae5d91d"
       },
       "feeds/luci/applications/luci-app-vlmcsd": {
@@ -676,7 +676,7 @@
         "src": "25.218.38818~14ea92e"
       },
       "feeds/luci/applications/luci-app-vnstat2": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.147.46187~4a1a6bd"
       },
       "feeds/luci/applications/luci-app-vsftpd": {
@@ -684,7 +684,7 @@
         "src": "25.272.27379~18cbbf3"
       },
       "feeds/luci/applications/luci-app-watchcat": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "25.343.62322~4c4b5c3"
       },
       "feeds/luci/applications/luci-app-wechatpush": {
@@ -696,23 +696,23 @@
         "src": "26.278.48779~a29ca05"
       },
       "feeds/luci/applications/luci-app-wifihistory": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.040.14571~9c4b2ee"
       },
       "feeds/luci/applications/luci-app-wifischedule": {
-        "po": "26.278.51556~9c9ad92",
+        "po": "26.310.60063~9a62efc",
         "src": "26.220.05359~b702d11"
       },
       "feeds/luci/applications/luci-app-wol": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "26.147.46186~7e0faa8"
       },
       "feeds/luci/applications/luci-app-xfrpc": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "24.338.55521~22d4830"
       },
       "feeds/luci/applications/luci-app-xinetd": {
-        "po": "26.291.65693~03c6023",
+        "po": "26.310.60063~9a62efc",
         "src": "25.078.43276~da878da"
       },
       "feeds/luci/applications/luci-app-xlnetacc": {
@@ -792,8 +792,8 @@
         "src": "26.047.02577~fbaa2c6"
       },
       "feeds/luci/modules/luci-base": {
-        "po": "26.293.12901~62f0fbb",
-        "src": "26.293.12901~62f0fbb"
+        "po": "26.315.10273~ad75cde",
+        "src": "26.315.10273~ad75cde"
       },
       "feeds/luci/modules/luci-compat": {
         "po": "0",
@@ -812,11 +812,11 @@
         "src": "26.153.26146~147f021"
       },
       "feeds/luci/modules/luci-mod-dashboard": {
-        "po": "26.291.65693~03c6023",
-        "src": "26.270.42305~1958e98"
+        "po": "26.310.60063~9a62efc",
+        "src": "26.311.62176~0ad9563"
       },
       "feeds/luci/modules/luci-mod-dsl": {
-        "po": "26.287.65283~327d358",
+        "po": "26.310.60063~9a62efc",
         "src": "26.249.67624~9aff465"
       },
       "feeds/luci/modules/luci-mod-network": {
@@ -969,23 +969,15 @@
       },
       "feeds/luci/themes/luci-theme-bootstrap": {
         "po": "0",
-        "src": "26.219.84805~084fae3"
+        "src": "26.308.28974~59b4e33"
       },
       "feeds/luci/themes/luci-theme-footstrap": {
-        "po": "26.270.60134~05dc750",
-        "src": "26.283.46957~36720dd"
+        "po": "26.297.60563~4bfd110",
+        "src": "26.308.28974~d5d31d8"
       },
       "feeds/luci/themes/luci-theme-material": {
         "po": "0",
         "src": "26.257.63024~4e23ae5"
-      },
-      "feeds/luci/themes/luci-theme-openwrt": {
-        "po": "0",
-        "src": "26.219.84805~7c6d8ff"
-      },
-      "feeds/luci/themes/luci-theme-openwrt-2020": {
-        "po": "0",
-        "src": "26.219.84805~7c6d8ff"
       }
     }
   },
