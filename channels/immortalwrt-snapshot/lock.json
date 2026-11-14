@@ -57,7 +57,7 @@
     }
   ],
   "packageVersions": {
-    "baseFilesRelease": "1961",
+    "baseFilesRelease": "1963",
     "luci": {
       "feeds/luci/applications/luci-app-3cat": {
         "po": "25.165.47678~2fcc26e",
@@ -981,16 +981,16 @@
       }
     }
   },
-  "revision": "r43172-4765b657625e",
+  "revision": "r43294-a4ba8240d8a1",
   "src": {
     "fetch": {
-      "narHash": "sha256-U9KFk4yaxkh88RDbWSLT2DBdLgtefHp3/3islZynRG4=",
+      "narHash": "sha256-hJ4Uk6YlZrnrvwoU0oZCUWdc26ImLsovTKj9pt99NEo=",
       "owner": "immortalwrt",
       "repo": "immortalwrt",
-      "rev": "4765b657625ec5bbda74b44400465fe043802b30",
+      "rev": "a4ba8240d8a1aaef7e8c6f2d65e841a9bfd2b8c5",
       "type": "github"
     },
-    "lastModified": 1793851573,
+    "lastModified": 1794627768,
     "ref": "master"
   },
   "version": "SNAPSHOT"

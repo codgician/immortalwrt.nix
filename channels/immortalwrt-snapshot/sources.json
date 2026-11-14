@@ -18499,14 +18499,14 @@
   ],
   "package/firmware/ipq-wifi": [
    {
-    "file": "ipq-wifi-2026.10.25~49ce14c0.tar.zst",
+    "file": "ipq-wifi-2026.11.12~e1c4cbaf.tar.zst",
     "git": {
-     "rev": "49ce14c099b16044b7062df54bdabeb495b804ad",
-     "subdir": "ipq-wifi-2026.10.25~49ce14c0",
+     "rev": "e1c4cbaf43917e19779dbf9f8e276e31116bcaef",
+     "subdir": "ipq-wifi-2026.11.12~e1c4cbaf",
      "submodules": [],
      "url": "https://git.openwrt.org/project/firmware/qca-wireless.git"
     },
-    "sha256": "b9c6723021af9267035b7e25762b80c06887a5ea9c524b2649b0b27ea58b121c"
+    "sha256": "2d525d7af66de1dc947aff2653669265ccad678424e7fdfe71aebc6c55692437"
    }
   ],
   "package/firmware/lantiq/dsl-vrx200-firmware-xdsl": [
@@ -18989,28 +18989,28 @@
   ],
   "package/kernel/r8125": [
    {
-    "file": "r8125-9.016.01.tar.bz2",
-    "sha256": "5434b26500538a62541c55cd09eea099177f59bd9cc48d16969089a9bcdbbd41",
+    "file": "r8125-9.018.00.tar.bz2",
+    "sha256": "66291cb5d4d3b359cfa0c9ca902028d9ce0f76065887cb64b4052dce4a676ff8",
     "urls": [
-     "https://github.com/openwrt/rtl8125/releases/download/9.016.01/r8125-9.016.01.tar.bz2"
+     "https://github.com/openwrt/rtl8125/releases/download/9.018.00/r8125-9.018.00.tar.bz2"
     ]
    }
   ],
   "package/kernel/r8126": [
    {
-    "file": "r8126-10.016.00.tar.bz2",
-    "sha256": "50c8d3d49592d2e8f372bd7ece8e7df9b50a71b055c077d42eacc42302914440",
+    "file": "r8126-10.018.00.tar.bz2",
+    "sha256": "ee3f531b65910e2443d98048d0578d404f538fa28ba428782da39f3e189a6fff",
     "urls": [
-     "https://github.com/openwrt/rtl8126/releases/download/10.016.00/r8126-10.016.00.tar.bz2"
+     "https://github.com/openwrt/rtl8126/releases/download/10.018.00/r8126-10.018.00.tar.bz2"
     ]
    }
   ],
   "package/kernel/r8127": [
    {
-    "file": "r8127-11.015.00.tar.bz2",
-    "sha256": "ab21bf69368fb9de7f591b2e81cf1a815988bbf086ecbf41af7de9787b10594b",
+    "file": "r8127-11.017.02.tar.bz2",
+    "sha256": "8be2612d9b30e9a00c33e44c71e1bf07703a0b34051be6fa6cccfaea5532b78e",
     "urls": [
-     "https://github.com/openwrt/rtl8127/releases/download/11.015.00/r8127-11.015.00.tar.bz2"
+     "https://github.com/openwrt/rtl8127/releases/download/11.017.02/r8127-11.017.02.tar.bz2"
     ]
    }
   ],
@@ -19023,10 +19023,10 @@
   ],
   "package/kernel/r8168": [
    {
-    "file": "r8168-8.056.02.tar.bz2",
-    "sha256": "38c48129c41d1dc38681cb83e87c70bda12873384899d94ecc26bb79903829ce",
+    "file": "r8168-8.057.00.tar.bz2",
+    "sha256": "6f48d5eb1f958499495acf48d8d5989cc99e9dafc4ca6968111450a3a15b99b1",
     "urls": [
-     "https://github.com/openwrt/rtl8168/releases/download/8.056.02/r8168-8.056.02.tar.bz2"
+     "https://github.com/openwrt/rtl8168/releases/download/8.057.00/r8168-8.057.00.tar.bz2"
     ]
    }
   ],
@@ -19668,14 +19668,14 @@
   ],
   "package/network/config/firewall4": [
    {
-    "file": "firewall4-2026.10.29~e6f600c4.tar.zst",
+    "file": "firewall4-2026.11.08~3722eadc.tar.zst",
     "git": {
-     "rev": "e6f600c458bda7bc2d87b07e78fd06b50c9d7131",
-     "subdir": "firewall4-2026.10.29~e6f600c4",
+     "rev": "3722eadc088c3ab81389596ca9796112b436583a",
+     "subdir": "firewall4-2026.11.08~3722eadc",
      "submodules": [],
      "url": "https://git.openwrt.org/project/firewall4.git"
     },
-    "sha256": "d67c4a2fe4072f641ea532379f463ab3169aea8c2aa54966154a4670fda2e1ac"
+    "sha256": "a95c6cfe419c7d4e22bda5608aa6e46c67dadc9c7096879702d614cc498759d0"
    }
   ],
   "package/network/config/ltq-adsl-app": [
@@ -19846,10 +19846,10 @@
   ],
   "package/network/services/ppp": [
    {
-    "file": "ppp-2.5.4.tar.gz",
-    "sha256": "379a630a40d858a1347f6592d671791dde12101697a743ef9900012f3765be31",
+    "file": "ppp-2.5.5.tar.gz",
+    "sha256": "0ebbcfef906d16cfbb9cbdd19c0d92aa3df2fd8fdd29731f614c58d16a279aa5",
     "urls": [
-     "https://download.samba.org/pub/ppp/ppp-2.5.4.tar.gz"
+     "https://download.samba.org/pub/ppp/ppp-2.5.5.tar.gz"
     ]
    }
   ],
@@ -19867,14 +19867,14 @@
   ],
   "package/network/services/uhttpd": [
    {
-    "file": "uhttpd-2026.10.19~ca796d7d.tar.zst",
+    "file": "uhttpd-2026.11.05~93b05e0b.tar.zst",
     "git": {
-     "rev": "ca796d7dec5697a2d1a7a42be79677f239b64282",
-     "subdir": "uhttpd-2026.10.19~ca796d7d",
+     "rev": "93b05e0b65d91c23c5aa8fdde378df1f174ec71d",
+     "subdir": "uhttpd-2026.11.05~93b05e0b",
      "submodules": [],
      "url": "https://git.openwrt.org/project/uhttpd.git"
     },
-    "sha256": "6a2fbcc0dbd3f6c9d076037f23b8544356487aea6b00d2a82a3591b09ba4a8e4"
+    "sha256": "8305c6d4c63aa3c8f6471c55256a378dd9ee3b2898e0b3c096540ba4ec23f2db"
    }
   ],
   "package/network/services/umdns": [
@@ -20176,14 +20176,14 @@
   ],
   "package/system/fstools": [
    {
-    "file": "fstools-2026.10.18~907cf449.tar.zst",
+    "file": "fstools-2026.11.07~5e371ecf.tar.zst",
     "git": {
-     "rev": "907cf4496eb58c93daf3c9c65ce32eec6e6546e3",
-     "subdir": "fstools-2026.10.18~907cf449",
+     "rev": "5e371ecfa7f6289db816b6ce07da5a039fb0a5c8",
+     "subdir": "fstools-2026.11.07~5e371ecf",
      "submodules": [],
      "url": "https://git.openwrt.org/project/fstools.git"
     },
-    "sha256": "7abaed886eb7a092ca91522f31d8374c24699f55eef4ebb8a2f7719322c424b1"
+    "sha256": "c3a5d979015f5393ad6f29052f8bbfc1ab6bef2817bc9505340cd3ae0e087dbb"
    }
   ],
   "package/system/fwtool": [
@@ -21061,10 +21061,10 @@
   ],
   "tools/ccache": [
    {
-    "file": "ccache-4.13.3.tar.gz",
-    "sha256": "c149d71f47f6fe08e4f2e43db4b0b091c61e8ea3daa23aa998b094bd84ecdfe8",
+    "file": "ccache-4.14.2.tar.gz",
+    "sha256": "35921f80a93d6453a874525f2e4bd97264c46ddc349d87aacc1032cde4dd2924",
     "urls": [
-     "https://github.com/ccache/ccache/releases/download/v4.13.3/ccache-4.13.3.tar.gz"
+     "https://github.com/ccache/ccache/releases/download/v4.14.2/ccache-4.14.2.tar.gz"
     ]
    }
   ],
@@ -21348,13 +21348,13 @@
   ],
   "tools/libressl": [
    {
-    "file": "libressl-4.2.1.tar.gz",
-    "sha256": "6d5c2f58583588ea791f4c8645004071d00dfa554a5bf788a006ca1eb5abd70b",
+    "file": "libressl-4.2.3.tar.gz",
+    "sha256": "4063e659bc79573146d0faab01ad28762f5141acdc39df29247fc255aadf187c",
     "urls": [
-     "https://mirrors.tencent.com/OpenBSD/LibreSSL/libressl-4.2.1.tar.gz",
-     "https://mirror.ox.ac.uk/pub/OpenBSD/LibreSSL/libressl-4.2.1.tar.gz",
-     "https://ftp.jaist.ac.jp/pub/OpenBSD/LibreSSL/libressl-4.2.1.tar.gz",
-     "https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-4.2.1.tar.gz"
+     "https://mirrors.tencent.com/OpenBSD/LibreSSL/libressl-4.2.3.tar.gz",
+     "https://mirror.ox.ac.uk/pub/OpenBSD/LibreSSL/libressl-4.2.3.tar.gz",
+     "https://ftp.jaist.ac.jp/pub/OpenBSD/LibreSSL/libressl-4.2.3.tar.gz",
+     "https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-4.2.3.tar.gz"
     ]
    }
   ],
@@ -21852,5 +21852,5 @@
   "https://sources.openwrt.org",
   "https://mirror2.openwrt.org/sources"
  ],
- "revision": "r43172-4765b657625e"
+ "revision": "r43294-a4ba8240d8a1"
 }
