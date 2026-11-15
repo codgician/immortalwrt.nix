@@ -16721,10 +16721,10 @@
   ],
   "feeds/telephony/libs/re": [
    {
-    "file": "re-3.16.0.tar.gz",
-    "sha256": "11b3215064b6ef5a11b0f4645d6d4834f8ba899d5b65c66477f9c4afbd32e1ed",
+    "file": "re-4.9.0.tar.gz",
+    "sha256": "2094822477e4b68bf03089fe29b43b5160103ba846847004df25f9e3d65fabb6",
     "urls": [
-     "https://codeload.github.com/baresip/re/tar.gz/v3.16.0?/re-3.16.0.tar.gz"
+     "https://codeload.github.com/baresip/re/tar.gz/v4.9.0?/re-4.9.0.tar.gz"
     ]
    }
   ],
@@ -16838,23 +16838,23 @@
   ],
   "feeds/telephony/net/baresip": [
    {
-    "file": "baresip-3.16.0.tar.gz",
-    "sha256": "95338c4e4dd6931c94d425d69089b66d32c173e48cb992344e856ead7ba9393b",
+    "file": "baresip-4.9.0.tar.gz",
+    "sha256": "fe0dc70640616b5b6814f728af3ce83b4c56dd1d7a9a21658480c305bd092367",
     "urls": [
-     "https://codeload.github.com/baresip/baresip/tar.gz/v3.16.0?/baresip-3.16.0.tar.gz"
+     "https://codeload.github.com/baresip/baresip/tar.gz/v4.9.0?/baresip-4.9.0.tar.gz"
     ]
    }
   ],
   "feeds/telephony/net/baresip-apps": [
    {
-    "file": "baresip-apps-0b25d61247f3e8d15071b09223e35f8806dacad8.tar.gz",
+    "file": "baresip-apps-45d835b68386484672268d24386cd8a25af21ef6.tar.gz",
     "git": {
-     "rev": "0b25d61247f3e8d15071b09223e35f8806dacad8",
-     "subdir": "baresip-apps-0~0b25d612",
+     "rev": "45d835b68386484672268d24386cd8a25af21ef6",
+     "subdir": "baresip-apps-0~45d835b6",
      "submodules": [],
      "url": "https://github.com/baresip/baresip-apps.git"
     },
-    "sha256": "35599fa7d081640a86a0ae91e1b46209fa1ddd41295332948ec29fa5a15c2b65"
+    "sha256": "8f453ff24a12e2ca68bf3ae7efd8ad0aae832d07c1cd29d8d79dfb8cccacf63f"
    }
   ],
   "feeds/telephony/net/coturn": [

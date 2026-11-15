@@ -35,10 +35,10 @@
     },
     {
       "fetch": {
-        "narHash": "sha256-avOQbnX44lU7u1qGbb03PAKbn2qIpkBB/fE6A4tcIJA=",
+        "narHash": "sha256-xWI2W51JbXZme3np5AEPAHwJofXiF1blpvxJHjPCVlw=",
         "owner": "openwrt",
         "repo": "telephony",
-        "rev": "9bcb6d71db03377ff49ccb099be763add9a5b059",
+        "rev": "06feffc2c154993f555b43756ef7db6dd7e58225",
         "type": "github"
       },
       "name": "telephony",
