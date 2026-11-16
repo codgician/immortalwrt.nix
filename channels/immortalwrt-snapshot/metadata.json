@@ -1,5 +1,5 @@
 {
-  "revision": "r43294-a4ba8240d8a1",
+  "revision": "r43295-2fe3065ade26",
   "configSelects": [
     {"packages": ["grub2", "grub2-bios-setup", "grub2-efi", "grub2-efi-arm", "grub2-efi-loongarch64", "kmod-fs-vfat"], "targets": ["TARGET_armsr", "TARGET_loongarch64", "TARGET_x86"]},
     {"packages": ["grub2", "grub2-bios-setup"], "targets": ["TARGET_x86"]},

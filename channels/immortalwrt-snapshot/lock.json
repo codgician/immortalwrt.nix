@@ -981,16 +981,16 @@
       }
     }
   },
-  "revision": "r43294-a4ba8240d8a1",
+  "revision": "r43295-2fe3065ade26",
   "src": {
     "fetch": {
-      "narHash": "sha256-hJ4Uk6YlZrnrvwoU0oZCUWdc26ImLsovTKj9pt99NEo=",
+      "narHash": "sha256-yTsit1O38DiOm9mDww+CAPWbfLW17zGjg3GA7upsscA=",
       "owner": "immortalwrt",
       "repo": "immortalwrt",
-      "rev": "a4ba8240d8a1aaef7e8c6f2d65e841a9bfd2b8c5",
+      "rev": "2fe3065ade26bd1ef85539c9d1bd2272bdb0aa01",
       "type": "github"
     },
-    "lastModified": 1794627768,
+    "lastModified": 1794794143,
     "ref": "master"
   },
   "version": "SNAPSHOT"
