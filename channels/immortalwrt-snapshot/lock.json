@@ -13,10 +13,10 @@
     },
     {
       "fetch": {
-        "narHash": "sha256-/R6qS3Tap+LSCgXPaY5hlRflOlk8xRABtYA/C4qJGO0=",
+        "narHash": "sha256-55e2CrsfO/PJkqzidROez4xqtBRRLQmoS6ccvfyhJdg=",
         "owner": "immortalwrt",
         "repo": "luci",
-        "rev": "ad75cde88e694b511100576bfbe0a280e5efe6ef",
+        "rev": "a6adca3c8f91ecc7c43dd04d3c23b252135c6c53",
         "type": "github"
       },
       "name": "luci",
@@ -46,10 +46,10 @@
     },
     {
       "fetch": {
-        "narHash": "sha256-/QfLPYj+e3aRuXwbxHc/y1FT7ZE7JDnuS/lB5TgCyj4=",
+        "narHash": "sha256-HrQ4C2hAEfePsrcRhbFISEmsBFE+bqtxFX9OW9xoPHA=",
         "owner": "openwrt",
         "repo": "video",
-        "rev": "97137d9e4bbf2d5b8fc74b49d2a8641f21855032",
+        "rev": "7d3dcdebda95e50604cf068ed9b8fef29c94069e",
         "type": "github"
       },
       "name": "video",
@@ -964,8 +964,8 @@
         "src": "26.147.46187~b5e99ae"
       },
       "feeds/luci/themes/luci-theme-argon": {
-        "po": "26.294.34279~ebc4118",
-        "src": "26.314.09277~64cb103"
+        "po": "26.321.34033~a6adca3",
+        "src": "26.321.34033~a6adca3"
       },
       "feeds/luci/themes/luci-theme-bootstrap": {
         "po": "0",
