@@ -18499,14 +18499,14 @@
   ],
   "package/firmware/ipq-wifi": [
    {
-    "file": "ipq-wifi-2026.11.12~e1c4cbaf.tar.zst",
+    "file": "ipq-wifi-2026.11.16~c832ed2c.tar.zst",
     "git": {
-     "rev": "e1c4cbaf43917e19779dbf9f8e276e31116bcaef",
-     "subdir": "ipq-wifi-2026.11.12~e1c4cbaf",
+     "rev": "c832ed2cfbd42350bc2f683175952d341f737ec0",
+     "subdir": "ipq-wifi-2026.11.16~c832ed2c",
      "submodules": [],
      "url": "https://git.openwrt.org/project/firmware/qca-wireless.git"
     },
-    "sha256": "2d525d7af66de1dc947aff2653669265ccad678424e7fdfe71aebc6c55692437"
+    "sha256": "46756b986f0182a4b317eca478c3fa3733dc585f6a56c4f99704944436360509"
    }
   ],
   "package/firmware/lantiq/dsl-vrx200-firmware-xdsl": [
@@ -19454,10 +19454,10 @@
   ],
   "package/libs/mbedtls": [
    {
-    "file": "mbedtls-3.6.7.tar.bz2",
-    "sha256": "a7e8bcbec0e6f761b4af24f25677626b35f762f68eef79c08677a363212d11f6",
+    "file": "mbedtls-3.6.8.tar.bz2",
+    "sha256": "bc54b818e87f49c0b3281dd85d24adaede0e63b4e822e3fbd49c005a38b9595b",
     "urls": [
-     "https://github.com/Mbed-TLS/mbedtls/releases/download/mbedtls-3.6.7/mbedtls-3.6.7.tar.bz2"
+     "https://github.com/Mbed-TLS/mbedtls/releases/download/mbedtls-3.6.8/mbedtls-3.6.8.tar.bz2"
     ]
    }
   ],
@@ -19822,14 +19822,14 @@
   ],
   "package/network/services/odhcpd": [
    {
-    "file": "odhcpd-2026.10.28~26aa64a0.tar.zst",
+    "file": "odhcpd-2026.11.16~1c662962.tar.zst",
     "git": {
-     "rev": "26aa64a0bd819ba34bfcaebf02d0a3d8da530723",
-     "subdir": "odhcpd-2026.10.28~26aa64a0",
+     "rev": "1c66296296c528953b083bb93e0b0e818ad79309",
+     "subdir": "odhcpd-2026.11.16~1c662962",
      "submodules": [],
      "url": "https://git.openwrt.org/project/odhcpd.git"
     },
-    "sha256": "f30d47dbec4429b4bd80d97e3176bfc1660c21842b017920d54a72d9862df68d"
+    "sha256": "d5fbdeca5bcfcf985d08e40c10648266535e1a66f1165abe93b83f302f7085ef"
    }
   ],
   "package/network/services/omcproxy": [
@@ -20290,14 +20290,14 @@
   ],
   "package/system/ubox": [
    {
-    "file": "ubox-2025.10.30~6f78fa49.tar.zst",
+    "file": "ubox-2026.11.15~b0635f42.tar.zst",
     "git": {
-     "rev": "6f78fa496bf36c55864a41e353df7d13f04b1077",
-     "subdir": "ubox-2025.10.30~6f78fa49",
+     "rev": "b0635f4227bd12de3445bdfe69653723de300953",
+     "subdir": "ubox-2026.11.15~b0635f42",
      "submodules": [],
      "url": "https://git.openwrt.org/project/ubox.git"
     },
-    "sha256": "41c28d9152cdf2998a4d867827655548f823de9de522a113a45ed1efef97d3ae"
+    "sha256": "5afebd5f72dc25294b468bff1e0d5145b4019b60b4a83d4b3e1898bf10f9de47"
    }
   ],
   "package/system/ubus": [
@@ -21852,5 +21852,5 @@
   "https://sources.openwrt.org",
   "https://mirror2.openwrt.org/sources"
  ],
- "revision": "r43295-2fe3065ade26"
+ "revision": "r43508-c4c69cfede1b"
 }

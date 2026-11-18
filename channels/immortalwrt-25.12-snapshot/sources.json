@@ -18573,14 +18573,14 @@
   ],
   "package/firmware/ipq-wifi": [
    {
-    "file": "ipq-wifi-2026.05.18~e20f4c6f.tar.zst",
+    "file": "ipq-wifi-2026.11.12~e1c4cbaf.tar.zst",
     "git": {
-     "rev": "e20f4c6ff197823762319e4b7e31af01816503cf",
-     "subdir": "ipq-wifi-2026.05.18~e20f4c6f",
+     "rev": "e1c4cbaf43917e19779dbf9f8e276e31116bcaef",
+     "subdir": "ipq-wifi-2026.11.12~e1c4cbaf",
      "submodules": [],
      "url": "https://git.openwrt.org/project/firmware/qca-wireless.git"
     },
-    "sha256": "a0109d830c474aeca2716496cb2eab05319c4d6671ae2d02c43449a94da183fa"
+    "sha256": "2d525d7af66de1dc947aff2653669265ccad678424e7fdfe71aebc6c55692437"
    }
   ],
   "package/firmware/ixp4xx-microcode": [
@@ -21925,5 +21925,5 @@
   "https://sources.openwrt.org",
   "https://mirror2.openwrt.org/sources"
  ],
- "revision": "r38318-761b7ff22cbf"
+ "revision": "r38337-03ca1c076b94"
 }

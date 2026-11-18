@@ -14,10 +14,10 @@
     },
     {
       "fetch": {
-        "narHash": "sha256-cmNUxSa20x3yG0dS/3r6xok0aqnJ3LKxIZpcXXSjGz4=",
+        "narHash": "sha256-8K+6ssTyufdr35Z9iLxYyY0gSN60GYGWUoY+bNKYX78=",
         "owner": "immortalwrt",
         "repo": "luci",
-        "rev": "8f18275bb510818c501e4b124f872b6d30573d8a",
+        "rev": "476b5257e3aa8274a727d648ba06c4ed284c159b",
         "type": "github"
       },
       "name": "luci",
@@ -333,8 +333,8 @@
         "src": "26.052.56300~90d5914"
       },
       "feeds/luci/applications/luci-app-librespeed": {
-        "po": "26.268.33051~dd3d1cb",
-        "src": "26.268.33051~dd3d1cb"
+        "po": "26.320.60423~5331286",
+        "src": "26.320.60423~5331286"
       },
       "feeds/luci/applications/luci-app-libreswan": {
         "po": "26.304.25531~9fe44cf",
@@ -702,7 +702,7 @@
       },
       "feeds/luci/applications/luci-app-wol": {
         "po": "26.304.25531~9fe44cf",
-        "src": "25.349.49508~946f77a"
+        "src": "26.315.12466~b2e0be4"
       },
       "feeds/luci/applications/luci-app-xfrpc": {
         "po": "26.304.25531~9fe44cf",
@@ -794,7 +794,7 @@
       },
       "feeds/luci/modules/luci-base": {
         "po": "26.315.10183~8f18275",
-        "src": "26.293.13009~61e876e"
+        "src": "26.322.27569~476b525"
       },
       "feeds/luci/modules/luci-compat": {
         "po": "0",
@@ -949,8 +949,8 @@
         "src": "25.266.65290~f48999c"
       },
       "feeds/luci/themes/luci-theme-argon": {
-        "po": "26.315.10084~3431da3",
-        "src": "26.315.10102~2b2c68f"
+        "po": "26.322.27521~8ca5c25",
+        "src": "26.322.27521~8ca5c25"
       },
       "feeds/luci/themes/luci-theme-bootstrap": {
         "po": "0",
@@ -974,16 +974,16 @@
       }
     }
   },
-  "revision": "r38318-761b7ff22cbf",
+  "revision": "r38337-03ca1c076b94",
   "src": {
     "fetch": {
-      "narHash": "sha256-ocFMjGHDC3FlyQLPTpSqwNin5cnYy4+GE4Pbqg7xly4=",
+      "narHash": "sha256-CaCUcUHG6ttiuzoLscNmhYqWAsMrEQ3UQn5tFGXjPqc=",
       "owner": "immortalwrt",
       "repo": "immortalwrt",
-      "rev": "761b7ff22cbf7c13f28fc631bd70a84d295fd627",
+      "rev": "03ca1c076b94bf9731e189571e6d81741f6bc13d",
       "type": "github"
     },
-    "lastModified": 1794379527,
+    "lastModified": 1794982578,
     "ref": "openwrt-25.12"
   },
   "version": "25.12-SNAPSHOT"
