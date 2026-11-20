@@ -46,10 +46,10 @@
     },
     {
       "fetch": {
-        "narHash": "sha256-HrQ4C2hAEfePsrcRhbFISEmsBFE+bqtxFX9OW9xoPHA=",
+        "narHash": "sha256-wdDaGy+jb0NHMKjsPlZkNrLXOcR9XwFoMV+yRRtTN6c=",
         "owner": "openwrt",
         "repo": "video",
-        "rev": "7d3dcdebda95e50604cf068ed9b8fef29c94069e",
+        "rev": "6a3b5fd6e963f41caa73ef4f691e156d467e2894",
         "type": "github"
       },
       "name": "video",
