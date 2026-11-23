@@ -26,10 +26,10 @@
     },
     {
       "fetch": {
-        "narHash": "sha256-/0cB1g5SGabCPwWP+q2xkO56/tAKRJH4RX5o83cLcMo=",
+        "narHash": "sha256-IUMp54JOgkSeYYdR5i7O4hAeX4UTBKg9tv1bescVgdc=",
         "owner": "openwrt",
         "repo": "routing",
-        "rev": "625f9d8446807708bab4eef26cdc44692164818a",
+        "rev": "bfe1c696846e6c5bf69df97d155f639879cf9729",
         "type": "github"
       },
       "name": "routing",
