@@ -288,11 +288,11 @@
   ],
   "feeds/packages/admin/zabbix": [
    {
-    "file": "zabbix-7.0.31.tar.gz",
-    "sha256": "9df1069aa1cfdf67b7131e93f2f5fe6d0ad005e416c9902016fd8cb68f330e8c",
+    "file": "zabbix-7.0.32.tar.gz",
+    "sha256": "ead5b0723ad965eb0e79f98d5d2b89088e7c898ae194eeba767e5d1fb2d50a96",
     "urls": [
-     "https://cdn.zabbix.com/zabbix/sources/stable/7.0/zabbix-7.0.31.tar.gz",
-     "https://cdn.zabbix.com/zabbix/sources/oldstable/7.0/zabbix-7.0.31.tar.gz"
+     "https://cdn.zabbix.com/zabbix/sources/stable/7.0/zabbix-7.0.32.tar.gz",
+     "https://cdn.zabbix.com/zabbix/sources/oldstable/7.0/zabbix-7.0.32.tar.gz"
     ]
    }
   ],
@@ -767,25 +767,25 @@
   ],
   "feeds/packages/lang/golang/golang1.26": [
    {
-    "file": "go1.26.10.src.tar.gz",
-    "sha256": "fd63e883ba2f2bfca93c1646b31ebef63e2b1e4d2b317c9789d976a68d81f36f",
+    "file": "go1.26.11.src.tar.gz",
+    "sha256": "d44101b0ff27ed2a4c75ad46c17b9c74359209e2eb2ca7c9df6cb4fdb68e1969",
     "urls": [
-     "https://go.dev/dl/go1.26.10.src.tar.gz",
-     "https://golang.google.cn/dl/go1.26.10.src.tar.gz",
-     "https://mirrors.nju.edu.cn/golang/go1.26.10.src.tar.gz",
-     "https://mirrors.ustc.edu.cn/golang/go1.26.10.src.tar.gz"
+     "https://go.dev/dl/go1.26.11.src.tar.gz",
+     "https://golang.google.cn/dl/go1.26.11.src.tar.gz",
+     "https://mirrors.nju.edu.cn/golang/go1.26.11.src.tar.gz",
+     "https://mirrors.ustc.edu.cn/golang/go1.26.11.src.tar.gz"
     ]
    }
   ],
   "feeds/packages/lang/golang/golang1.27": [
    {
-    "file": "go1.27.3.src.tar.gz",
-    "sha256": "6e7749035cf360f06b2575d162ea79df9fda8ef671889e5c375f8e50777f26bb",
+    "file": "go1.27.4.src.tar.gz",
+    "sha256": "73cfb8571aec0c01177687db87163d46aa20e9779672772891aa17654d9a6099",
     "urls": [
-     "https://go.dev/dl/go1.27.3.src.tar.gz",
-     "https://golang.google.cn/dl/go1.27.3.src.tar.gz",
-     "https://mirrors.nju.edu.cn/golang/go1.27.3.src.tar.gz",
-     "https://mirrors.ustc.edu.cn/golang/go1.27.3.src.tar.gz"
+     "https://go.dev/dl/go1.27.4.src.tar.gz",
+     "https://golang.google.cn/dl/go1.27.4.src.tar.gz",
+     "https://mirrors.nju.edu.cn/golang/go1.27.4.src.tar.gz",
+     "https://mirrors.ustc.edu.cn/golang/go1.27.4.src.tar.gz"
     ]
    }
   ],
@@ -3408,10 +3408,10 @@
   ],
   "feeds/packages/lang/php8": [
    {
-    "file": "php-8.4.27.tar.xz",
-    "sha256": "dcf93923b0e38e0d5252b25b796520b5a47761a08b3488b6d0b5d1115764d3f0",
+    "file": "php-8.4.28.tar.xz",
+    "sha256": "0c8ec360e5dd8154f270b2fd50cd44ecc824e6ee39c85f911312b80d4daecd72",
     "urls": [
-     "https://www.php.net/distributions/php-8.4.27.tar.xz"
+     "https://www.php.net/distributions/php-8.4.28.tar.xz"
     ]
    }
   ],
@@ -5319,10 +5319,10 @@
   ],
   "feeds/packages/lang/python/python3": [
    {
-    "file": "Python-3.13.15.tar.xz",
-    "sha256": "1e66a7945a48390ee4c2a4268a0e4185884059a13c4aab6d148aa208deea4a76",
+    "file": "Python-3.13.18.tar.xz",
+    "sha256": "abb0102e6d4ae027509bcb82327d9dd85515b44a3ba8ad538cfc5e9847029f68",
     "urls": [
-     "https://www.python.org/ftp/python/3.13.15/Python-3.13.15.tar.xz"
+     "https://www.python.org/ftp/python/3.13.18/Python-3.13.18.tar.xz"
     ]
    }
   ],
@@ -5400,10 +5400,10 @@
   ],
   "feeds/packages/lang/ruby": [
    {
-    "file": "ruby-3.4.9.tar.gz",
-    "sha256": "7bb4d4f5e807cc27251d14d9d6086d182c5b25875191e44ab15b709cd7a7dd9c",
+    "file": "ruby-3.4.13.tar.gz",
+    "sha256": "d0d3bf3dd8c224a3c3b7ecd816a0f1b2cbcf4f87b5afcbdbe91d3fef177f351a",
     "urls": [
-     "https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.9.tar.gz"
+     "https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.13.tar.gz"
     ]
    }
   ],
@@ -5852,10 +5852,10 @@
   ],
   "feeds/packages/libs/gperftools": [
    {
-    "file": "gperftools-2.17.2.tar.gz",
-    "sha256": "885dbbf1f25a922de0cdc78b0703c3ab93c43850e1d2f7c889e41be7c824c53d",
+    "file": "gperftools-2.19.3.tar.gz",
+    "sha256": "96fab688bb7b16f44ef1e270b0e5274594efb9dd1f389a20406e4a5d4fd0a49b",
     "urls": [
-     "https://codeload.github.com/gperftools/gperftools/tar.gz/gperftools-2.17.2?/gperftools-2.17.2.tar.gz"
+     "https://codeload.github.com/gperftools/gperftools/tar.gz/gperftools-2.19.3?/gperftools-2.19.3.tar.gz"
     ]
    }
   ],
@@ -6177,10 +6177,10 @@
   ],
   "feeds/packages/libs/libdaq3": [
    {
-    "file": "libdaq-3.0.23.tar.gz",
-    "sha256": "693e4709610432998c9c6ed5eb820525a5bad2fdbe610b10ef85e442376a3271",
+    "file": "libdaq-3.0.29.tar.gz",
+    "sha256": "136deba78d195163687eb71a6dc81b725c27fde7765b7ef70eb741c371e887a8",
     "urls": [
-     "https://codeload.github.com/snort3/libdaq/tar.gz/v3.0.23?/libdaq-3.0.23.tar.gz"
+     "https://codeload.github.com/snort3/libdaq/tar.gz/v3.0.29?/libdaq-3.0.29.tar.gz"
     ]
    }
   ],
@@ -8433,10 +8433,10 @@
   ],
   "feeds/packages/mail/dovecot": [
    {
-    "file": "dovecot-2.3.21.tar.gz",
-    "sha256": "05b11093a71c237c2ef309ad587510721cc93bbee6828251549fc1586c36502d",
+    "file": "dovecot-2.3.21.1.tar.gz",
+    "sha256": "2d90a178c4297611088bf7daae5492a3bc3d5ab6328c3a032eb425d2c249097e",
     "urls": [
-     "https://dovecot.org/releases/2.3/dovecot-2.3.21.tar.gz"
+     "https://dovecot.org/releases/2.3/dovecot-2.3.21.1.tar.gz"
     ]
    }
   ],
@@ -8985,17 +8985,17 @@
   ],
   "feeds/packages/net/adguardhome": [
    {
-    "file": "adguardhome-0.107.79.tar.gz",
-    "sha256": "5f4fa119f24ea741bb8cecfa74203165fe6b86b904cef05ff429fb227b07d425",
+    "file": "adguardhome-1.0.0.tar.gz",
+    "sha256": "fb7b67a40bcd81063cf0f7fbc5c27cd5ae71cc6434a4b5342885ebb3e51586d6",
     "urls": [
-     "https://codeload.github.com/AdguardTeam/AdGuardHome/tar.gz/v0.107.79?/adguardhome-0.107.79.tar.gz"
+     "https://codeload.github.com/AdguardTeam/AdGuardHome/tar.gz/v1.0.0?/adguardhome-1.0.0.tar.gz"
     ]
    },
    {
-    "file": "adguardhome-frontend-0.107.79.tar.gz",
-    "sha256": "30184c157d4aefe5371b575a43c0ab5a7314aef039a820cc421ea67bab994ce8",
+    "file": "adguardhome-frontend-1.0.0.tar.gz",
+    "sha256": "70537426c7438ccce1f0997843676042bd01a7fa09cd5cd1a464bcb9e65152c5",
     "urls": [
-     "https://github.com/AdguardTeam/AdGuardHome/releases/download/v0.107.79/AdGuardHome_frontend.tar.gz"
+     "https://github.com/AdguardTeam/AdGuardHome/releases/download/v1.0.0/AdGuardHome_frontend.tar.gz"
     ]
    }
   ],
@@ -9061,22 +9061,22 @@
   ],
   "feeds/packages/net/apache": [
    {
-    "file": "httpd-2.4.69.tar.bz2",
-    "sha256": "c5e6ebc66e349b87d7fc6916ae7cc2a808ed348003de134cf9e9d89d3e2cc73d",
+    "file": "httpd-2.4.71.tar.bz2",
+    "sha256": "2bc5da5a33c247341de082717d4ebcb5cb49e8b73a05b7fddf7d5d6dc2f8de62",
     "urls": [
-     "https://mirrors.tencent.com/apache/httpd/httpd-2.4.69.tar.bz2",
-     "https://mirrors.aliyun.com/apache/httpd/httpd-2.4.69.tar.bz2",
-     "https://mirrors.tuna.tsinghua.edu.cn/apache/httpd/httpd-2.4.69.tar.bz2",
-     "https://mirrors.ustc.edu.cn/apache/httpd/httpd-2.4.69.tar.bz2",
-     "https://dlcdn.apache.org/httpd/httpd-2.4.69.tar.bz2",
-     "https://mirror.aarnet.edu.au/pub/apache/httpd/httpd-2.4.69.tar.bz2",
-     "https://mirror.csclub.uwaterloo.ca/apache/httpd/httpd-2.4.69.tar.bz2",
-     "https://archive.apache.org/dist/httpd/httpd-2.4.69.tar.bz2",
-     "https://mirror.cogentco.com/pub/apache/httpd/httpd-2.4.69.tar.bz2",
-     "https://mirror.navercorp.com/apache/httpd/httpd-2.4.69.tar.bz2",
-     "https://ftp.jaist.ac.jp/pub/apache/httpd/httpd-2.4.69.tar.bz2",
-     "https://apache.cs.utah.edu/httpd/httpd-2.4.69.tar.bz2",
-     "http://apache.mirrors.ovh.net/ftp.apache.org/dist/httpd/httpd-2.4.69.tar.bz2"
+     "https://mirrors.tencent.com/apache/httpd/httpd-2.4.71.tar.bz2",
+     "https://mirrors.aliyun.com/apache/httpd/httpd-2.4.71.tar.bz2",
+     "https://mirrors.tuna.tsinghua.edu.cn/apache/httpd/httpd-2.4.71.tar.bz2",
+     "https://mirrors.ustc.edu.cn/apache/httpd/httpd-2.4.71.tar.bz2",
+     "https://dlcdn.apache.org/httpd/httpd-2.4.71.tar.bz2",
+     "https://mirror.aarnet.edu.au/pub/apache/httpd/httpd-2.4.71.tar.bz2",
+     "https://mirror.csclub.uwaterloo.ca/apache/httpd/httpd-2.4.71.tar.bz2",
+     "https://archive.apache.org/dist/httpd/httpd-2.4.71.tar.bz2",
+     "https://mirror.cogentco.com/pub/apache/httpd/httpd-2.4.71.tar.bz2",
+     "https://mirror.navercorp.com/apache/httpd/httpd-2.4.71.tar.bz2",
+     "https://ftp.jaist.ac.jp/pub/apache/httpd/httpd-2.4.71.tar.bz2",
+     "https://apache.cs.utah.edu/httpd/httpd-2.4.71.tar.bz2",
+     "http://apache.mirrors.ovh.net/ftp.apache.org/dist/httpd/httpd-2.4.71.tar.bz2"
     ]
    }
   ],
@@ -9184,11 +9184,11 @@
   ],
   "feeds/packages/net/bind": [
    {
-    "file": "bind-9.20.30.tar.xz",
-    "sha256": "9e1443a40a72a30272cbc3196d020a6b2e26937111c83e59e101e82e1e3b4fef",
+    "file": "bind-9.20.31.tar.xz",
+    "sha256": "9bfecd503ec79209d321053689c794da9f8dba993a24e9cd6bd7aa87cdf4122f",
     "urls": [
-     "https://www.mirrorservice.org/sites/ftp.isc.org/isc/bind9/9.20.30/bind-9.20.30.tar.xz",
-     "https://ftp.isc.org/isc/bind9/9.20.30/bind-9.20.30.tar.xz"
+     "https://www.mirrorservice.org/sites/ftp.isc.org/isc/bind9/9.20.31/bind-9.20.31.tar.xz",
+     "https://ftp.isc.org/isc/bind9/9.20.31/bind-9.20.31.tar.xz"
     ]
    }
   ],
@@ -9602,14 +9602,14 @@
   ],
   "feeds/packages/net/dawn": [
    {
-    "file": "dawn-2025.11.07~7414c34a.tar.zst",
+    "file": "dawn-2026.11.09~fbe90b8b.tar.zst",
     "git": {
-     "rev": "7414c34a08c7cbbd5f292e0e25e53f1edbfc751a",
-     "subdir": "dawn-2025.11.07~7414c34a",
+     "rev": "fbe90b8bcb3e1bcc2df5e8dcc4069d4c1f514c7c",
+     "subdir": "dawn-2026.11.09~fbe90b8b",
      "submodules": [],
      "url": "https://github.com/berlin-open-wireless-lab/DAWN.git"
     },
-    "sha256": "9663f6e75e9bf8cb2c38df6348ee6163c472d3c0cd1c10eedeab60ddb824dc0e"
+    "sha256": "25f65a5962b5f9ce9fc41c66593a29e7226b1f2f3f3ddf771b75e7836b0dbab5"
    }
   ],
   "feeds/packages/net/dcstad": [
@@ -9932,10 +9932,10 @@
   ],
   "feeds/packages/net/fsh": [
    {
-    "file": "fsh-4.11.0.tar.xz",
-    "sha256": "767f493233cbad076fad5f837066eacdd50c92c807acdab258fd3fe418eeaeff",
+    "file": "fsh-4.12.0.tar.xz",
+    "sha256": "43f4c9c4ca726f8c04e727b7c4e2ef740c358b46b0f90f26714a599101af5ff4",
     "urls": [
-     "https://github.com/heiher/hev-fsh/releases/download/4.11.0/fsh-4.11.0.tar.xz"
+     "https://github.com/heiher/hev-fsh/releases/download/4.12.0/fsh-4.12.0.tar.xz"
     ]
    }
   ],
@@ -10016,17 +10016,17 @@
   ],
   "feeds/packages/net/git": [
    {
-    "file": "git-2.50.1.tar.xz",
-    "sha256": "7e3e6c36decbd8f1eedd14d42db6674be03671c2204864befa2a41756c5c8fc4",
+    "file": "git-2.50.2.tar.xz",
+    "sha256": "b9d6be0e286803466f998ced664566de3368534eca7eda6d5d9358e40f55c151",
     "urls": [
-     "https://mirror.iscas.ac.cn/kernel.org/software/scm/git/git-2.50.1.tar.xz",
-     "https://mirrors.ustc.edu.cn/kernel.org/software/scm/git/git-2.50.1.tar.xz",
-     "https://mirror.nju.edu.cn/kernel.org/software/scm/git/git-2.50.1.tar.xz",
-     "https://cdn.kernel.org/pub/software/scm/git/git-2.50.1.tar.xz",
-     "https://mirrors.mit.edu/kernel/software/scm/git/git-2.50.1.tar.xz",
-     "http://ftp.nara.wide.ad.jp/pub/kernel.org/software/scm/git/git-2.50.1.tar.xz",
-     "http://www.ring.gr.jp/archives/linux/kernel.org/software/scm/git/git-2.50.1.tar.xz",
-     "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/software/scm/git/git-2.50.1.tar.xz"
+     "https://mirror.iscas.ac.cn/kernel.org/software/scm/git/git-2.50.2.tar.xz",
+     "https://mirrors.ustc.edu.cn/kernel.org/software/scm/git/git-2.50.2.tar.xz",
+     "https://mirror.nju.edu.cn/kernel.org/software/scm/git/git-2.50.2.tar.xz",
+     "https://cdn.kernel.org/pub/software/scm/git/git-2.50.2.tar.xz",
+     "https://mirrors.mit.edu/kernel/software/scm/git/git-2.50.2.tar.xz",
+     "http://ftp.nara.wide.ad.jp/pub/kernel.org/software/scm/git/git-2.50.2.tar.xz",
+     "http://www.ring.gr.jp/archives/linux/kernel.org/software/scm/git/git-2.50.2.tar.xz",
+     "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/software/scm/git/git-2.50.2.tar.xz"
     ]
    }
   ],
@@ -10166,19 +10166,19 @@
   ],
   "feeds/packages/net/hev-socks5-tproxy": [
    {
-    "file": "hev-socks5-tproxy-2.13.0.tar.xz",
-    "sha256": "4cc74958221b3d40803ef9e597af1510110b6e674ceea729e470b808a257ba31",
+    "file": "hev-socks5-tproxy-2.14.0.tar.xz",
+    "sha256": "a25a81811e996d7e2aa14582dfa15982732853480f9bb0f75e5e41d2faba0961",
     "urls": [
-     "https://github.com/heiher/hev-socks5-tproxy/releases/download/2.13.0/hev-socks5-tproxy-2.13.0.tar.xz"
+     "https://github.com/heiher/hev-socks5-tproxy/releases/download/2.14.0/hev-socks5-tproxy-2.14.0.tar.xz"
     ]
    }
   ],
   "feeds/packages/net/hev-socks5-tunnel": [
    {
-    "file": "hev-socks5-tunnel-2.19.0.tar.xz",
-    "sha256": "6ee1db4f999708dd7fb04ff021c13b603dd2eae45791ea07493de3506778a788",
+    "file": "hev-socks5-tunnel-2.20.0.tar.xz",
+    "sha256": "bc2ce746a0beeb71030d3ffe299f5a9d48e2895902d3883c2cac1a551ee128e9",
     "urls": [
-     "https://github.com/heiher/hev-socks5-tunnel/releases/download/2.19.0/hev-socks5-tunnel-2.19.0.tar.xz"
+     "https://github.com/heiher/hev-socks5-tunnel/releases/download/2.20.0/hev-socks5-tunnel-2.20.0.tar.xz"
     ]
    }
   ],
@@ -10595,11 +10595,11 @@
   ],
   "feeds/packages/net/libcurl-gnutls": [
    {
-    "file": "curl-8.14.1.tar.xz",
-    "sha256": "f4619a1e2474c4bbfedc88a7c2191209c8334b48fa1f4e53fd584cc12e9120dd",
+    "file": "curl-8.23.0.tar.xz",
+    "sha256": "8dadd7d2536a314f982ad05a651b713f426bf7d02cc2c76cffb9796f2218e6c5",
     "urls": [
-     "https://github.com/curl/curl/releases/download/curl-8_14_1/curl-8.14.1.tar.xz",
-     "https://curl.se/download/curl-8.14.1.tar.xz"
+     "https://github.com/curl/curl/releases/download/curl-8_23_0/curl-8.23.0.tar.xz",
+     "https://curl.se/download/curl-8.23.0.tar.xz"
     ]
    }
   ],
@@ -10843,10 +10843,10 @@
   ],
   "feeds/packages/net/mosquitto": [
    {
-    "file": "mosquitto-2.0.22.tar.gz",
-    "sha256": "2f752589ef7db40260b633fbdb536e9a04b446a315138d64a7ff3c14e2de6b68",
+    "file": "mosquitto-2.0.23.tar.gz",
+    "sha256": "47d66fc98d9f8714bdc700dfe690dbe80c9fbe93c00a21b04dc61d00e1667b34",
     "urls": [
-     "https://mosquitto.org/files/source/mosquitto-2.0.22.tar.gz"
+     "https://mosquitto.org/files/source/mosquitto-2.0.23.tar.gz"
     ]
    }
   ],
@@ -11019,10 +11019,10 @@
   ],
   "feeds/packages/net/netbird": [
    {
-    "file": "netbird-0.81.4.tar.gz",
-    "sha256": "c735ffec7dece473e61c8764fec7a5cb971bacc766620e9639c97c9a249bbcbb",
+    "file": "netbird-0.82.0.tar.gz",
+    "sha256": "9553375fdd487572a4fdfeefd4cce95622686a80b8f0d10077c9913bebefe021",
     "urls": [
-     "https://codeload.github.com/netbirdio/netbird/tar.gz/v0.81.4?/netbird-0.81.4.tar.gz"
+     "https://codeload.github.com/netbirdio/netbird/tar.gz/v0.82.0?/netbird-0.82.0.tar.gz"
     ]
    }
   ],
@@ -11088,10 +11088,10 @@
   ],
   "feeds/packages/net/nextdns": [
    {
-    "file": "nextdns-1.49.0.tar.gz",
-    "sha256": "71acde630e1941f5e520ce71d6eab0fc2d655e5d1769b22930a73ff354d78069",
+    "file": "nextdns-1.50.2.tar.gz",
+    "sha256": "46ab8b64c36bb1db8fe6cd3b6ded9fbbd2af7c3ab4960c01e566ff2969fe97ee",
     "urls": [
-     "https://codeload.github.com/nextdns/nextdns/tar.gz/v1.49.0?/nextdns-1.49.0.tar.gz"
+     "https://codeload.github.com/nextdns/nextdns/tar.gz/v1.50.2?/nextdns-1.50.2.tar.gz"
     ]
    }
   ],
@@ -11134,10 +11134,10 @@
   ],
   "feeds/packages/net/nginx": [
    {
-    "file": "nginx-1.26.3.tar.gz",
-    "sha256": "69ee2b237744036e61d24b836668aad3040dda461fe6f570f1787eab570c75aa",
+    "file": "nginx-1.30.7.tar.gz",
+    "sha256": "2565b5c837050e958f70fb0f73c48e2bca4542ad349fd356f46fb0c72610bc6e",
     "urls": [
-     "https://nginx.org/download/nginx-1.26.3.tar.gz"
+     "https://nginx.org/download/nginx-1.30.7.tar.gz"
     ]
    }
   ],
@@ -11393,11 +11393,11 @@
   ],
   "feeds/packages/net/openssh": [
    {
-    "file": "openssh-10.6p1.tar.gz",
-    "sha256": "a9dc9565dffe8640f64d863cd29a32bc4a3dbdec0566a7fc44c5d6ee767d5f39",
+    "file": "openssh-10.6p2.tar.gz",
+    "sha256": "9ae44872090cf2f06b3cf9ff147e7f16f309671340763ed2f99248398ae29d5b",
     "urls": [
-     "https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.6p1.tar.gz",
-     "https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.6p1.tar.gz"
+     "https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.6p2.tar.gz",
+     "https://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-10.6p2.tar.gz"
     ]
    }
   ],
@@ -11693,10 +11693,10 @@
   ],
   "feeds/packages/net/radicale3": [
    {
-    "file": "radicale-3.8.3.tar.gz",
-    "sha256": "24be9a55485341be367eec6adf1ab73e96125e0d96e8efab22aa94615abce3bc",
+    "file": "radicale-3.9.0.tar.gz",
+    "sha256": "25fe89613d77a5bed182860407235efa3a77adead4ddc6022784801521992741",
     "urls": [
-     "https://files.pythonhosted.org/packages/source/R/Radicale/radicale-3.8.3.tar.gz"
+     "https://files.pythonhosted.org/packages/source/R/Radicale/radicale-3.9.0.tar.gz"
     ]
    }
   ],
@@ -11873,10 +11873,10 @@
   ],
   "feeds/packages/net/rsync": [
    {
-    "file": "rsync-3.5.1.tar.gz",
-    "sha256": "c55f9c9dc10fb8bec397b399a0fdded53cc9a2d8e30891bb0d63724d25c37bef",
+    "file": "rsync-3.5.2.tar.gz",
+    "sha256": "a10d591825251e070f74c98df3daad195def4ed81b4a2de16169026aea33f6c8",
     "urls": [
-     "https://download.samba.org/pub/rsync/src/rsync-3.5.1.tar.gz"
+     "https://download.samba.org/pub/rsync/src/rsync-3.5.2.tar.gz"
     ]
    }
   ],
@@ -12104,10 +12104,10 @@
   ],
   "feeds/packages/net/snort3": [
    {
-    "file": "snort3-3.10.0.0.tar.gz",
-    "sha256": "fbd6619e612998330f8459486158a3ea571473218628d9011982aaf238e480e2",
+    "file": "snort3-3.13.2.0.tar.gz",
+    "sha256": "298367524a31f0d4725ef12b2b06265b4e76e6545f990ae3dc3b5e4c10f6e0ea",
     "urls": [
-     "https://codeload.github.com/snort3/snort3/tar.gz/3.10.0.0?/snort3-3.10.0.0.tar.gz"
+     "https://codeload.github.com/snort3/snort3/tar.gz/3.13.2.0?/snort3-3.13.2.0.tar.gz"
     ]
    }
   ],
@@ -12125,10 +12125,10 @@
   ],
   "feeds/packages/net/socat": [
    {
-    "file": "socat-1.8.1.1.tar.bz2",
-    "sha256": "5ebc636b7f427053f98806696521653a614c7e06464910353cbf54e2327adc1b",
+    "file": "socat-1.8.1.3.tar.bz2",
+    "sha256": "25bc6476292b2e614220989c77b0b6fca87bb2525d9747b31a6639b1fb602418",
     "urls": [
-     "http://www.dest-unreach.org/socat/download/socat-1.8.1.1.tar.bz2"
+     "http://www.dest-unreach.org/socat/download/socat-1.8.1.3.tar.bz2"
     ]
    }
   ],
@@ -12897,10 +12897,10 @@
   ],
   "feeds/packages/net/weechat": [
    {
-    "file": "weechat-4.10.2.tar.xz",
-    "sha256": "6fcd05f350c808a4206d6951af36a9eec11b145b6a1a2a8a2b29dd3502e07022",
+    "file": "weechat-4.10.4.tar.xz",
+    "sha256": "9b67a869330f34498f08dcab49edc1c54e9a8af136188d30d5ed1fb8257106da",
     "urls": [
-     "https://weechat.org/files/src/weechat-4.10.2.tar.xz"
+     "https://weechat.org/files/src/weechat-4.10.4.tar.xz"
     ]
    }
   ],
@@ -13009,10 +13009,10 @@
   ],
   "feeds/packages/net/xray-core": [
    {
-    "file": "xray-core-26.10.21.tar.gz",
-    "sha256": "44ef4874529a03848c90f1fdcfb763350fbc5f1de741ec90e0024d651df25650",
+    "file": "xray-core-26.11.9.tar.gz",
+    "sha256": "d5a47bed1b85e1cdfe3cb2f88a02e2db7144f0f8bee541d20b84fafa8fdf6c8d",
     "urls": [
-     "https://codeload.github.com/XTLS/Xray-core/tar.gz/v26.10.21?/xray-core-26.10.21.tar.gz"
+     "https://codeload.github.com/XTLS/Xray-core/tar.gz/v26.11.9?/xray-core-26.11.9.tar.gz"
     ]
    }
   ],
@@ -14110,10 +14110,10 @@
   ],
   "feeds/packages/utils/domoticz": [
    {
-    "file": "domoticz-2025.2.tar.gz",
-    "sha256": "fd016f4ffe419e8d559bc0a7f9de5ec4fcaf485fc9d1464c8e8221102b13f589",
+    "file": "domoticz_src_2026.18387.tar.gz",
+    "sha256": "88964b791050abf6b6df3ec9e1d262d18e198a6fa108638974eca8600d1a4568",
     "urls": [
-     "https://codeload.github.com/domoticz/domoticz/tar.gz/2025.2?/domoticz-2025.2.tar.gz"
+     "https://github.com/domoticz/domoticz/releases/download/2026.4/domoticz_src_2026.18387.tar.gz"
     ]
    }
   ],
@@ -14861,10 +14861,10 @@
   ],
   "feeds/packages/utils/librespeed-cli": [
    {
-    "file": "librespeed-cli-v1.0.14.tar.gz",
-    "sha256": "3031e0f7babd7f9c51a1c49b95026d12532668455e8cc459049160f1bd525bf3",
+    "file": "librespeed-cli-v1.0.15.tar.gz",
+    "sha256": "3f7af37e4b3190859fe9438ec35a53708ba40cfb03c4a3fc517d5d6284a97fbd",
     "urls": [
-     "https://codeload.github.com/librespeed/speedtest-cli/tar.gz/v1.0.14?/librespeed-cli-v1.0.14.tar.gz"
+     "https://codeload.github.com/librespeed/speedtest-cli/tar.gz/v1.0.15?/librespeed-cli-v1.0.15.tar.gz"
     ]
    }
   ],
@@ -15099,6 +15099,18 @@
     "urls": [
      "https://git.kitenet.net/index.cgi/moreutils.git/snapshot/moreutils-0.69.tar.gz"
     ]
+   }
+  ],
+  "feeds/packages/utils/mox-pkcs11": [
+   {
+    "file": "mox-pkcs11-2.0.tar.zst",
+    "git": {
+     "rev": "v2.0",
+     "subdir": "mox-pkcs11-2.0",
+     "submodules": [],
+     "url": "https://gitlab.nic.cz/turris/mox-pkcs11.git"
+    },
+    "sha256": "424b5247288310c6a71b7babed201dc153c58fca73241530254d2cbc84f1b4ef"
    }
   ],
   "feeds/packages/utils/mpremote": [
@@ -15372,14 +15384,14 @@
   ],
   "feeds/packages/utils/owut": [
    {
-    "file": "owut-2026.10.25~65d67aad.tar.zst",
+    "file": "owut-2026.11.08~55ed17f8.tar.zst",
     "git": {
-     "rev": "65d67aad5a125d6c32a848876bee3c8325b89bb2",
-     "subdir": "owut-2026.10.25~65d67aad",
+     "rev": "55ed17f8199719ad4c4f3ff6881b5648fae1f612",
+     "subdir": "owut-2026.11.08~55ed17f8",
      "submodules": [],
      "url": "https://github.com/efahl/owut.git"
     },
-    "sha256": "091673d86dcdaffb36aeaa6970ed09bd30ae1749bf34e73f6743c3ce13d60eb7"
+    "sha256": "62564f503624e3cbbcfc5f6777c4a834f84594573c963bbdc4dd3b8c29bdb6e5"
    }
   ],
   "feeds/packages/utils/parted": [
@@ -16037,10 +16049,10 @@
   ],
   "feeds/packages/utils/sshpass": [
    {
-    "file": "sshpass-1.09.tar.gz",
-    "sha256": "71746e5e057ffe9b00b44ac40453bf47091930cba96bbea8dc48717dedc49fb7",
+    "file": "sshpass-1.10.tar.gz",
+    "sha256": "ad1106c203cbb56185ca3bad8c6ccafca3b4064696194da879f81c8d7bdfeeda",
     "urls": [
-     "https://downloads.sourceforge.net/sshpass/sshpass-1.09.tar.gz"
+     "https://downloads.sourceforge.net/sshpass/sshpass-1.10.tar.gz"
     ]
    }
   ],
@@ -18714,17 +18726,17 @@
   ],
   "package/firmware/linux-firmware": [
    {
-    "file": "linux-firmware-20260221.tar.xz",
-    "sha256": "bd19acc4c1a02548e09d3df67f987fe6e378df735bab138c1d9e917962056d94",
+    "file": "linux-firmware-20261019.tar.xz",
+    "sha256": "a10d1ab5baf2c74ba92e8c7cf313e691696c26bddfa6df00db795e48d70cd4ca",
     "urls": [
-     "https://mirror.iscas.ac.cn/kernel.org/linux/kernel/firmware/linux-firmware-20260221.tar.xz",
-     "https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/firmware/linux-firmware-20260221.tar.xz",
-     "https://mirror.nju.edu.cn/kernel.org/linux/kernel/firmware/linux-firmware-20260221.tar.xz",
-     "https://cdn.kernel.org/pub/linux/kernel/firmware/linux-firmware-20260221.tar.xz",
-     "https://mirrors.mit.edu/kernel/linux/kernel/firmware/linux-firmware-20260221.tar.xz",
-     "http://ftp.nara.wide.ad.jp/pub/kernel.org/linux/kernel/firmware/linux-firmware-20260221.tar.xz",
-     "http://www.ring.gr.jp/archives/linux/kernel.org/linux/kernel/firmware/linux-firmware-20260221.tar.xz",
-     "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/linux/kernel/firmware/linux-firmware-20260221.tar.xz"
+     "https://mirror.iscas.ac.cn/kernel.org/linux/kernel/firmware/linux-firmware-20261019.tar.xz",
+     "https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/firmware/linux-firmware-20261019.tar.xz",
+     "https://mirror.nju.edu.cn/kernel.org/linux/kernel/firmware/linux-firmware-20261019.tar.xz",
+     "https://cdn.kernel.org/pub/linux/kernel/firmware/linux-firmware-20261019.tar.xz",
+     "https://mirrors.mit.edu/kernel/linux/kernel/firmware/linux-firmware-20261019.tar.xz",
+     "http://ftp.nara.wide.ad.jp/pub/kernel.org/linux/kernel/firmware/linux-firmware-20261019.tar.xz",
+     "http://www.ring.gr.jp/archives/linux/kernel.org/linux/kernel/firmware/linux-firmware-20261019.tar.xz",
+     "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/linux/kernel/firmware/linux-firmware-20261019.tar.xz"
     ]
    }
   ],
@@ -18847,25 +18859,25 @@
   ],
   "package/kernel/bpf-headers": [
    {
-    "file": "linux-6.12.116.tar.xz",
-    "sha256": "cb3ed3dfdd47e6ade49dc933db334fd86e24cadee920da612c262b0e9b6a511b",
+    "file": "linux-6.12.118.tar.xz",
+    "sha256": "08308460320e852ac0745b2be3c7ae1cd81bdad713506ed7d817ba1ec9e1a5a5",
     "urls": [
-     "https://mirror.iscas.ac.cn/kernel.org/linux/kernel/v6.x/linux-6.12.116.tar.xz",
-     "https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/v6.x/linux-6.12.116.tar.xz",
-     "https://mirror.nju.edu.cn/kernel.org/linux/kernel/v6.x/linux-6.12.116.tar.xz",
-     "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.116.tar.xz",
-     "https://mirrors.mit.edu/kernel/linux/kernel/v6.x/linux-6.12.116.tar.xz",
-     "http://ftp.nara.wide.ad.jp/pub/kernel.org/linux/kernel/v6.x/linux-6.12.116.tar.xz",
-     "http://www.ring.gr.jp/archives/linux/kernel.org/linux/kernel/v6.x/linux-6.12.116.tar.xz",
-     "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/linux/kernel/v6.x/linux-6.12.116.tar.xz",
-     "https://mirror.iscas.ac.cn/kernel.org/linux/kernel/v6.x/longterm/v6.12.116/linux-6.12.116.tar.xz",
-     "https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/v6.x/longterm/v6.12.116/linux-6.12.116.tar.xz",
-     "https://mirror.nju.edu.cn/kernel.org/linux/kernel/v6.x/longterm/v6.12.116/linux-6.12.116.tar.xz",
-     "https://cdn.kernel.org/pub/linux/kernel/v6.x/longterm/v6.12.116/linux-6.12.116.tar.xz",
-     "https://mirrors.mit.edu/kernel/linux/kernel/v6.x/longterm/v6.12.116/linux-6.12.116.tar.xz",
-     "http://ftp.nara.wide.ad.jp/pub/kernel.org/linux/kernel/v6.x/longterm/v6.12.116/linux-6.12.116.tar.xz",
-     "http://www.ring.gr.jp/archives/linux/kernel.org/linux/kernel/v6.x/longterm/v6.12.116/linux-6.12.116.tar.xz",
-     "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/linux/kernel/v6.x/longterm/v6.12.116/linux-6.12.116.tar.xz"
+     "https://mirror.iscas.ac.cn/kernel.org/linux/kernel/v6.x/linux-6.12.118.tar.xz",
+     "https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/v6.x/linux-6.12.118.tar.xz",
+     "https://mirror.nju.edu.cn/kernel.org/linux/kernel/v6.x/linux-6.12.118.tar.xz",
+     "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.118.tar.xz",
+     "https://mirrors.mit.edu/kernel/linux/kernel/v6.x/linux-6.12.118.tar.xz",
+     "http://ftp.nara.wide.ad.jp/pub/kernel.org/linux/kernel/v6.x/linux-6.12.118.tar.xz",
+     "http://www.ring.gr.jp/archives/linux/kernel.org/linux/kernel/v6.x/linux-6.12.118.tar.xz",
+     "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/linux/kernel/v6.x/linux-6.12.118.tar.xz",
+     "https://mirror.iscas.ac.cn/kernel.org/linux/kernel/v6.x/longterm/v6.12.118/linux-6.12.118.tar.xz",
+     "https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/v6.x/longterm/v6.12.118/linux-6.12.118.tar.xz",
+     "https://mirror.nju.edu.cn/kernel.org/linux/kernel/v6.x/longterm/v6.12.118/linux-6.12.118.tar.xz",
+     "https://cdn.kernel.org/pub/linux/kernel/v6.x/longterm/v6.12.118/linux-6.12.118.tar.xz",
+     "https://mirrors.mit.edu/kernel/linux/kernel/v6.x/longterm/v6.12.118/linux-6.12.118.tar.xz",
+     "http://ftp.nara.wide.ad.jp/pub/kernel.org/linux/kernel/v6.x/longterm/v6.12.118/linux-6.12.118.tar.xz",
+     "http://www.ring.gr.jp/archives/linux/kernel.org/linux/kernel/v6.x/longterm/v6.12.118/linux-6.12.118.tar.xz",
+     "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/linux/kernel/v6.x/longterm/v6.12.118/linux-6.12.118.tar.xz"
     ]
    }
   ],
@@ -20936,25 +20948,25 @@
   ],
   "toolchain/kernel-headers": [
    {
-    "file": "linux-6.12.116.tar.xz",
-    "sha256": "cb3ed3dfdd47e6ade49dc933db334fd86e24cadee920da612c262b0e9b6a511b",
+    "file": "linux-6.12.118.tar.xz",
+    "sha256": "08308460320e852ac0745b2be3c7ae1cd81bdad713506ed7d817ba1ec9e1a5a5",
     "urls": [
-     "https://mirror.iscas.ac.cn/kernel.org/linux/kernel/v6.x/linux-6.12.116.tar.xz",
-     "https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/v6.x/linux-6.12.116.tar.xz",
-     "https://mirror.nju.edu.cn/kernel.org/linux/kernel/v6.x/linux-6.12.116.tar.xz",
-     "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.116.tar.xz",
-     "https://mirrors.mit.edu/kernel/linux/kernel/v6.x/linux-6.12.116.tar.xz",
-     "http://ftp.nara.wide.ad.jp/pub/kernel.org/linux/kernel/v6.x/linux-6.12.116.tar.xz",
-     "http://www.ring.gr.jp/archives/linux/kernel.org/linux/kernel/v6.x/linux-6.12.116.tar.xz",
-     "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/linux/kernel/v6.x/linux-6.12.116.tar.xz",
-     "https://mirror.iscas.ac.cn/kernel.org/linux/kernel/v6.x/longterm/v6.12.116/linux-6.12.116.tar.xz",
-     "https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/v6.x/longterm/v6.12.116/linux-6.12.116.tar.xz",
-     "https://mirror.nju.edu.cn/kernel.org/linux/kernel/v6.x/longterm/v6.12.116/linux-6.12.116.tar.xz",
-     "https://cdn.kernel.org/pub/linux/kernel/v6.x/longterm/v6.12.116/linux-6.12.116.tar.xz",
-     "https://mirrors.mit.edu/kernel/linux/kernel/v6.x/longterm/v6.12.116/linux-6.12.116.tar.xz",
-     "http://ftp.nara.wide.ad.jp/pub/kernel.org/linux/kernel/v6.x/longterm/v6.12.116/linux-6.12.116.tar.xz",
-     "http://www.ring.gr.jp/archives/linux/kernel.org/linux/kernel/v6.x/longterm/v6.12.116/linux-6.12.116.tar.xz",
-     "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/linux/kernel/v6.x/longterm/v6.12.116/linux-6.12.116.tar.xz"
+     "https://mirror.iscas.ac.cn/kernel.org/linux/kernel/v6.x/linux-6.12.118.tar.xz",
+     "https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/v6.x/linux-6.12.118.tar.xz",
+     "https://mirror.nju.edu.cn/kernel.org/linux/kernel/v6.x/linux-6.12.118.tar.xz",
+     "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.118.tar.xz",
+     "https://mirrors.mit.edu/kernel/linux/kernel/v6.x/linux-6.12.118.tar.xz",
+     "http://ftp.nara.wide.ad.jp/pub/kernel.org/linux/kernel/v6.x/linux-6.12.118.tar.xz",
+     "http://www.ring.gr.jp/archives/linux/kernel.org/linux/kernel/v6.x/linux-6.12.118.tar.xz",
+     "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/linux/kernel/v6.x/linux-6.12.118.tar.xz",
+     "https://mirror.iscas.ac.cn/kernel.org/linux/kernel/v6.x/longterm/v6.12.118/linux-6.12.118.tar.xz",
+     "https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/v6.x/longterm/v6.12.118/linux-6.12.118.tar.xz",
+     "https://mirror.nju.edu.cn/kernel.org/linux/kernel/v6.x/longterm/v6.12.118/linux-6.12.118.tar.xz",
+     "https://cdn.kernel.org/pub/linux/kernel/v6.x/longterm/v6.12.118/linux-6.12.118.tar.xz",
+     "https://mirrors.mit.edu/kernel/linux/kernel/v6.x/longterm/v6.12.118/linux-6.12.118.tar.xz",
+     "http://ftp.nara.wide.ad.jp/pub/kernel.org/linux/kernel/v6.x/longterm/v6.12.118/linux-6.12.118.tar.xz",
+     "http://www.ring.gr.jp/archives/linux/kernel.org/linux/kernel/v6.x/longterm/v6.12.118/linux-6.12.118.tar.xz",
+     "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/linux/kernel/v6.x/longterm/v6.12.118/linux-6.12.118.tar.xz"
     ]
    }
   ],
@@ -20978,10 +20990,10 @@
   ],
   "tools/7z": [
    {
-    "file": "7z2501-src.tar.xz",
-    "sha256": "ed087f83ee789c1ea5f39c464c55a5c9d4008deb0efe900814f2df262b82c36e",
+    "file": "7z2603-src.tar.xz",
+    "sha256": "9cbde5099c6deb73691b0579063da5827522ccbbcba3f0020fd04e8c8c16c0d4",
     "urls": [
-     "https://7-zip.org/a/7z2501-src.tar.xz"
+     "https://7-zip.org/a/7z2603-src.tar.xz"
     ]
    }
   ],
@@ -21893,26 +21905,26 @@
   ]
  },
  "kernel": {
-  "6.12.116": {
-   "file": "linux-6.12.116.tar.xz",
-   "sha256": "cb3ed3dfdd47e6ade49dc933db334fd86e24cadee920da612c262b0e9b6a511b",
+  "6.12.118": {
+   "file": "linux-6.12.118.tar.xz",
+   "sha256": "08308460320e852ac0745b2be3c7ae1cd81bdad713506ed7d817ba1ec9e1a5a5",
    "urls": [
-    "https://mirror.iscas.ac.cn/kernel.org/linux/kernel/v6.x/linux-6.12.116.tar.xz",
-    "https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/v6.x/linux-6.12.116.tar.xz",
-    "https://mirror.nju.edu.cn/kernel.org/linux/kernel/v6.x/linux-6.12.116.tar.xz",
-    "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.116.tar.xz",
-    "https://mirrors.mit.edu/kernel/linux/kernel/v6.x/linux-6.12.116.tar.xz",
-    "http://ftp.nara.wide.ad.jp/pub/kernel.org/linux/kernel/v6.x/linux-6.12.116.tar.xz",
-    "http://www.ring.gr.jp/archives/linux/kernel.org/linux/kernel/v6.x/linux-6.12.116.tar.xz",
-    "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/linux/kernel/v6.x/linux-6.12.116.tar.xz",
-    "https://mirror.iscas.ac.cn/kernel.org/linux/kernel/v6.x/longterm/v6.12.116/linux-6.12.116.tar.xz",
-    "https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/v6.x/longterm/v6.12.116/linux-6.12.116.tar.xz",
-    "https://mirror.nju.edu.cn/kernel.org/linux/kernel/v6.x/longterm/v6.12.116/linux-6.12.116.tar.xz",
-    "https://cdn.kernel.org/pub/linux/kernel/v6.x/longterm/v6.12.116/linux-6.12.116.tar.xz",
-    "https://mirrors.mit.edu/kernel/linux/kernel/v6.x/longterm/v6.12.116/linux-6.12.116.tar.xz",
-    "http://ftp.nara.wide.ad.jp/pub/kernel.org/linux/kernel/v6.x/longterm/v6.12.116/linux-6.12.116.tar.xz",
-    "http://www.ring.gr.jp/archives/linux/kernel.org/linux/kernel/v6.x/longterm/v6.12.116/linux-6.12.116.tar.xz",
-    "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/linux/kernel/v6.x/longterm/v6.12.116/linux-6.12.116.tar.xz"
+    "https://mirror.iscas.ac.cn/kernel.org/linux/kernel/v6.x/linux-6.12.118.tar.xz",
+    "https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/v6.x/linux-6.12.118.tar.xz",
+    "https://mirror.nju.edu.cn/kernel.org/linux/kernel/v6.x/linux-6.12.118.tar.xz",
+    "https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.12.118.tar.xz",
+    "https://mirrors.mit.edu/kernel/linux/kernel/v6.x/linux-6.12.118.tar.xz",
+    "http://ftp.nara.wide.ad.jp/pub/kernel.org/linux/kernel/v6.x/linux-6.12.118.tar.xz",
+    "http://www.ring.gr.jp/archives/linux/kernel.org/linux/kernel/v6.x/linux-6.12.118.tar.xz",
+    "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/linux/kernel/v6.x/linux-6.12.118.tar.xz",
+    "https://mirror.iscas.ac.cn/kernel.org/linux/kernel/v6.x/longterm/v6.12.118/linux-6.12.118.tar.xz",
+    "https://mirrors.ustc.edu.cn/kernel.org/linux/kernel/v6.x/longterm/v6.12.118/linux-6.12.118.tar.xz",
+    "https://mirror.nju.edu.cn/kernel.org/linux/kernel/v6.x/longterm/v6.12.118/linux-6.12.118.tar.xz",
+    "https://cdn.kernel.org/pub/linux/kernel/v6.x/longterm/v6.12.118/linux-6.12.118.tar.xz",
+    "https://mirrors.mit.edu/kernel/linux/kernel/v6.x/longterm/v6.12.118/linux-6.12.118.tar.xz",
+    "http://ftp.nara.wide.ad.jp/pub/kernel.org/linux/kernel/v6.x/longterm/v6.12.118/linux-6.12.118.tar.xz",
+    "http://www.ring.gr.jp/archives/linux/kernel.org/linux/kernel/v6.x/longterm/v6.12.118/linux-6.12.118.tar.xz",
+    "https://www.mirrorservice.org/sites/ftp.kernel.org/pub/linux/kernel/v6.x/longterm/v6.12.118/linux-6.12.118.tar.xz"
    ]
   }
  },
@@ -21925,5 +21937,5 @@
   "https://sources.openwrt.org",
   "https://mirror2.openwrt.org/sources"
  ],
- "revision": "r38337-03ca1c076b94"
+ "revision": "r38363-b1088b5661bf"
 }
