@@ -18879,10 +18879,10 @@
   ],
   "feeds/video/libs/glslang": [
    {
-    "file": "glslang-16.4.0.tar.gz",
-    "sha256": "c634d6237eb0cc04d5ddf5dc9955daa175d82b0f8797acab45b49965e9f6df13",
+    "file": "glslang-16.6.0.tar.gz",
+    "sha256": "9c09b901149c729df745057dafa815278aaa101b84d2b6e14f16a42de52f97f2",
     "urls": [
-     "https://codeload.github.com/KhronosGroup/glslang/tar.gz/16.4.0?/glslang-16.4.0.tar.gz"
+     "https://codeload.github.com/KhronosGroup/glslang/tar.gz/16.6.0?/glslang-16.6.0.tar.gz"
     ]
    }
   ],
@@ -18957,26 +18957,26 @@
   ],
   "feeds/video/libs/llvm": [
    {
-    "file": "SPIRV-LLVM-Translator-23.1.1.tar.gz",
-    "sha256": "9e0bf1beb0ab7edca6cd8c17fd9bbb7ce3dcd520f3e969e0485ff5b00931f929",
+    "file": "SPIRV-LLVM-Translator-23.1.3.tar.gz",
+    "sha256": "9ed57de3f31c575c836bef8f05ce5dfa98a8d80e64d948a02aac83c2e124f842",
     "urls": [
-     "https://codeload.github.com/KhronosGroup/SPIRV-LLVM-Translator/tar.gz/v23.1.1?/SPIRV-LLVM-Translator-23.1.1.tar.gz"
+     "https://codeload.github.com/KhronosGroup/SPIRV-LLVM-Translator/tar.gz/v23.1.3?/SPIRV-LLVM-Translator-23.1.3.tar.gz"
     ]
    },
    {
-    "file": "llvm-project-23.1.1.src.tar.xz",
-    "sha256": "ebe9be46fe8756d58c5b198ffad0fa2a766257add81a4dc52179bfacc7888ee6",
+    "file": "llvm-project-23.1.6.src.tar.xz",
+    "sha256": "d3b86ab29cfb4445a6652e5c2642ccc75e04e38084dde3701d323320f35a31da",
     "urls": [
-     "https://github.com/llvm/llvm-project/releases/download/llvmorg-23.1.1/llvm-project-23.1.1.src.tar.xz"
+     "https://github.com/llvm/llvm-project/releases/download/llvmorg-23.1.6/llvm-project-23.1.6.src.tar.xz"
     ]
    }
   ],
   "feeds/video/libs/mesa": [
    {
-    "file": "mesa-26.2.2.tar.xz",
-    "sha256": "eeb29ca7e56cfaa8e8a79538dcf834e3b18e501c31bef5145e959ea437cc4216",
+    "file": "mesa-26.3.1.tar.xz",
+    "sha256": "4e4e438eac7b840a9383988cbb7c08dad8041da544b9319fc26d319fa7348961",
     "urls": [
-     "https://archive.mesa3d.org/mesa-26.2.2.tar.xz"
+     "https://archive.mesa3d.org/mesa-26.3.1.tar.xz"
     ]
    }
   ],
@@ -19076,46 +19076,46 @@
   ],
   "feeds/video/libs/spirv-headers": [
    {
-    "file": "SPIRV-Headers-1.4.357.0.tar.gz",
-    "sha256": "4d703067a7e06331ccb37bdfed3f9b7879cc61969a2689ae95c95db34a47ff07",
+    "file": "SPIRV-Headers-1.4.363.0.tar.gz",
+    "sha256": "5b3a0d099f5c7649e29c0938476c462e71d66ad89a0bde42fa1ba3eb476956c9",
     "urls": [
-     "https://codeload.github.com/KhronosGroup/SPIRV-Headers/tar.gz/vulkan-sdk-1.4.357.0?/SPIRV-Headers-1.4.357.0.tar.gz"
+     "https://codeload.github.com/KhronosGroup/SPIRV-Headers/tar.gz/vulkan-sdk-1.4.363.0?/SPIRV-Headers-1.4.363.0.tar.gz"
     ]
    }
   ],
   "feeds/video/libs/spirv-tools": [
    {
-    "file": "SPIRV-Tools-vulkan-sdk-1.4.357.0.tar.gz",
-    "sha256": "d31e7109b6ef3559067e53e520870eafed7c9534d00db9728814b6df03fa4a5e",
+    "file": "SPIRV-Tools-vulkan-sdk-1.4.363.0.tar.gz",
+    "sha256": "e6c83a215538fbfd265ccf398d3877985055df1273dbed73912bd05307664688",
     "urls": [
-     "https://codeload.github.com/KhronosGroup/SPIRV-Tools/tar.gz/vulkan-sdk-1.4.357.0?/SPIRV-Tools-vulkan-sdk-1.4.357.0.tar.gz"
+     "https://codeload.github.com/KhronosGroup/SPIRV-Tools/tar.gz/vulkan-sdk-1.4.363.0?/SPIRV-Tools-vulkan-sdk-1.4.363.0.tar.gz"
     ]
    }
   ],
   "feeds/video/libs/vulkan-headers": [
    {
-    "file": "Vulkan-Headers-vulkan-sdk-1.4.357.0.tar.gz",
-    "sha256": "e87dce08116151f6b6d7de6b6faf41498e87e6cf848ff16fa3bd5402190ad4a3",
+    "file": "Vulkan-Headers-vulkan-sdk-1.4.363.0.tar.gz",
+    "sha256": "4a078be12bef21cfebc09d878b77a63cff9d68f899254a0b00d0e37ef73e7f7e",
     "urls": [
-     "https://codeload.github.com/KhronosGroup/Vulkan-Headers/tar.gz/vulkan-sdk-1.4.357.0?/Vulkan-Headers-vulkan-sdk-1.4.357.0.tar.gz"
+     "https://codeload.github.com/KhronosGroup/Vulkan-Headers/tar.gz/vulkan-sdk-1.4.363.0?/Vulkan-Headers-vulkan-sdk-1.4.363.0.tar.gz"
     ]
    }
   ],
   "feeds/video/libs/vulkan-loader": [
    {
-    "file": "Vulkan-Loader-vulkan-sdk-1.4.357.0.tar.gz",
-    "sha256": "54f2537df22313768da0317dda2abdaaab7711b4081c48c869a79db343d0ae70",
+    "file": "Vulkan-Loader-vulkan-sdk-1.4.363.0.tar.gz",
+    "sha256": "941eff558fc74f248745fb7df367640cf89a8457f216dae498a74ae14b6ba6f7",
     "urls": [
-     "https://codeload.github.com/KhronosGroup/Vulkan-Loader/tar.gz/vulkan-sdk-1.4.357.0?/Vulkan-Loader-vulkan-sdk-1.4.357.0.tar.gz"
+     "https://codeload.github.com/KhronosGroup/Vulkan-Loader/tar.gz/vulkan-sdk-1.4.363.0?/Vulkan-Loader-vulkan-sdk-1.4.363.0.tar.gz"
     ]
    }
   ],
   "feeds/video/libs/vulkan-tools": [
    {
-    "file": "Vulkan-Tools-vulkan-sdk-1.4.357.0.tar.gz",
-    "sha256": "6c94b86c850808aba316d999dd6742133d6197ae2135248d3a8aed9b32ebd1f7",
+    "file": "Vulkan-Tools-vulkan-sdk-1.4.363.0.tar.gz",
+    "sha256": "6cbeb83294434e636a0c78760f1a6dfe3e50c1bab0cffa154603ce73e70508f1",
     "urls": [
-     "https://codeload.github.com/KhronosGroup/Vulkan-Tools/tar.gz/vulkan-sdk-1.4.357.0?/Vulkan-Tools-vulkan-sdk-1.4.357.0.tar.gz"
+     "https://codeload.github.com/KhronosGroup/Vulkan-Tools/tar.gz/vulkan-sdk-1.4.363.0?/Vulkan-Tools-vulkan-sdk-1.4.363.0.tar.gz"
     ]
    }
   ],
